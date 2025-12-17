@@ -1,0 +1,11 @@
+gitignore 
+myenv
+exams
+
+
+
+.tmp.driveupload
+.tmp.drivedownload
+ch
+students_exam
+
