@@ -83,43 +83,99 @@ to'xtasin (ikkita shartni ham tekshiring)
 
 
 """ 1-mashq """
-books = []
-while 1:  # True = 1 | False  = 0
-    book = input("Enter book name: ").lower()
+# books = []
+# while 1:  # True = 1 | False  = 0
+#     book = input("Enter book name: ").lower()
 
-    if book == "stop":
-        print("The end !")
-        break
+#     if book == "stop":
+#         print("The end !")
+#         break
     
-    elif book != "":
-        books.append(book)
+#     elif book != "":
+#         books.append(book)
 
-print(books)
+# print(books)
 
 """ 2-mashq """
-summa = 0
-number = 1 # 1 ... 100
-while True:
+# summa = 0
+# number = 1 # 1 ... 100
+# while True:
     
-    summa = summa + number
-    number += 1
+#     summa = summa + number
+#     number += 1
 
-    if number > 100:
-        break
+#     if number > 100:
+#         break
 
-print(summa)
+# print(summa)
 
 """
 9-mashq
-Foydalanuvchidan tizimga kirishi uchun parol so'rang, foydalanuvchi to'gri javob kiritsa unga 'hush keib siz' degan habar chiqsin va dastur to'xtasin.
+Foydalanuvchidan tizimga kirishi uchun parol so'rang, foydalanuvchi to'gri javob kiritsa unga 'hush keib siz' degan habar chiqsin 
+va dastur to'xtasin.
 Agar foydalanuvchi 3 marta xato parol kiritsa uni abadiy tsiklga tushurib qo'ying.
 
 """
 
-parol = 123
+# parol = "123"
+# urinish = 3
 
 """ Abadiy tsikl """
-while True:
-    print("Siz xato kirgizdiz ")
+# while True:
+#     print(f"Sizda {urinish} ta urinish imkoniyati bor !")
+#     savol = input("Parolni kiriting: ")
+    
+#     if savol == parol:
+#         print("Hush kelibsiz !")
+#         break
+#     else:
+#         urinish -= 1
+#         # urinish = urinish -1
+#         print("Xato parol ❗")
+        
+#     if urinish == 0:
+#         while True:
+#             print("Siz bloklandingiz ❌❌❌")
+    
+
+
+
+""" sekundli parol """
+# import time
+# parol = "123"
+# urinish = 3
+
+
+# while True:
+#     print(f"Sizda {urinish} ta urinish imkoniyati bor !")
+#     savol = input("Parolni kiriting: ")
+    
+#     if savol == parol:
+#         print("Hush kelibsiz !")
+#         break
+#     else:
+#         urinish -= 1
+#         # urinish = urinish -1
+#         print("Xato parol ❗")
+        
+#     if urinish == 0:
+#         print("Siz 10 sekundaga bloklandingiz !")
+        
+#         for sekund in range(10, 0, -1):
+#             print(f"Sizda {sekund} s qoldi")
+#             time.sleep(1)
+            
+#         print("Siz qaytadan urinib ko'rishingiz mumkin ♻")
+#         urinish = 3
     
     
+
+
+
+
+
+
+
+
+
+

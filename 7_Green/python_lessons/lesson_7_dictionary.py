@@ -124,42 +124,42 @@ Namuna: Naima Olmani yoqtiradi.
 """
 
 """ 4-mashq """
-mashina = {
-    'model' : "Treker",
-    'rang' : "qora",
-    "yil" : 2024,
-}
-mashina["rang"] = 'oq'
-mashina.update({'tezlik':'220'})
-mashina.pop('yil')
-mashina.clear()
+# mashina = {
+#     'model' : "Treker",
+#     'rang' : "qora",
+#     "yil" : 2024,
+# }
+# mashina["rang"] = 'oq'
+# mashina.update({'tezlik':'220'})
+# mashina.pop('yil')
+# mashina.clear()
 
 
 """ 5-mashq """
-friend = {
-    'saida':"Anor",
-    "oisha":"gilos",
-    "nodira":"Qulpinay",
-    "nigora":"Tarvuz",
-    "sabina":"Malina",
-    "ruxsora":"apelsin",
-}
+# friend = {
+#     'saida':"Anor",
+#     "oisha":"gilos",
+#     "nodira":"Qulpinay",
+#     "nigora":"Tarvuz",
+#     "sabina":"Malina",
+#     "ruxsora":"apelsin",
+# }
 
-print(f"Saida {friend['saida']} ni yoqtiradi")
-print(f"Sabina {friend['sabina']} ni yoqtiradi")
-print(f"Ruxsora {friend['ruxsora']} ni yoqtiradi")
+# print(f"Saida {friend['saida']} ni yoqtiradi")
+# print(f"Sabina {friend['sabina']} ni yoqtiradi")
+# print(f"Ruxsora {friend['ruxsora']} ni yoqtiradi")
 
 
-"""
-8-mashq
-Foydalanuvchidan uning yaqin do'sti haqidagi ma'lumotlarni so'ragan holda friend nomli lug'at tuzing. 
-Lug'atda quidagi ma'lumotlar bo'lsin; ism, familiya, yosh, manzil, telefon raqam hamda kasb. 
-Keyin lug'atdagi barcha ma'lumotlarni konsulga bir gap ko'rinishida chiqaring.
-"""
+# """
+# 8-mashq
+# Foydalanuvchidan uning yaqin do'sti haqidagi ma'lumotlarni so'ragan holda friend nomli lug'at tuzing. 
+# Lug'atda quidagi ma'lumotlar bo'lsin; ism, familiya, yosh, manzil, telefon raqam hamda kasb. 
+# Keyin lug'atdagi barcha ma'lumotlarni konsulga bir gap ko'rinishida chiqaring.
+# """
 
-frined = {
-    'ismi' : input("Ismini kiriting: ")
-}
+# frined = {
+#     'ismi' : input("Ismini kiriting: ")
+# }
 
 
 
@@ -178,6 +178,77 @@ Mevalar deb nomlangan lug'at tuzing, unda {“kalit”:”meva nomi”}  ko'rini
 Keyin esa:  2 ta yangi qiymat qo'shing,  2 ta qiymatni o'zgartiring, 2 ta qiymatni o'chiring. 
 So'ngra mevalar lug'atini o'chirib tashlang;
 """
+
+
+"""
+11-mashq
+Foydalanuvchidan 7 ta shahar nomini so'rang va shaharlar deb nomlangan lug'at tuzing. 
+3 ta elementni 3 hil usulda o'chirib tashlang. Yangi 2 ta shahar nomini 2 xil usulda qo'shing.
+Ro'yhatni tozalab yuboring, so'ngra uni o'chirib tashlang.
+
+12-mashq
+fruts deb nomlangan lug'at tuzing{“key”:”meva nomi”}. Ichida 2 ta element bo'lsin. 
+Yana yangi 2 ta elementni 2 xil usulda qo'shing, 2 ta elementni 2 xil usulda yangilang, 
+3 ta elementni 3 xil usulda o'chiring va so'ngra lug'atni tozalab tashlang.
+"""
+
+""" 11-mashq """
+# shaharlar={
+#     'city1':input("1-Shahar nomini kiriting: "),
+#     "city2":input("2-Shahar nomini kiriting: "),
+#     "city3":input("3-Shahar nomini kiriting: "),
+#     "city4":input("4-Shahar nomini kiriting: "),
+#     "city5":input("5-Shahar nomini kiriting: "),
+#     "city6":input("6-Shahar nomini kiriting: "),
+#     "city7":input("7-Shahar nomini kiriting: "),
+# }
+
+# del shaharlar["city1"]
+# shaharlar.pop("city2")
+# shaharlar.popitem()
+
+# shaharlar['city8'] = "Andijon"
+# shaharlar.update({'city9':"Venetsiya"})
+
+# shaharlar.clear()
+# del shaharlar
+
+
+""" 12-mashq """
+fruts = {
+    'frut1':"Olma",
+    'frut2':"Apelsin"
+}
+
+# fruts['frut3'] = "Mandarin"
+# fruts.update({'frut4':"Anjir"})
+
+# fruts['frut3'] = "Tarvuz"
+# fruts.update({'frut4':"Qovun"})
+
+# del fruts["frut1"]
+# fruts.pop("frut2")
+# fruts.popitem()
+
+# fruts.clear()
+
+
+"""
+13-mashq
+Teachers deb nomlangan lug'at tuzing, unda {“fan nomi”:”O'qtuvchi ismi”}  ko'rinishidagi 2 ta ism bo'lsin.   
+Keyin esa:  2 ta yangi qiymat qo'shing,  2 ta qiymatni o'zgartiring, 2 ta qiymatni o'chiring. So'ngra lug'atni o'chirib tashlang;
+
+14-mashq
+Shaharlar deb nomlangan lug'at tuzing, unda {“ixtiyoriy kalit”:” shahar nomi”} ko'rinishidagi 2 ta shahar bo'lsin. 
+Keyin esa: 2 ta yangi qiymat qo'shing, 2 ta qiymatni o'zgartiring, 2 ta qiymatni o'chiring. 
+So'ngra shaharlar lug'atini o'chirib tashlang;  
+"""
+
+
+""" .get() metodi """
+# print(fruts["frut11"])
+print(fruts.get('frut1', "bunday key bizda yo'q"))
+print("Davomi...")
 
 
 

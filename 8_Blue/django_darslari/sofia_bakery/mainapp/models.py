@@ -27,7 +27,7 @@ class Category(models.Model):
         return self.name
     
 
-class Cake(models.Model):
+class Cake(models.Model): # 
     """  """
     
     name = models.CharField()
@@ -41,7 +41,6 @@ class Cake(models.Model):
 
     def __str__(self):
         return self.name
-
 
 
 class New(models.Model):

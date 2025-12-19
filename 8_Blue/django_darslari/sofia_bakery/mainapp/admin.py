@@ -7,7 +7,7 @@ from .models import Cake, Category, New
 class Cake_Admin(admin.ModelAdmin):
     list_display = ('name', "category", 'price', 'status')
     list_filter = ('status', 'cretaed_on', 'category')
-    search_fields = ('body', 'price', 'name')
+    search_fields = ('body', 'price', 'name') 
     
 @admin.register(Category)
 class Category_Admin(admin.ModelAdmin):
@@ -20,5 +20,4 @@ class New_Admin(admin.ModelAdmin):
     list_display = ('title', "cretaed_on", 'status')
     list_filter = ('status', 'cretaed_on')
     search_fields = ('title', 'body')
-
 
