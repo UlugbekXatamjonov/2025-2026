@@ -117,9 +117,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-MEDIA_URL = 'photos/'
-MEDIA_ROOT = 'photos'
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = 'media/'
 
 
 
