@@ -77,123 +77,44 @@ while True:
         print("parol xato !!!")
         
 """ 
-Vazifa
-
-1-mashq
-Foydalanuvchidan son kiritishini so'rang. agar u faqat manfiy(-) son kiritsa dastur to'xtasin.
-
-2-mashq
-Foydalanuvchidan son olib, son juft yoki toqligini topuvchi dastur tuzing.
-Dastur faqat “chiqish” so’zi kiritilganda to’xtasin.
-
-3-mashq
-Foydalanuvchidan yaxshi ko'rgan ismlarini kiritishni so'rang va ismlar degan ro'yhatga qo'shing.
-Foydalanuvchi "stop" so'zini yozishi bilan dasturni to'xtating. va ro'yhatdagi ismlar nomini chiqaring
-
-4-mashq
-Foydalanuvchidan yaxshi ko'rgan mashinalari nomini kiritishni so'rang va ularni cars degan ro’yhatga yig’ing.
-Foydalanuvchi exit so'zini yozishi bilan dasturni to'xtating va ro’yhatdagi mashinalarni konsulga chiqaring.
-
-5-mashq
-Foydalanuvchidan yaxshi ko'rgan kitoblarini kiritishni so'rab biror ro'yhatga qo'shib yig'ing.
-Foydalanuvchi stop so'zini yozishi bilan dasturni to'xtating.
-
-6-mashq
-Foydalanuvchidan uning ismini so’rang agar uning ismi “Abbos” bo’lsa dasturni to’xtating.
-Aks holda dastur ism so’rashda davom etaversin.
-
-7-mashq
-1 dan 100 gacha bo‘lgan sonlar yig‘indisini while yordamida, sum() funksiyasini ishlatmasdan topishga harakat qiling.
-
-8-mashq
-Muzeyga chipta narhi foydalanuvchining yoshiga bog'liq:
-7 dan yoshlarga - 2000 so'm,
-7-18 gacha 3000 so'm,
-18-65 gacha 10000 so'm,
-65 dan kattalarga bepul.
-
-Shunday while tsikl yozingki, dastur foydalanuvchi yoshini so'rasin va chipta narhini chiqarsin.
-Foydalanuvchi exit yoki quit deb yozganda dastur to'xtasin (ikkita shartni ham tekshiring)
-
-9-mashq
-Foydalanuvchidan tizimga kirishi uchun parol so'rang, foydalanuvchi to'gri javob kiritsa unga 'hush keib siz' degan habar chiqsin va dastur to'xtasin.
-Agar foydalanuvchi 3 marta xato parol kiritsa uni abadiy tsiklga tushurib qo'ying.
-
-10-mashq
-Online bozor loyihasini qiling.
-Avvaliga foydalanuvchiga do'koningizdagi mahsulotlarni nomi va narxini ko'rsating,
-so‘ng foydalanuvchidan nima olishini so'rang, keyin xaridni davom etirasizmi yoki yo'q deb so'rang.
-Agar ha desa yana mahsulot nomini so'rang,
-agar yo'q desa jarayoni tugatib, sotib olgan mahsulotlari va ularning narxini ko'rsating.
-
-11-mashq
-"Son topish" o'yinini while yordamisa shunday qilingki, dastur faqat "exit" so'zi kiritilganda to'xtasin,
-hamda foydalanuvchi va komputerning nechta g'alaba qozonganini ham hisoblasin.
-
-12-mashq
-"Tosh, qaychi, qog'oz" o'yinini ham yuqoridagi mashq kabi bajaring.
-
-
-
-
-
----------------------------------
-
 1) Foydalanuvchidan yaxshi ko'rgan kitoblarini kiritishni so'rab biror ro'yhatga qo'shib yig'ing. 
     Foydalanuvchi stop so'zini yozishi bilan dasturni to'xtating.
-2) 1 dan 100 gacha bo‘lgan sonlar yig‘indisini while yordamida, sum() funksiyasini ishatmasdan topishga harakat qiling.
+    
+2) Foydalanuvchidan uning ismini so’rang agar uning ismi “Abbos” bo’lsa dasturni to’xtating. Aks holda dastur ism so’rashda davom etaversin.
 
-2) Muzeyga chipta narhi foydalanuvchining yoshiga bog'liq: 7 dan yoshlarga - 2000 so'm, 
-7-18 gacha 3000 so'm, 18-65 gacha 10000 so'm, 65 dan kattalarga bepul. 
-Shunday while tsikl yozingki, dastur foydalanuvchi yoshini so'rasin va 
-chipta narhini chiqarsin. Foydalanuvchi exit yoki quit deb yozganda dastur 
-to'xtasin (ikkita shartni ham tekshiring)
+3) Foydalanuvchidan son kiritishini so'rang. agar u faqat manfiy(-) son kiritsa dastur to'xtasin.
 
-3) Foydalanuvchidan tizimga kirishi uchun parol so'rang, foydalanuvchi to'gri javob 
-kiritsa unga 'hush keib siz' degan habar chiqsinva dastur to'xtasim. 
-Agar foydalanuvchi 3 marta xato parol kiritsa uni abadiy tsiklga tushurib qo'ying.  
+4)  Foydalanuvchidan son olib, son juft yoki toqligini topuvchi dastur tuzing.
+    Dastur faqat  “chiqish” so’zi kiritilganda to’xtasin.
 
-5) Online bozor loyihasini qiling. Avvaliga foydalanuvchiga do'koningizdagi mahsulotlarni nomi va narxini ko'rsating,
-song foydalanuvchidan nima olishini so'rang, keyin xaridni davom etirasizmi yoki yo'q deb so'rang
-agar ha desa yana mahsulot nomini so'rang, agar yoq dasa jarayoni tugatib, sotib olgan mahsulotlari va 
-ularning narxini ko'rsating. 
+5)  Foydalanuvchidan yaxshi ko'rgan ismlarini kiritishni so'rang va ismlar  degan ro'yhatga qo'shing. 
+    Foydalanuvchi "stop" so'zini yozishi bilan dasturni to'xtating. va ro'yhatdagi ismlar nomini chiqaring
 
-5) "Son topish" o'yinini while yordamisa shunday qilingki, dastur faqat "exit" so'zi kiritilganda to'xtasin, 
-hamda foydalanuvchi va komputerning  nechta g'alaba qozonganini ham hisoblasin.
+6)  Foydalanuvchidan yaxshi ko'rgan mashinalari nomini kiritishni so'rang  va ularni cars degan ro’yhatga  yig’ing.  
+    Foydalanuvchi exit so'zini yozishi bilan dasturni to'xtating va ro’yhatdagi mashinalarni konsulga chiqaring.
 
-6) "Tosh, qaychi, qog'oz" o'yinini ham yuqoridagi mashq kabi bajaring.
+7) Muzeyga chipta narhi foydalanuvchining yoshiga bog'liq: 7 dan yoshlarga - 2000 so'm, 
+    7-18 gacha 3000 so'm, 18-65 gacha 10000 so'm, 65 dan kattalarga bepul. 
+    Shunday while tsikl yozingki, dastur foydalanuvchi yoshini so'rasin va 
+    chipta narhini chiqarsin. Foydalanuvchi exit yoki quit deb yozganda dastur 
+    to'xtasin (ikkita shartni ham tekshiring)
 
-Foydalanuvchidan son kiritishini so'rang. agar u faqat manfiy(-) son kiritsa dastur to'xtasin.
+8)  Foydalanuvchidan tizimga kirishi uchun parol so'rang, foydalanuvchi to'gri javob 
+    kiritsa unga 'hush keib siz' degan habar chiqsin va dastur to'xtasim. 
+    Agar foydalanuvchi 3 marta xato parol kiritsa uni abadiy tsiklga tushurib qo'ying.  
 
-4-mashq
-Foydalanuvchidan son olib, son juft yoki toqligini topuvchi dastur tuzing.
-Dastur faqat  “chiqish” so’zi kiritilganda to’xtasin.
+9) "Son topish" o'yinini while yordamisa shunday qilingki, dastur faqat "exit" so'zi kiritilganda to'xtasin, 
+    hamda foydalanuvchi va komputerning  nechta g'alaba qozonganini ham hisoblasin.
 
-Foydalanuvchidan yaxshi ko'rgan ismlarini kiritishni so'rang va ismlar  degan ro'yhatga qo'shing. 
-Foydalanuvchi "stop" so'zini yozishi bilan dasturni to'xtating. va ro'yhatdagi ismlar nomini chiqaring
+10) "Tosh, qaychi, qog'oz" o'yinini ham yuqoridagi mashq kabi bajaring.
 
-Foydalanuvchidan yaxshi ko'rgan mashinalari nomini kiritishni so'rang  va ularni cars degan ro’yhatga  yig’ing.  Foydalanuvchi exit so'zini yozishi bilan dasturni to'xtating va ro’yhatdagi mashinalarni konsulga chiqaring.
+11) Online bozor loyihasini qiling. Avvaliga foydalanuvchiga do'koningizdagi mahsulotlarni nomi va narxini ko'rsating,
+    song foydalanuvchidan nima olishini so'rang, keyin xaridni davom etirasizmi yoki yo'q deb so'rang
+    agar ha desa yana mahsulot nomini so'rang, agar yoq dasa jarayoni tugatib, sotib olgan mahsulotlari va 
+    ularning narxini ko'rsating. 
 
-Foydalanuvchidan uning ismini so’rang agar uning ismi “Abbos” bo’lsa dasturni to’xtating. Aks holda dastur ism so’rashda davom etaversin.
+12) 1 dan 100 gacha bo‘lgan sonlar yig‘indisini while yordamida, sum() funksiyasini ishatmasdan topishga harakat qiling.
 
 """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
