@@ -369,3 +369,51 @@ from random import randrange, choice
 #     print("Siz noto'g'ri tanlov kiritdingiz ❗❌❌❌")
 
 
+"""
+Foydalanuvchidan 3 ta son kiritishini so’rab, ulardan qay biri katta, kichik yoki tengligini topib beruvchi dastur tuzing.
+"""
+
+# son1 = int(input("1-sonni kiriting: "))
+# son2 = int(input("2-sonni kiriting: "))
+# son3 = int(input("3-sonni kiriting: "))
+
+# if son1 > son2 and son1 > son3:
+#     print(f"{son1} eng kattasi")
+# elif son2 > son1 and son2 > son3:
+#     print(f"{son2} eng kattasi")
+# elif son3 > son2 and son3 > son1:
+#     print(f"{son3} eng kattasi")
+# else:
+#     print(f"Sonlar teng !")
+
+
+# if son1 == son2 == son3:
+#     print(f"Sonlar teng !")
+# else:
+#     print(f"Eng katta son {max(son1, son2, son3)}")
+#     print(f"Eng kichik son {min(son1, son2, son3)}")
+
+"""
+Restoran menusi lug'atini tuzing(kamida 7 ta taom-narh juftligini kiriting). Foydalanuvchidan 3 ta ovqat
+buyurtma berishni so'rang. Foydalanuvchi kiritgan taomlarni menu bilan solishtiring, agar taom menuda 
+bo'lsa narhini ko'rsating, aks holda "bizda bunday taom yo'q" degan xabarni chiqaring.
+"""
+# menu = {
+#     "osh":1500,
+#     "olma":200,
+#     "shurpa":10000,
+#     "yogurt":300,
+#     "qorachoy":1000
+# }
+
+# ovqat1 = input("Siz restorandan nma olasiz: ")
+# ovqat2 = input("Siz restorandan nma olasiz: ")
+# ovqat3 = input("Siz restorandan nma olasiz: ")
+
+# print(menu.get(ovqat1, "Bizda bu haqida malumot yo'q"))
+# print(menu.get(ovqat2, "Bizda bu haqida malumot yo'q"))
+# print(menu.get(ovqat3, "Bizda bu haqida malumot yo'q"))
+
+
+
+

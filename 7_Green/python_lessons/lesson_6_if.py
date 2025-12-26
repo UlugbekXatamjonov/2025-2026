@@ -188,7 +188,7 @@ O'g'il bolalar ismlarini — barcha harflarini kichik qiling.
 #     if ism == "UMARBEK" or ism == "JO'RABEK":
 #        print(f"{ism.capitalize()}")
 #     else:
-#         print(f"{ism.upper()}") 
+#         print(f"{ism.lower()}") 
 
 
 """ 14-mashq """
