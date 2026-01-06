@@ -8,3 +8,15 @@ print(f"Doskaga {choice(students)} chiqadi 👏")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+

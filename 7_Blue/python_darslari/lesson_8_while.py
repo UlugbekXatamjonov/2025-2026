@@ -84,12 +84,13 @@ to'xtasin (ikkita shartni ham tekshiring)
 
 """ 1-mashq """
 # books = []
-# while 1:  # True = 1 | False  = 0
+# belgi = 1
+# while belgi:  # True = 1 | False  = 0
 #     book = input("Enter book name: ").lower()
 
 #     if book == "stop":
 #         print("The end !")
-#         break
+#         belgi = 0
     
 #     elif book != "":
 #         books.append(book)
