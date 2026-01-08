@@ -5,7 +5,8 @@ from .models import News
 
 @admin.register(News)
 class News_Admin(admin.ModelAdmin):
-    list_display = ('title', 'author',)
-
+    list_display = ('title', 'author', 'created_on', 'status')
+    list_filter = ('author', 'status', 'created_on')
+    search_fields = ('title', 'body', 'tag')
 
 

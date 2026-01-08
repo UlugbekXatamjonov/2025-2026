@@ -247,8 +247,81 @@ So'ngra shaharlar lug'atini o'chirib tashlang;
 
 """ .get() metodi """
 # print(fruts["frut11"])
-print(fruts.get('frut1', "bunday key bizda yo'q"))
-print("Davomi...")
+# print(fruts.get('frut1', "bunday key bizda yo'q"))
+# print("Davomi...")
 
 
+"""  .keys()  .values() """
+friend = {
+    'saida':"Anor",
+    "oisha":"gilos",
+    "nodira":"Qulpinay",
+    "nigora":"Tarvuz",
+    "sabina":"Malina",
+    "ruxsora":"apelsin",
+}
 
+# print(friend.keys())
+# print(friend.values())
+
+# for key in friend.keys():
+#     print(key)
+
+# for key in friend.values():
+#     print(key)
+
+""" .items() """
+
+# for ism, meva in friend.items():
+#     print(f"{ism}ning yoqtirgan mevasi {meva}")
+
+
+eng_uzb = {
+    'apple':"olma",
+    'sweet':"shirin",
+    'fox':"tulki"
+}
+
+
+# word = input("Enter word: ")
+# for eng, uzb in eng_uzb.items():
+#     if word == eng:
+#         print(f"{eng} - {uzb}")
+#     elif word == uzb:
+#         print(f"{uzb} - {eng}")
+
+# if word not in eng_uzb.keys() and word not in eng_uzb.values():
+#     print(f"Bizda {word} ning tarjimasi yo'q !")
+        
+        
+        
+        
+""" how to change python code to apk """
+
+"""
+16-mashq
+Mashina nomidan iborat lug'at Tuzing. {“Mashina nomi”:mashinaning narxi} bo'lsin. Foydalanuvchidan biror mashina nomini so'rang agar u sizning lug'atingizda bor mashina nomini aytsa, unga o'sha mashinaning  narxini ayting, agar bo'lmasa “Bizda bu mashina yo'q edi” degan habarni chiqaring.
+
+"""
+
+cars = {
+    'malibu':23000,
+    'damas':5000,
+}
+
+
+question = input("Enter car name: ")
+for car, price in cars.items():
+    if question == car:
+        print(f"{car} - {price} dollar")
+
+if question not in cars.keys():
+    print(f"Bizda {question} mashina yo'q !")
+        
+
+"""
+
+17-mashq
+Ism familiyalardan foydalanib eng kamida 5 ta familiya, ism juftligidan iborat lug'at shakillantiring(“familiya”:”ism”). 
+Foydalanuvchidan biror o'quvchining ismi yoki familiyasini kiritishini so'rang. Agar ism kiritilsa familiyani, familiya kiritilsa ismni qaytaring. Agar foydalanuvchi kiritgan ism yoki familiya sizning lug'atingizda bo'masa “Bizda bu o'quvchi haqida ma'lumot yo'q” habarni chiqaring.
+"""

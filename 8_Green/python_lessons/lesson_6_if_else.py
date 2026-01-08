@@ -83,20 +83,25 @@ Qolganlar uchun: → “Assalomu aleykum Ali(Olim...)”
     - 300-400 → 5-daraja
 """
 
-ismlar = ['Ali', 'Olim', 'Kamron', 'Abdulloh', 'Karim', 'Usmon']
-for ism in ismlar:
-    if ism == "Kamron" or ism == "Karim":
-        print(f"Salom {ism}, ahvollaring yaxshimi?")
-    else:
-        print(f"Assalomu aleykum {ism}")
+# ismlar = ['Ali', 'Olim', 'Kamron', 'Abdulloh', 'Karim', 'Usmon']
+# for ism in ismlar:
+#     if ism == "Kamron" or ism == "Karim":
+#         print(f"Salom {ism}, ahvollaring yaxshimi?")
+#     else:
+#         print(f"Assalomu aleykum {ism}")
     
-sonlar = list(range(2, 500, 2))
-from math import sqrt
+# sonlar = list(range(2, 500, 2))
+# from math import sqrt
 
-for son in sonlar:
-    if 1< son < 50:
-        print(f"{son} ning 2-darajasi {son**2}")    
-    elif 100 < son < 200:
-        print(f"{son} ning ildizi {sqrt(son)}")    
-    elif 300 < son < 400:
-        print(f"{son} ning 5-darajasi  {son ** 5}")    
+# for son in sonlar:
+#     if 1< son < 50:
+#         print(f"{son} ning 2-darajasi {son**2}")    
+#     elif 100 < son < 200:
+#         print(f"{son} ning ildizi {sqrt(son)}")    
+#     elif 300 < son < 400:
+#         print(f"{son} ning 5-darajasi  {son ** 5}")    
+
+
+
+
+

@@ -58,23 +58,23 @@ while ishora: # = while True -> abadiy tsikl
 
 
 """ continue """
-sonlar = [1,2,3,4,5,6,7,8,9,10]
-for son in sonlar:
-    if son == 6:
-        continue # davom etish / bu holatda 6 ni tashlab o'tib ketadi
-    else:
-        print(son, end=' ')
+# sonlar = [1,2,3,4,5,6,7,8,9,10]
+# for son in sonlar:
+#     if son == 6:
+#         continue # davom etish / bu holatda 6 ni tashlab o'tib ketadi
+#     else:
+#         print(son, end=' ')
 
 
 
 """ parol tizimi """ 
-parol = "www"
-while True:
-    savol = input("Parolni kiriting: ")
-    if savol == parol:
-        break
-    else:
-        print("parol xato !!!")
+# parol = "www"
+# while True:
+#     savol = input("Parolni kiriting: ")
+#     if savol == parol:
+#         break
+#     else:
+#         print("parol xato !!!")
         
 """ 
 1) Foydalanuvchidan yaxshi ko'rgan kitoblarini kiritishni so'rab biror ro'yhatga qo'shib yig'ing. 
@@ -116,5 +116,7 @@ while True:
 12) 1 dan 100 gacha bo‘lgan sonlar yig‘indisini while yordamida, sum() funksiyasini ishatmasdan topishga harakat qiling.
 
 """
+
+
 
 

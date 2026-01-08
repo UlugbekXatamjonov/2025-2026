@@ -170,14 +170,81 @@
 """
 
 
+
+
+
+
+
+""" Online do'kon """
+mahsulotlar = {
+    "olma":4_500,
+    "nok":2_000,
+    "non":3_000,
+    "asal":15_000,
+    "tuz":2_500,    
+}
+
+
+bor = []
+yoq = []
+summa = 0
+
+
+print("Assalomu aleykum do'konimizga hush kelibsiz !")
+print("Bizning do'konda quidagi mahsulotlar bor: ")
+
+for mahsulot, narx in mahsulotlar.items():
+    print(f"{mahsulot} - {narx} so'm")
+
+while True:
+    savol = input("Mahsulot nomini kiriting: ")
+    if savol == 'exit' or savol == 'quit':
+        break
+    elif savol in mahsulotlar:
+        bor.append(savol)
+    else:
+        yoq.append(savol)
+
+for mahsulot, narx in mahsulotlar.items():
+    if mahsulot in bor:
+        summa += narx
+
+print(f"Bizda siz aytgan quidagi {len(bor)} ta mahsulotlar bor {bor} va ularning umumiy narxi {summa} so'm")
+print(f"Bizda siz aytgan quidagi {len(yoq)} ta mahsulotlar yo'q {yoq}")
+
+
+
+
+""" Son topish o'yini """
 from random import randrange
 
-komputer = randrange(1, 5)
-player = int(input("Son kiriting: "))
 
-if komputer == player:
-    print("Siz yutdingiz ! ✅")
-else:
-    print("Siz yutqazdingiz !❌")
+computer_score = 0
+plater_score = 0
+
+while True:
+    komputer = randrange(1, 4)
+    player = input("Son kiriting: ").lower()
+
+    if player == "exit":
+        print("Game over !")
+        print(f"Siz {plater_score} : {computer_score} Komputer")
+        break
     
-print(f"Kompyuter: {komputer}")
+    elif player.isdigit(): 
+        player = int(player)
+
+        if komputer == player:
+            print("Siz yutdingiz ! ✅")
+            plater_score += 1
+        else:
+            print("Siz yutqazdingiz !❌")
+            computer_score += 1
+            
+        print(f"Kompyuter: {komputer}")
+        print(f"Siz {plater_score} : {computer_score} Komputer")
+    
+    else:
+        print("Son kioriting ❗")
+
+

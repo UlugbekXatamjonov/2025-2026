@@ -1,57 +1,70 @@
-person1 = {
-    'full_name':"Saidbek Shokirov",
-    'card_number' : 1234,
-    'card_password': 1111,
-    'balance': 4_000_000,
-    'block': False
-}
-person2 = {
-    'full_name':"Nodirbek Avazbekov",
-    'card_number' : 7777,
-    'card_password': 0000,
-    'balance': 1_500_000,
-    'block': False
-}
-person3 = {
-    'full_name':"Javohir Murodillayev",
-    'card_number' : 9966,
-    'card_password': 9966,
-    'balance': 6_320_000,
-    'block': False
-}
-
-people = [person1, person2, person3]
-
-# karta raqam va parolni so'raymiz
-
 while True:
-    card_number = int(input("Enter the card number: "))
-    card_password = int(input("Enter the card password: "))
 
+    person1 = {
+        'full_name':"Saidbek Shokirov",
+        'card_number' : 1234,
+        'card_password': 1111,
+        'balance': 4_000_000,
+        'block': False
+    }
 
+    print("Assalomu aleykum hurmatli mijoz ! \nHush kelibsiz")
+    card_number = int(input("Karta raqamingizni kiriting: "))
+    password = int(input("Parolingizni kiriting: "))
 
-    for person in people: # Agar parol va raqamni to'g'ri kiritsa, keyingi ishlarga o'tamiz
-        if card_number in person.values() and card_password in person.values():
-            print("Siz bor siz")
+    while True:
+        if card_number == person1['card_number'] and password == person1['card_password']:
+            print("Biror amalni tanlang: \n1) Balansni ko'rish \n2) Naqd pul yechish \n3) Kartani to'ldirish \n4) Parolni o'zgartirish \n5) Chiqish")
+            customer = int(input("Amallardan birini tanlang: "))
 
+            if customer == 1:
+                print(f"Sizning balansiz {person1['balance']} so'm") 
 
-    if card_number not in person.values() or card_password not in person.values(): # Agar parol va raqamni 3 marta noto'g'ri kiritsa, blocklaymiz  
-        print("Siz yo'q siz")
+            if customer == 2:
+                withdrawn_money= int(input("Yechiladigan mablag'ni kiriting: "))
 
+                if withdrawn_money <= person1['balance']:
+                    person1['balance'] -= withdrawn_money
+                    print(f"Sizning hisobingdan {withdrawn_money} so'm yechib olindi !")
+                    print(f"Qolgan mablag': {person1['balance']} so'm")
+                else:
+                    print(f"Sizning balansingizda yetarlicha mablag' yo'q")
 
+            if customer == 3:
+                additional_money = int(input("Qo'shiladigan mablag'ni kiriting: "))
+                
+                if additional_money > 0:
+                    person1['balance'] += additional_money
+                    print(f"Sizning balansingiz muvoffaqiyatli to'ldirildi !")
+                    print(f"Sizning balansiz {person1['balance']} so'm") 
+                else:
+                    print(f"Siz manfiy mablag' kirita olmaysiz !")
 
+            if customer == 4:
+                current_password = int(input("Hozirgi parolingizni kiriting: "))
+                if current_password == person1['card_password']:
+                    print("Yangi parol 4 ta sondan iborat bo'lishi va sodda bo'lmasligi kerak !")
+                    new_password1 = int(input("Yangi parol kiriting: "))
+                    new_password2 = int(input("Parolni tasdiqlang: "))
 
+                    if new_password1 == new_password2 and len(str(new_password1)) == 4:
+                        person1['card_password'] = new_password1
+                        print(f"Parol muvoffaqiyatli o'zgartirildi !")
+                    else:
+                        print("Parol shartlarga mos kelmadi !!!") 
 
+                else:
+                    print("Parolni xato kirgizdingiz !")
 
-
-
-
-
-
-
-
-
-
-
-
-
+            if customer == 5:
+                print(f"Xizmatimizdan foydalanganingiz uchun rahmat !\n\n\n\n\n\n\n\n\n\n")
+                break
+            
+            if customer < 1 or customer > 5:
+                print(f"Siz noto'g'ri amalni tanladingiz ! Qaytadan urinib ko'ring !")
+            
+        else:
+            print("Karta raqami yoki paroli noto'g'ri !\n\n")
+            break
+            
+            
