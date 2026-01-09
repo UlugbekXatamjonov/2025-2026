@@ -102,6 +102,32 @@ Qolganlar uchun: → “Assalomu aleykum Ali(Olim...)”
 #         print(f"{son} ning 5-darajasi  {son ** 5}")    
 
 
+"""
+19-mashq (eng murakkab)
+Foydalanuvchidan avval parol, keyin parolni tasdiqlashni so'rang:
+Agar parollar bir-biriga mos va 8 ta belgidan uzun bo'lsa → “Parol o'rnatildi”
+Parollar mos kelmasa → “Parollar mos emas”
+Parol uzunligi < 8 bo'lsa → “Parolda kamida 8 belgi bo'lishi shart”
+"""
+""" 19-mashq """
+
+password1 = input("Parolni kiriting: ")
+password2 = input("Parolni takrorlang: ")
+
+if password1 == password2:
+    if len(password1) >= 8:
+        print("Parol o'rnatildi")
+    else:
+        print("Parol eng kamida 8 ta belgidan iborat bo'lishi kerak !")
+else:
+    print("Parollar bir xil emas !")
+
+
+
+
+
+
+
 
 
 
