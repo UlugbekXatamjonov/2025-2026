@@ -60,7 +60,7 @@ def yigindi(x:int, y:int):
 """
 
 
-def t_yil_hisoblovchi(ism:str, yosh:int):
+def t_yil_hisoblovchi(ism:str, yosh:int): # parametr
     """  """
 
     return f"{ism.title()} {2026-yosh}-yili tug'ilgan"
