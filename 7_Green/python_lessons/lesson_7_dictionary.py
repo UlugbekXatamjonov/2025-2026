@@ -304,19 +304,19 @@ Mashina nomidan iborat lug'at Tuzing. {“Mashina nomi”:mashinaning narxi} bo'
 
 """
 
-cars = {
-    'malibu':23000,
-    'damas':5000,
-}
+# cars = {
+#     'malibu':23000,
+#     'damas':5000,
+# }
 
 
-question = input("Enter car name: ")
-for car, price in cars.items():
-    if question == car:
-        print(f"{car} - {price} dollar")
+# question = input("Enter car name: ")
+# for car, price in cars.items():
+#     if question == car:
+#         print(f"{car} - {price} dollar")
 
-if question not in cars.keys():
-    print(f"Bizda {question} mashina yo'q !")
+# if question not in cars.keys():
+#     print(f"Bizda {question} mashina yo'q !")
         
 
 """
@@ -325,3 +325,25 @@ if question not in cars.keys():
 Ism familiyalardan foydalanib eng kamida 5 ta familiya, ism juftligidan iborat lug'at shakillantiring(“familiya”:”ism”). 
 Foydalanuvchidan biror o'quvchining ismi yoki familiyasini kiritishini so'rang. Agar ism kiritilsa familiyani, familiya kiritilsa ismni qaytaring. Agar foydalanuvchi kiritgan ism yoki familiya sizning lug'atingizda bo'masa “Bizda bu o'quvchi haqida ma'lumot yo'q” habarni chiqaring.
 """
+
+
+# oquvchilar = {
+#     "Mamadaliyev": "Abdurashid",
+#     "Mamadov": "Abubakr",
+#     "Raximdjanov": "Abubakr",
+#     "Shamsiddinov": "Abbos",
+#     "Sobirov": "MUhammadqodir"
+# }
+
+# savol = input("Ism yoki familiya kiriting: ")
+
+# for familiya, ism in oquvchilar.items():
+#     if savol == ism:
+#         print(f"{ism}ning familiyasi {familiya}")
+#     elif savol == familiya:
+#         print(f"{familiya}ning ismi {ism}")
+# if savol not in oquvchilar.keys() and savol not in oquvchilar.values():
+#     print(f"Bizda {savol} haqida ma'lumot yo'q !")
+    
+    
+    

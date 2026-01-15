@@ -4,15 +4,18 @@ from .models import Category, Cake, New
 
 
 # Serializers define the API representation.
-class CategorySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Category
-        fields = '__all__'
-
 class CakeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cake
         fields = '__all__'
+        
+class CategorySerializer(serializers.ModelSerializer):
+    cakes = CakeSerializer(many=True, read_only=True)
+    
+    class Meta:
+        model = Category
+        fields = ('id', 'name', 'image', 'cakes')
+
 
 class NewSerializer(serializers.ModelSerializer):
     class Meta:

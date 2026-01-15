@@ -31,7 +31,7 @@ class Cake(models.Model): #
     """  """
     
     name = models.CharField()
-    category = models.ForeignKey(Category, on_delete=models.CASCADE) 
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="cakes") 
     body = models.TextField()
     price = models.PositiveIntegerField()
     image = models.ImageField(upload_to="photos/cake_photos")

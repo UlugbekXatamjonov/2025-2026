@@ -62,7 +62,6 @@ def yigindi(x:int, y:int):
 
 def t_yil_hisoblovchi(ism:str, yosh:int): # parametr
     """  """
-
     return f"{ism.title()} {2026-yosh}-yili tug'ilgan"
 
 
@@ -71,5 +70,73 @@ def t_yil_hisoblovchi(ism:str, yosh:int): # parametr
 
 
 
+""" Argumentni kalit so'z bilan uzatish """
+
+def full_name(name, surname, father):
+    """
+    full_name - To'liq ism sharifni qaytarish uchun funksiya
+    
+    Arguments:
+        name - str
+        suename - str
+        father - str 
+    """
+    
+    return f"{surname} {name} {father} o'g'li/qizi"
+
+# full_name(name="Olimjon", surname="Aliyev", father="Baxodirovich")
+# print(full_name("Nodirbek", "Saidbekov", "Javohir"))
+# print(full_name(surname="Saidbekov", father="Javohir", name="Nodirbek"))
+
+
+"""
+2) Foydalanuvchidan son olib, uning kvadrati va kubini konsolga chiqaruvchi funksiya yozing.
+3) Foydalanuvchidan son olib, son juft yoki toqligini konsolga chiqaruvchi funksiya yozing.
+4) Foydalanuvchidan ikkita son olib, ulardan kattasini konsolga chiqaruvchi funksiya yozing. 
+    Agar sonlar teng bo'lsa "Sonlar teng" degan xabarni chiqaring.
+"""
+
+""" 2 """
+
+def kv(son:int):
+    """  """
+    kv = son**2
+    kub = son**3
+    
+    return f"{son} ning kvadrati {kv}, kubi {kub}"
+
+# print(kv(5))
+# print(kv(9))
+
+
+""" 3 """
+def juft_toq(son:int):
+    """  """
+    
+    if son%2 == 0:
+        return f"{son} juft"
+    else:
+        return f"{son} toq"
+
+# print(juft_toq(4))
+# print(juft_toq(5))
+
+""" 4 """
+
+def katta_kichik(son1:int, son2:int):
+    """  """
+
+    if son1 > son2:
+        return f"{son1} > {son2}"
+    elif son1 < son2:
+        return f"{son1} < {son2}"
+    if son1 == son2:
+        return f"{son1} = {son2}"
+
+
+
+print(katta_kichik(15, 8))
+print(katta_kichik(23, 55))
+print(katta_kichik(4, 4))
 
 
