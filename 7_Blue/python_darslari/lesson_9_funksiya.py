@@ -84,9 +84,9 @@ def full_name(name, surname, father):
     
     return f"{surname} {name} {father} o'g'li/qizi"
 
-# full_name(name="Olimjon", surname="Aliyev", father="Baxodirovich")
-# print(full_name("Nodirbek", "Saidbekov", "Javohir"))
-# print(full_name(surname="Saidbekov", father="Javohir", name="Nodirbek"))
+full_name(name="Olimjon", surname="Aliyev", father="Baxodirovich")
+print(full_name("Nodirbek", "Saidbekov", "Javohir"))
+print(full_name(surname="Saidbekov", father="Javohir", name="Nodirbek"))
 
 
 """
@@ -105,8 +105,8 @@ def kv(son:int):
     
     return f"{son} ning kvadrati {kv}, kubi {kub}"
 
-# print(kv(5))
-# print(kv(9))
+print(kv(5))
+print(kv(9))
 
 
 """ 3 """
@@ -118,8 +118,8 @@ def juft_toq(son:int):
     else:
         return f"{son} toq"
 
-# print(juft_toq(4))
-# print(juft_toq(5))
+print(juft_toq(4))
+print(juft_toq(5))
 
 """ 4 """
 
@@ -133,10 +133,43 @@ def katta_kichik(son1:int, son2:int):
     if son1 == son2:
         return f"{son1} = {son2}"
 
-
-
 print(katta_kichik(15, 8))
 print(katta_kichik(23, 55))
 print(katta_kichik(4, 4))
+
+
+"""
+  
+5) Tog'ri to'rtburchakli uchburchakning katetlarini qabul qilib olib uning gipotenuzsini hisoblovchi funksiya 
+    yozing, 2- katetni o'zgarmas parameter sifatida bering.
+    f: c**2 = a**2 + b**2 / c ni topish kk / b - o'zgarmas qiymat   
+    Yuqoridagi har bir funksiyaga to'liq tarif(defenition yozing)
+
+
+6) Foydanaluvchidan ismi, familiyasi, tug'ilgan yili, tug'ilgan joyi, email manzili va 
+    telefon raqamini qabul qilib, lug'at ko'rinishida malumot qaytaruvchi funksiya yozing. 
+    Lug'atda foydalanuvchi yoshi ham bo'lsin. Ba'zi argumentlarni kiritishni ixtiyoriy 
+    qiling (masalan, tel.raqam, el.manzil)
+
+7) Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing
+
+8) Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, diametrini, 
+    perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya yozing
+
+"""
+
+from math import sqrt
+def tbu(a:float, b:float):
+    """  """
+    c = sqrt(a**2 + b**2)
+    
+    return c
+
+
+# def the_biggest(a:int, b:int, c:int):
+    
+#     if 
+
+
 
 
