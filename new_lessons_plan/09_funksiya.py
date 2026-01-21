@@ -196,14 +196,13 @@ Vazifa:
     
 5) Tog'ri to'rtburchakli uchburchakning katetlarini qabul qilib olib uning gipotenuzsini hisoblovchi funksiya 
     yozing, 2- katetni o'zgarmas parameter sifatida bering.
-    f: c**2 = a**2 + b**2 / c ni topish kk / b - o'zgarmas qiymat   
+    f: c**2 = a**2 + b**2 / c ni topish kk
     Yuqoridagi har bir funksiyaga to'liq tarif(defenition yozing)
 
 
 6) Foydanaluvchidan ismi, familiyasi, tug'ilgan yili, tug'ilgan joyi, email manzili va 
     telefon raqamini qabul qilib, lug'at ko'rinishida malumot qaytaruvchi funksiya yozing. 
-    Lug'atda foydalanuvchi yoshi ham bo'lsin. Ba'zi argumentlarni kiritishni ixtiyoriy 
-    qiling (masalan, tel.raqam, el.manzil)
+    Lug'atda foydalanuvchi yoshi ham bo'lsin.
 
 7) Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing
 
@@ -214,7 +213,7 @@ Vazifa:
 9) To'g'ri to'rtburchakning ikki tomoni parametr sifatida uzatilsa, uning perimetri va yuzini topuvchi funksiya yozing.
 
 
-10) Parametr sifatida uzatilgan matnning  uzunligini topuvchi funksiya tuzing.L
+10) Parametr sifatida uzatilgan matnning  uzunligini topuvchi funksiya tuzing.
     
 11) parametr sifatida uzatilgan sonlar ichidan faqat toq sonlarni ajratib qaytaradigan funksiya yozing.
 

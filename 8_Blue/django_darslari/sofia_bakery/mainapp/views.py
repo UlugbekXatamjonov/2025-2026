@@ -21,5 +21,5 @@ class NewViewSet(viewsets.ModelViewSet):
 
 
 class Last_cakes_ViewSet(viewsets.ModelViewSet):
-    queryset = Cake.objects.filter(status='have')[:1]
+    queryset = Cake.objects.filter(status='have').order_by('-id')[:3]
     serializer_class = CakeSerializer
