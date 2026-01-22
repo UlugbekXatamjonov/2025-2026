@@ -91,20 +91,20 @@ While tsikli
     Dastur faqat  “chiqish” so’zi kiritilganda to’xtasin.
 """
 
-while True:
-    son = input("Son kiriting(chiqish):")
+# while True:
+#     son = input("Son kiriting(chiqish):")
 
-    if son == "chiqish":
-        print("The end !")
-        break
+#     if son == "chiqish":
+#         print("The end !")
+#         break
     
-    if son.isdigit():
-        son = int(son)
+#     if son.isdigit():
+#         son = int(son)
     
-        if son%2 ==0:
-            print(f"{son} juft")
-        else:
-            print(f"{son} toq")
+#         if son%2 ==0:
+#             print(f"{son} juft")
+#         else:
+#             print(f"{son} toq")
 
 
 """
@@ -120,16 +120,16 @@ while True:
 6)  Foydalanuvchidan yaxshi ko'rgan mashinalari nomini kiritishni so'rang  va ularni cars degan ro’yhatga  yig’ing.  
     Foydalanuvchi exit so'zini yozishi bilan dasturni to'xtating va ro’yhatdagi mashinalarni konsulga chiqaring.
 """
-cars = []
-while True:
-    car = input("Mashina: ")
+# cars = []
+# while True:
+#     car = input("Mashina: ")
 
-    if car == 'stop':
-        break
+#     if car == 'stop':
+#         break
     
-    else:
-        cars.append(car)
-print(cars)
+#     else:
+#         cars.append(car)
+# print(cars)
         
 """
 8)  Foydalanuvchidan tizimga kirishi uchun parol so'rang, foydalanuvchi to'gri javob 
@@ -137,5 +137,60 @@ print(cars)
     Agar foydalanuvchi 3 marta xato parol kiritsa, siz blocklandiungiz.  
 """
 
+parol = "0123"
+xatolar_soni = 3
+while True:
+    savol = input("Parol kiriting: ")
+    if savol == parol:
+        print("Hush kelibsiz")
+        break
+    else:
+        xatolar_soni -= 1
+        print("Parol xato!")
+        print(f"Sizda yana {xatolar_soni} ta urinish qoldi")
+
+        if xatolar_soni == 0:
+            print("Sizning blockladingiz!")
+          
+import time
 
 
+""" sekundli """
+parol = "0123"
+xatolar_soni = 3
+while True:
+    savol = input("Parol kiriting: ")
+    if savol == parol:
+        print("Hush kelibsiz")
+        break
+    else:
+        xatolar_soni -= 1
+        print("Parol xato!")
+        print(f"Sizda yana {xatolar_soni} ta urinish qoldi")
+
+        if xatolar_soni == 0:
+            print("Sizning blockladingiz!")
+            for t in range(10, 0, -1):
+                print(f"{t} sekun qoldi !")
+                time.sleep(1)
+            xatolar_soni = 3
+    
+    
+"""
+9) "Son topish" o'yinini while yordamisa shunday qilingki, dastur faqat "exit" so'zi kiritilganda to'xtasin, 
+    hamda foydalanuvchi va komputerning  nechta g'alaba qozonganini ham hisoblasin.
+"""
+""" random """
+from random import randrange, choice, choices
+
+komputer = randrange(1, 5) # 1 dan 5 gacha ixtiyoriy biro sonni tanlab beradi
+print("Komputer tanlagan sonni taxmin qiling !")
+player = int(input("Biror sonni kiriting: "))
+
+if komputer == player:
+    print("Siz yutdingiz ✅")
+else:
+    print("Siz yutqazdiz ❌👎")
+print(f"Komputer {komputer} sonini  o'ylagan edi")
+  
+    
