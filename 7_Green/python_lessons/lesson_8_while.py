@@ -137,43 +137,43 @@ While tsikli
     Agar foydalanuvchi 3 marta xato parol kiritsa, siz blocklandiungiz.  
 """
 
-parol = "0123"
-xatolar_soni = 3
-while True:
-    savol = input("Parol kiriting: ")
-    if savol == parol:
-        print("Hush kelibsiz")
-        break
-    else:
-        xatolar_soni -= 1
-        print("Parol xato!")
-        print(f"Sizda yana {xatolar_soni} ta urinish qoldi")
+# parol = "0123"
+# xatolar_soni = 3
+# while True:
+#     savol = input("Parol kiriting: ")
+#     if savol == parol:
+#         print("Hush kelibsiz")
+#         break
+#     else:
+#         xatolar_soni -= 1
+#         print("Parol xato!")
+#         print(f"Sizda yana {xatolar_soni} ta urinish qoldi")
 
-        if xatolar_soni == 0:
-            print("Sizning blockladingiz!")
+#         if xatolar_soni == 0:
+#             print("Sizning blockladingiz!")
           
-import time
+# import time
 
 
 """ sekundli """
-parol = "0123"
-xatolar_soni = 3
-while True:
-    savol = input("Parol kiriting: ")
-    if savol == parol:
-        print("Hush kelibsiz")
-        break
-    else:
-        xatolar_soni -= 1
-        print("Parol xato!")
-        print(f"Sizda yana {xatolar_soni} ta urinish qoldi")
+# parol = "0123"
+# xatolar_soni = 3
+# while True:
+#     savol = input("Parol kiriting: ")
+#     if savol == parol:
+#         print("Hush kelibsiz")
+#         break
+#     else:
+#         xatolar_soni -= 1
+#         print("Parol xato!")
+#         print(f"Sizda yana {xatolar_soni} ta urinish qoldi")
 
-        if xatolar_soni == 0:
-            print("Sizning blockladingiz!")
-            for t in range(10, 0, -1):
-                print(f"{t} sekun qoldi !")
-                time.sleep(1)
-            xatolar_soni = 3
+#         if xatolar_soni == 0:
+#             print("Sizning blockladingiz!")
+#             for t in range(10, 0, -1):
+#                 print(f"{t} sekun qoldi !")
+#                 time.sleep(1)
+#             xatolar_soni = 3
     
     
 """
@@ -183,14 +183,73 @@ while True:
 """ random """
 from random import randrange, choice, choices
 
-komputer = randrange(1, 5) # 1 dan 5 gacha ixtiyoriy biro sonni tanlab beradi
-print("Komputer tanlagan sonni taxmin qiling !")
-player = int(input("Biror sonni kiriting: "))
+# player_score = 0
+# komputer_score = 0
 
-if komputer == player:
-    print("Siz yutdingiz ✅")
-else:
-    print("Siz yutqazdiz ❌👎")
-print(f"Komputer {komputer} sonini  o'ylagan edi")
-  
+# while True:
+#     komputer = randrange(1, 5) # 1 dan 5 gacha ixtiyoriy biro sonni tanlab beradi
+#     print("Komputer tanlagan sonni taxmin qiling !")
+#     player = input("Biror sonni kiriting: ")
+
+#     if player == 'exit':
+#         break
     
+#     if player.isdigit():
+#         player = int(player)
+
+#         if komputer == player:
+#             print("Siz yutdingiz ✅")
+#             player_score += 1
+#         else:
+#             print("Siz yutqazdiz ❌👎")
+#             komputer_score += 1
+#         print(f"Komputer {komputer} sonini  o'ylagan edi")
+    
+#     print(f"Player {player_score}:{komputer_score} Komputer")
+  
+
+""" Tosh, qaychi, qog'oz """
+
+
+# player_score = 0
+# komputer_score = 0
+
+# while True:
+#     tqq = ["tosh", 'qaychi', "qogoz"]
+#     komputer = choice(tqq)
+#     player = input("Tosh-qaychi-qogoz: ").lower()
+    
+#     if player == 'exit':
+#         break
+
+#     if player in tqq:
+#         if komputer == player:
+#             print("Durrang 🤝")
+#         elif komputer == 'tosh' and  player == "qaychi":
+#             print(f"Siz yutqazdingiz ❌")
+#             komputer_score += 1
+            
+#         elif komputer == 'qaychi' and  player == "qogoz":
+#             print(f"Siz yutqazdingiz ❌")
+#             komputer_score += 1
+            
+#         elif komputer == 'qogoz' and  player == "tosh":
+#             print(f"Siz yutqazdingiz ❌")
+#             komputer_score += 1
+        
+#         else:
+#             print("Siz yutdingiz ✅")
+#             player_score += 1
+        
+#         print(f"🤖 Komputer \"{komputer}\" ni tanlagan edi")
+#         print(f"😀Siz {player_score}:{komputer_score} Komputer🤖")
+        
+#     else:
+#         print("Siz noto'g'ri tanlov qildingiz ❗❗❗")
+
+
+
+
+
+
+

@@ -1,4 +1,5 @@
-1) Uy oldi sottisi uchun website
+"""
+1`1) Uy oldi sottisi uchun website
     - yangi uylar
     - eski uylar
     - ijara
@@ -16,7 +17,9 @@
     Ovqatlanish joylari uchun , QR menu yaratish.
     qr cod skayner qilinadi va saytga kiriladi u yerda oshxona menyusi online boʻladi
 
-6) 
+6) do'kondagi crm
+7) komputerxona uchun crm
+8) Restoran CRM
 
 
 
@@ -35,3 +38,5 @@
 
 
 
+
+"""

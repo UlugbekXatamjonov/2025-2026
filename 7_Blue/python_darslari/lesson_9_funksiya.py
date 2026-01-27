@@ -392,3 +392,46 @@ def yigindi2(son:int):
 # print(yigindi2(10))
 # print(yigindi2(100))
     
+
+
+""" Tub sonlar """
+# def tub(son1:int, son2:int):
+#     """  """
+#     tub_sonlar  = []
+#     sonlar = list(range(son1, son2))
+    
+#     for son in sonlar:
+#         if son%2 != 0 and son%3 != 0 and son%4 != 0 and son%5 != 0 and son%6 != 0 and son%7 != 0 and son%8 != 0: 
+#             tub_sonlar.append(son)
+    
+#     return tub_sonlar
+
+
+
+# print(tub(10, 50))
+# print(tub(10, 123))
+
+
+def tub(son1:int, son2:int):
+    """  """
+    tub_sonlar  = []
+    sonlar = list(range(son1, son2))
+    
+    for son in sonlar:
+        is_tub = True
+        
+        for s in range(2, son):
+            if son%s == 0:
+                is_tub = False
+        
+        if is_tub == True:
+            tub_sonlar.append(son)
+    
+    
+    return tub_sonlar
+
+
+
+print(tub(10, 50))
+print(tub(10, 123))
+print(tub(10, 1000))
