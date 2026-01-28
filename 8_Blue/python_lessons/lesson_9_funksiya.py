@@ -182,6 +182,56 @@ def togri_tortburchak(eni:int,boyi:int):
 # print(togri_tortburchak(4,3))
 
 
+""" *args - arguments """
+
+def our_sum(*sonlar:int):
+    summa = 0
+    for son in sonlar:
+        summa += son
+    
+    return summa
+
+
+# print(our_sum(2, 5,6))
+# print(our_sum(40, 20, 5, 15 ,20))
+
+
+
+"""  10) Parametr sifatida uzatilgan matnning  uzunligini topuvchi funksiya tuzing."""
+
+def our_len(matn:str):
+    length = 0
+    
+    for m in matn:
+        if m != " ":
+            length += 1
+    
+    return length
+
+# print(our_len("Salom hammaga"))
+# print(our_len("Mirziyo"))
+
+
+
+"""    
+11) parametr sifatida uzatilgan sonlar ichidan faqat toq sonlarni ajratib qaytaradigan funksiya yozing.
+ """
+
+
+def toq(*sonlar:int):
+    toqlar = []
+    for son in sonlar:
+        if son%2 != 0:
+            toqlar.append(son)
+            
+    return toqlar
+
+
+# print(toq(4, 8, 9,2, 3, 5, 7, 6))
+
+
+
+
 
 
 

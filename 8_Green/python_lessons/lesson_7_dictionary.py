@@ -78,7 +78,7 @@ taomlar = {
 
 """ keys() va values() metodlar """
 davlatlar = {
-    'uzbekistan':"Tashkent",
+        'uzbekistan':"Tashkent",
     'usa':"Vashington",
     'russian':"Moscow",
 }

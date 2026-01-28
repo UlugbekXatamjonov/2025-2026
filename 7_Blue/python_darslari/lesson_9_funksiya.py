@@ -249,5 +249,220 @@ def toq_sonlar(*sonlar:int):
 
 """
 12) Parametr sifatida uzatilgan sonlarning o'rta arifmetigini topib beruvchi funksiya tuzing.
+"""
+def middle(*sonlar:int):
+    """  """
+    number = 0
+    summa = 0
+    
+    for son in sonlar:
+        number += 1
+        summa += son
+        
+    return summa / number
+
+# print(middle(3, 7, 0, 8))
+# print(middle(-4, 8, 12, 9))
+
+
+"""
 14) Tasodifiy son o'yinini funksiyaga aylantiring.
 """
+"""14"""
+
+from random import randrange
+def taxmin_oyini():
+    """ """
+    player_score = 0
+    computer_score = 0
+    
+    while True:
+        son = randrange(1, 6)
+        taxmin = input("1 dan 5 gacha sonni taxmin qiling: ")
+
+        if taxmin == 'stop':
+            print("Game end !")
+            print(f"Player {player_score}:{computer_score} Komputer")
+            break
+        
+        if taxmin.isdigit():
+            taxmin = int(taxmin)
+            
+            if taxmin == son:
+                player_score += 1
+                print(f"To‘g‘ri! Kompyuter ham shu sonni o‘ylagan. \n Player {player_score}:{computer_score} Komputer")
+            else:
+                computer_score += 1
+                print(f"Noto‘g‘ri. Kompyuter {son} sonini o‘ylagan edi.\n Player {player_score}:{computer_score} Komputer")
+                
+# print(taxmin_oyini())
+
+
+
+"""
+13) Foydalanuvchi funksiyaga parametr sifatida o'zi yasagan parolni uzatsin. 
+    Siz uni tekshirib parolning kuchli yoki kuchsiz ekanini tekshirib bering. 
+    Kuchli parolning xususiyatlari:
+        eng kamida 8 ta belgidan ibotar bo'lishi;
+        katta va kichik harflar bo'lishi;
+        biror belgi qatnashishi;
+"""
+
+def password_checker(password:str):
+    """  """
+    
+    big = ["Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"]
+    small = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"]
+    sign = ["!","@","#","$","%","&",")","-","=","+","<",">","?","|","'",":",";"]
+    number = "1234567890"
+
+    katta = False
+    kichik = False
+    belgi = False
+    is_number = False
+    
+
+    for p in password:
+        if p in big:
+            katta = True
+        
+        if p in small:
+            kichik = True
+            
+        if p in sign:
+            belgi = True
+            
+        if p in number:
+            is_number = True
+            
+    if len(password) >= 4 and katta == True and kichik == True and belgi == True and is_number==True:
+        return f"Bu parol kuchli ✅"
+    else:
+        return f"Bu parol kuchsiz ❗ Qaytadan urining "
+
+# print(password_checker("QWer@$12"))
+# print(password_checker("QWee12"))
+# print(password_checker("QW#$12"))
+# print(password_checker("er#$21"))
+# print(password_checker("er#$WE"))
+
+
+""" pass operatori """
+"""
+pass - operatori malum vaqt funksiyani ishlatmaslik kerak bo'lganda kerak bo'ladi
+# """
+# def name(ism):
+#     pass
+    
+# print(name("Abbos"))
+
+# def name(ism):
+#     pass
+
+
+""" 
+15) 1 dan N gacha bo'lgan sonlar yig'indisini topuvchi funksiya tuzing.
+"""
+
+def yigindi(son:int):
+    """  """
+    if son >= 1:
+        sonlar = list(range(1, son+1))
+        summa = 0
+        
+        for son in sonlar:
+            summa += son
+            
+        return summa
+    else:
+        return 0    
+
+# print(yigindi(10))
+# print(yigindi(100))
+    
+
+def yigindi2(son:int):
+    """  """
+    
+    if son >= 1:
+        return son * (son+1) // 2 #     (n * (n+1)) / 2
+    else:
+        return 0
+
+# print(yigindi2(10))
+# print(yigindi2(100))
+    
+
+
+""" Tub sonlar """
+# def tub(son1:int, son2:int):
+#     """  """
+#     tub_sonlar  = []
+#     sonlar = list(range(son1, son2))
+    
+#     for son in sonlar:
+#         if son%2 != 0 and son%3 != 0 and son%4 != 0 and son%5 != 0 and son%6 != 0 and son%7 != 0 and son%8 != 0: 
+#             tub_sonlar.append(son)
+    
+#     return tub_sonlar
+
+
+
+# print(tub(10, 50))
+# print(tub(10, 123))
+
+
+def tub(son1:int, son2:int):
+    """  """
+    tub_sonlar  = []
+    sonlar = list(range(son1, son2))
+    
+    for son in sonlar:
+        is_tub = True
+        
+        for s in range(2, son):
+            if son%s == 0:
+                is_tub = False
+        
+        if is_tub == True:
+            tub_sonlar.append(son)
+    
+    
+    return tub_sonlar
+
+# print(tub(10, 50))
+# print(tub(10, 123))
+# print(tub(10, 1000))
+
+
+
+def our_max(*sonlar:int):
+    """ Berilgan sonlar ichidan eng sini kattasini qaytaradi """
+    return sorted(sonlar)[-1]
+
+# print(our_max(-9, 0, 5666, 9999999, -23, 111))
+
+
+
+def our_min(*sonlar:int):
+    """ Berilgan sonlar ichidan eng kichigini qaytaradi """
+    return sorted(sonlar)[0]
+# print(our_min(-9, 0, -5666, 9999999, -23, 111))
+
+
+def our_range(a:int, b:int, c=1): # standart qimat
+    """ Sonli oraliq hosil qilib beradi """
+    sonlar = [a]
+    
+    while True:
+        if a < b-c:
+            a += c
+            sonlar.append(a)
+        else:
+            break  
+    return sonlar
+    
+    
+print(our_range(1, 10, 1))
+print(our_range(0, 100, 5))
+print(our_range(30, 60))

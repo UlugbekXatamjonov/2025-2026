@@ -183,8 +183,6 @@ def name(ism):
     pass
 
 
-
-
 """
 Vazifa:
 
@@ -243,14 +241,10 @@ Vazifa:
 """
 
 
+""" 16 """
+def tub(son1:int, son2:int):
+    """  """
+    pass
 
 
-
-
-
-
-
-
-
-
-
+print(tub(10, 50))

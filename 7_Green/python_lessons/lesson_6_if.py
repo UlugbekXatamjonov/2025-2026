@@ -361,25 +361,25 @@ from random import randrange, choice, choices
 
 """ Tosh, qaychi, qog'oz """
 
-# tqq = ["tosh", 'qaychi', "qogoz"]
-# komputer = choice(tqq)
-# player = input("Tosh-qaychi-qogoz: ").lower()
+tqq = ["tosh", 'qaychi', "qogoz"]
+komputer = choice(tqq)
+player = input("Tosh-qaychi-qogoz: ").lower()
 
-# if player in tqq:
-#     if komputer == player:
-#         print("Durrang 🤝")
-#     elif komputer == 'tosh' and  player == "qaychi":
-#         print(f"Siz yutqazdingiz ❌")
-#     elif komputer == 'qaychi' and  player == "qogoz":
-#         print(f"Siz yutqazdingiz ❌")
-#     elif komputer == 'qogoz' and  player == "tosh":
-#         print(f"Siz yutqazdingiz ❌")
-#     else:
-#         print("Siz yutdingiz ✅")
+if player in tqq:
+    if komputer == player:
+        print("Durrang 🤝")
+    elif komputer == 'tosh' and  player == "qaychi":
+        print(f"Siz yutqazdingiz ❌")
+    elif komputer == 'qaychi' and  player == "qogoz":
+        print(f"Siz yutqazdingiz ❌")
+    elif komputer == 'qogoz' and  player == "tosh":
+        print(f"Siz yutqazdingiz ❌")
+    else:
+        print("Siz yutdingiz ✅")
     
-#     print(f"🤖 Komputer \"{komputer}\" ni tanlagan edi")
-# else:
-#     print("Siz noto'g'ri tanlov qildingiz ❗❗❗")
+    print(f"🤖 Komputer \"{komputer}\" ni tanlagan edi")
+else:
+    print("Siz noto'g'ri tanlov qildingiz ❗❗❗")
 
 
 
