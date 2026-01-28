@@ -430,8 +430,39 @@ def tub(son1:int, son2:int):
     
     return tub_sonlar
 
+# print(tub(10, 50))
+# print(tub(10, 123))
+# print(tub(10, 1000))
 
 
-print(tub(10, 50))
-print(tub(10, 123))
-print(tub(10, 1000))
+
+def our_max(*sonlar:int):
+    """ Berilgan sonlar ichidan eng sini kattasini qaytaradi """
+    return sorted(sonlar)[-1]
+
+# print(our_max(-9, 0, 5666, 9999999, -23, 111))
+
+
+
+def our_min(*sonlar:int):
+    """ Berilgan sonlar ichidan eng kichigini qaytaradi """
+    return sorted(sonlar)[0]
+# print(our_min(-9, 0, -5666, 9999999, -23, 111))
+
+
+def our_range(a:int, b:int, c=1): # standart qimat
+    """ Sonli oraliq hosil qilib beradi """
+    sonlar = [a]
+    
+    while True:
+        if a < b-c:
+            a += c
+            sonlar.append(a)
+        else:
+            break  
+    return sonlar
+    
+    
+print(our_range(1, 10, 1))
+print(our_range(0, 100, 5))
+print(our_range(30, 60))
