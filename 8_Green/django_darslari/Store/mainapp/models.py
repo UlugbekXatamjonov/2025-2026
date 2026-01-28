@@ -15,7 +15,7 @@ color = (
 class Category(models.Model):
     """  """
     name = models.CharField(max_length=100, verbose_name="Nomi")
-    photo = models.ImageField(verbose_name="rasmi")
+    photo = models.ImageField(verbose_name="rasmi", upload_to='category_photos/')
     
     status = models.BooleanField(default=True)
     
@@ -27,7 +27,7 @@ class Product(models.Model):
     """   """
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
-    photo = models.ImageField()
+    photo = models.ImageField(upload_to='product_photos/')
     description = models.TextField()
     price = models.PositiveIntegerField()
     color = models.CharField(max_length=50, choices=color)
@@ -37,3 +37,4 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    

@@ -133,10 +133,121 @@ def katta_kichik(son1:int, son2:int):
     if son1 == son2:
         return f"{son1} = {son2}"
 
+# print(katta_kichik(15, 8))
+# print(katta_kichik(23, 55))
+# print(katta_kichik(4, 4))
 
 
-print(katta_kichik(15, 8))
-print(katta_kichik(23, 55))
-print(katta_kichik(4, 4))
+"""
+  
+5) Tog'ri to'rtburchakli uchburchakning katetlarini qabul qilib olib uning gipotenuzsini hisoblovchi funksiya 
+    yozing, 2- katetni o'zgarmas parameter sifatida bering.
+    f: c**2 = a**2 + b**2 / c ni topish kk / b - o'zgarmas qiymat   
+    Yuqoridagi har bir funksiyaga to'liq tarif(defenition yozing)
 
 
+6) Foydanaluvchidan ismi, familiyasi, tug'ilgan yili, tug'ilgan joyi, email manzili va 
+    telefon raqamini qabul qilib, lug'at ko'rinishida malumot qaytaruvchi funksiya yozing. 
+    Lug'atda foydalanuvchi yoshi ham bo'lsin. Ba'zi argumentlarni kiritishni ixtiyoriy 
+    qiling (masalan, tel.raqam, el.manzil)
+
+7) Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing
+
+8) Foydalanuvchidan aylaning radiusini qabul qilib olib, uning radiusini, diametrini, 
+    perimetri va yuzini lug'at ko'rinishida qaytaruvchi funksiya yozing
+
+"""
+
+from math import sqrt, pi
+def tbu(a:float, b:float):
+    """  """
+    c = sqrt(a**2 + b**2)
+    
+    return c
+
+""" Uyga vazifa """
+
+""" 7-mashq """
+def eng_katta(son1:int,son2:int,son3:int):
+    """ """
+    if son1 > son2 and son1 > son3 :
+        return f"{son1} eng kattasi"
+    elif son2 > son1 and son2 > son3 :
+        return f"{son2} eng kattasi"
+    elif son3 > son2 and son3 > son1 :
+        return f"{son3} eng kattasi"
+    elif son1 == son2 == son3:
+        return "Hamma son teng"
+    
+# print(eng_katta(11,11,11))
+# print(eng_katta(12,11,10))
+# print(eng_katta(11,13,12))
+# print(eng_katta(11,11,14))
+
+""" 8-mashq """
+def aylananing_radiusi(r):
+    """ """
+    return f"Shu aylananing radiusi: {r}, diametri: {2 * r}, perimetri: {2 * pi * r}, yuzi: {3.14 * r ** 2} "
+    
+# print(aylananing_radiusi(3))
+
+"""" 9-mashq """
+def togri_tortburchak(eni:int,boyi:int):
+    """ """
+    return f"Shu tugri tortburchakning perimetri {2*(eni+boyi)} yuzi esa {eni*boyi}"
+    
+
+# print(togri_tortburchak(2,3)) 
+# print(togri_tortburchak(4,3))
+
+
+"""
+10) Parametr sifatida uzatilgan matnning  uzunligini topuvchi funksiya tuzing.L
+"""
+def my_len(matn:str):
+    """  """
+    harflar_soni = 0
+    for m in matn:
+        if m != ' ':
+            harflar_soni += 1
+    
+    return harflar_soni
+
+# print(my_len("Salom 7 blue. Bugun Chorshanba")) 
+
+
+
+""" *args - istalgancha son uzatish usuli """
+def my_sum(*sonlar:int):
+    """ Berilgan barcha sonlarning yig'indisini hisoblaydi. """
+    yigindi = 0
+    for son in sonlar:
+        yigindi += son
+
+    return yigindi
+    
+# print(my_sum(2, 5))
+# print(my_sum(2))
+# print(my_sum())
+# print(my_sum(6, 9, 0, -5, 34))
+
+
+"""
+11) parametr sifatida uzatilgan sonlar ichidan faqat toq sonlarni ajratib qaytaradigan funksiya yozing.
+"""
+
+def toq_sonlar(*sonlar:int):
+    """  """
+    toq = []
+    for son in sonlar:
+        if son%2 != 0:
+            toq.append(son)
+    toq.sort()
+    return toq
+
+# print(toq_sonlar(3, 4, 5, 7, 8, 2, 1))
+
+"""
+12) Parametr sifatida uzatilgan sonlarning o'rta arifmetigini topib beruvchi funksiya tuzing.
+14) Tasodifiy son o'yinini funksiyaga aylantiring.
+"""

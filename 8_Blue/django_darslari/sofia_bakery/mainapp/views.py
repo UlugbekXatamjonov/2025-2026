@@ -12,7 +12,7 @@ class CategoryViewSet(viewsets.ModelViewSet):
     serializer_class = CategorySerializer
 
 class CakeViewSet(viewsets.ModelViewSet):
-    queryset = Cake.objects.all()
+    queryset = Cake.objects.filter(status='have')
     serializer_class = CakeSerializer
 
 class NewViewSet(viewsets.ModelViewSet):
@@ -20,3 +20,6 @@ class NewViewSet(viewsets.ModelViewSet):
     serializer_class = NewSerializer
 
 
+class Last_cakes_ViewSet(viewsets.ModelViewSet):
+    queryset = Cake.objects.filter(status='have').order_by('-id')[:3]
+    serializer_class = CakeSerializer

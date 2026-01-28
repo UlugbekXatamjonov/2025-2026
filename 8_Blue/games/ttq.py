@@ -96,3 +96,4 @@ from random import choice
 #     else:
 #         print("Siz noto'g'ri tanlov kiritdingiz ❗❌❌❌")
 
+
