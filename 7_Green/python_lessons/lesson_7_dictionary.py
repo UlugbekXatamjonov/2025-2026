@@ -333,8 +333,7 @@ Foydalanuvchidan biror o'quvchining ismi yoki familiyasini kiritishini so'rang. 
 #     "Raximdjanov": "Abubakr",
 #     "Shamsiddinov": "Abbos",
 #     "Sobirov": "MUhammadqodir"
-# }
-
+# 
 # savol = input("Ism yoki familiya kiriting: ")
 
 # for familiya, ism in oquvchilar.items():
