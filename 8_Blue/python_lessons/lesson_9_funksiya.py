@@ -230,11 +230,62 @@ def toq(*sonlar:int):
 # print(toq(4, 8, 9,2, 3, 5, 7, 6))
 
 
+""" 12) Parametr sifatida uzatilgan sonlarning o'rta arifmetigini topib beruvchi funksiya tuzing. """
+
+def middle(*sonlar:int):
+    summa = 0
+    length = 0
+    for son in sonlar:
+        summa += son
+        length += 1
+        
+    return summa/length
+
+# print(middle(2, 5,6))
+# print(middle(40, 20, 5, 15 ,20))
 
 
 
+def password_checker(password:str):
+    """  """
+    
+    big = ["Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"]
+    small = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"]
+    sign = ["!","@","#","$","%","&",")","-","=","+","<",">","?","|","'",":",";"]
+    number = "1234567890"
+
+    katta = False
+    kichik = False
+    belgi = False
+    is_number = False
+    
+
+    for p in password:
+        if p in big:
+            katta = True
+        
+        if p in small:
+            kichik = True
+            
+        if p in sign:
+            belgi = True
+            
+        if p in number:
+            is_number = True
+            
+    if len(password) >= 4 and katta == True and kichik == True and belgi == True and is_number==True:
+        return f"Bu parol kuchli ✅"
+    else:
+        return f"Bu parol kuchsiz ❗ Qaytadan urining "
+
+# print(password_checker("QWer@$12"))
+# print(password_checker("QWee12"))
+# print(password_checker("QW#$12"))
+# print(password_checker("er#$21"))
+# print(password_checker("2802010Mm$"))
 
 
-
-
+""" 
+15) 1 dan N gacha bo'lgan sonlar yig'indisini topuvchi funksiya tuzing.
+"""
 
