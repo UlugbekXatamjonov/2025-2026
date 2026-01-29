@@ -1,10 +1,3 @@
-from re import match, findall, search
-phone = input("Telefon raqami kiriting: ")
-pattern = r"^[+]998[\d]{9}$"
-
-print(match(pattern, phone))
-
-
 """
 link -> https://docs.python.org/3/howto/regex.html
 link -> https://docs.python.org/3/library/re.html
@@ -20,36 +13,24 @@ search()    -   Agar satrning istalgan joyida moslik mavjud bo'lsa, Match ob'ekt
 \b - So'z chegarasi --> $
 \s - bo'shliq
 ^  - boshlanish
-
 """
+
+from re import match, findall, search
+""" match """
+
+# phone = input("Telefon raqami kiriting: ")
+# pattern = r"^[+]998[\d]{9}$"
+# print(match(pattern, phone))
+
 
 # car_number = input("Car number: ")
 # car_pattern = r"^[A-Z]{2}[\s][0-9]{4}[A-Z]{2}$"
 # print(match(car_pattern, car_number))
 
 
-"""
-Vazifa:
-
-50 A 117BD
-50 117ABC
-Yuqoridagi avtomobil raqamlari uchun RegEx tuzish.
-"""
-
-
-"""
-+998(90) 233-25-66
-"""
-
-# phone2 = input("tel: ")
-# phone2_pattern = r"^[+]998[(][0-9]{2}[)] [0-9]{3}-[0-9]{2}-[0-9]{2}$"
-# phone2_pattern = r"^[+]998[(]\d{2}[)] \d{3}-\d{2}-\d{2}$"
-
-# print(match(phone2_pattern, phone2))
-
 
 # word = input("Enter a word: ")
-word_regex = r"^[a-z]{3,8}$"
+# word_regex = r"^[a-z]{3,8}$"
 # print(match(word_regex, word))
 
 # if match(word_regex, word):
@@ -109,7 +90,18 @@ print(search(sana, matn1))
 
 
 
+"""
+Vazifa:
 
+50 A 117BD
+50 117ABC
+Yuqoridagi avtomobil raqamlari uchun RegEx tuzish.
+"""
+
+
+"""
++998(90) 233-25-66
+"""
 
 
 

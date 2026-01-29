@@ -23,5 +23,5 @@ class  Meal_type_Admin(admin.ModelAdmin):
 @admin.register(QR_code)
 class  QR_code_Admin(admin.ModelAdmin):
     list_display = ('name', 'url')
-    list_filter = ('status',)
+    
 

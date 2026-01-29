@@ -438,16 +438,17 @@ def tub(son1:int, son2:int):
 
 def our_max(*sonlar:int):
     """ Berilgan sonlar ichidan eng sini kattasini qaytaradi """
+    
     return sorted(sonlar)[-1]
 
 # print(our_max(-9, 0, 5666, 9999999, -23, 111))
-
+# print(our_max(-9, 0, 5666, 99, 777777, 88, 444, 99999, -23, 111))
 
 
 def our_min(*sonlar:int):
     """ Berilgan sonlar ichidan eng kichigini qaytaradi """
     return sorted(sonlar)[0]
-# print(our_min(-9, 0, -5666, 9999999, -23, 111))
+# print(our_min(-9, 0, -5666, -9999999, -23, 111))
 
 
 def our_range(a:int, b:int, c=1): # standart qimat
@@ -463,6 +464,50 @@ def our_range(a:int, b:int, c=1): # standart qimat
     return sonlar
     
     
-print(our_range(1, 10, 1))
-print(our_range(0, 100, 5))
-print(our_range(30, 60))
+# print(our_range(1, 10, 1))
+# print(our_range(0, 100, 5))
+# print(our_range(30, 60))
+
+
+"""
+4-mashq | 10 Ball
+Parametr sifatida uzatilgan songacha(0 dan boshlab) bo'lgan juft sonli ro'yhat tuzadigan funksiya yozing.
+"""
+
+""" 4 """
+def juft_royhat(son:int):
+    """"  """
+    sonlar = list(range(0, son, 2))
+    return sonlar
+
+# print(juft_royhat(25))
+# print(juft_royhat(87))
+
+"""
+5-mashq | 10 Ball
+Parametr sifatida uzatilgan harfni unli yoki undoshga ajratib beradigan funksiya yozing.
+unli --> e u i o a o'
+"""
+
+
+def unli(harf:str):
+    """  """
+    unlilar = ['a', 'e', 'u', 'i', 'o', "o'"]
+    ikktalilar = ['sh', 'ch', 'ng', "g'", "o'"]
+
+    if len(harf) == 1 or harf.lower() in ikktalilar:
+        if harf.lower() in unlilar:
+            return f"{harf} - unli"
+        else:
+            return f"{harf} - undosh"
+    else:
+        return "Siz faqat harf kirgazishingiz kerak !"
+
+# print(unli("aa"))
+# print(unli("Va yana bitt anarsa"))
+# print(unli("o"))
+# print(unli("O'"))
+# print(unli("a"))
+# print(unli("Sh"))
+# print(unli("nG"))
+# print(unli("g"))

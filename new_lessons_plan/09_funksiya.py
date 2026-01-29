@@ -183,6 +183,11 @@ def name(ism):
     pass
 
 
+""" funksiyani import qilish """
+
+
+
+
 """
 Vazifa:
 
@@ -239,12 +244,3 @@ Vazifa:
     1 deb olinadi.  1, 1, 2, 3, 5, 8, 13, 21, 34, 55,...
 
 """
-
-
-""" 16 """
-def tub(son1:int, son2:int):
-    """  """
-    pass
-
-
-print(tub(10, 50))

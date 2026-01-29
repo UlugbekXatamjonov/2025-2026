@@ -67,3 +67,59 @@ def tyil(ism:str, yosh:int):
 2) Foydalanuvchidan son olib, uning kvadrati va kubini konsolga chiqaruvchi funksiya yozing.
 3) Foydalanuvchidan son olib, son juft yoki toqligini konsolga chiqaruvchi funksiya yozing.
 """
+
+
+"""2-Mashq"""
+def kvadrat_va_kub(son:int):
+    return f"Kvadrati {son**2} Kubi {son**3}"
+
+# print(kvadrat_va_kub(5))
+
+
+"""3-Mashq"""
+def juft_yoki_toq(son:int):
+    if son%2 == 0:
+        return "Son juft"
+    else:
+        return "Son toq"
+    
+# print(juft_yoki_toq(5))
+# print(juft_yoki_toq(2))
+
+"""
+4) Foydalanuvchidan ikkita son olib, ulardan kattasini konsolga chiqaruvchi funksiya yozing. 
+    Agar sonlar teng bo'lsa "Sonlar teng" degan xabarni chiqaring.
+"""
+
+def katta_kichik(son1:int, son2:int):
+    """ Ikki sondan kattasini ko'rsatib beradi """
+
+    if son1 > son2:
+        return f"{son1} katta"
+    elif son1 < son2:
+        return f"{son2} katta"
+    elif son1 == son2:
+        return f"{son1}={son2}"
+
+# print(katta_kichik(5, 8))
+# print(katta_kichik(59, 33))
+# print(katta_kichik(5, 5))
+
+
+"""   
+5) Tog'ri to'rtburchakli uchburchakning katetlarini qabul qilib olib uning gipotenuzsini hisoblovchi funksiya 
+    yozing, 2- katetni o'zgarmas parameter sifatida bering.
+    f: c**2 = a**2 + b**2 / c ni topish kk
+    Yuqoridagi har bir funksiyaga to'liq tarif(defenition yozing)
+"""
+
+
+"""
+7) Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing
+"""
+
+
+
+
+
+

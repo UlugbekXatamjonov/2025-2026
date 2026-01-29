@@ -1,7 +1,5 @@
 from django.urls import path, include
-from django.contrib.auth.models import User
-from rest_framework import routers, serializers, viewsets
-
+from rest_framework import routers
 from .views import Category_ViewSet, Product_ViewSet
 
 
@@ -16,5 +14,5 @@ router.register(r'products', Product_ViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
+
