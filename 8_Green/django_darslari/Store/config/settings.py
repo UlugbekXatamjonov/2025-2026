@@ -121,3 +121,11 @@ STATIC_URL = 'static/'
 MEDIA_URL = '/media/' # tushish joyi
 MEDIA_ROOT = 'media/' # Ko'rish uchun qayerdan olaman
 
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}

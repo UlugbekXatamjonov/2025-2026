@@ -14,6 +14,14 @@ class Category_List_Serializers(serializers.ModelSerializer):
         fields = ('id', 'name', 'photo')
 
 
+class Category_Serializers(serializers.ModelSerializer):
+    meals = Meal_Serializer(many=True, read_only=True)
+    
+    class Meta:
+        model = Category
+        fields = ('id', 'name', 'meals')
+
+
 
 
 
