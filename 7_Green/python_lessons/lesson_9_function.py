@@ -118,8 +118,29 @@ def katta_kichik(son1:int, son2:int):
 7) Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya yozing
 """
 
+def katta_kichik2(son1:int, son2:int, son3:int):
+    """ Ikki sondan kattasini ko'rsatib beradi """
+
+    if son1 >= son2 and son1 >= son3:
+        return f"{son1} katta"
+    elif son1 <= son2 and son3 <= son2:
+        return f"{son2} katta"
+    elif son1 <= son3 and son2 <= son3:
+        return f"{son3} katta"
+    elif son1 == son2 and son1 == son3:
+        return f"{son1}={son2}={son3}"
+
+# print(katta_kichik2(5, 8 ,4))
+# print(katta_kichik2(59, 33, 4))
+# print(katta_kichik2(5, 5, 7))
+# print(katta_kichik2(0, 1, 1))
 
 
-
-
-
+"""
+10) Parametr sifatida uzatilgan matnning  uzunligini topuvchi funksiya tuzing.
+"""
+def len2(matn:str):
+    
+    return 
+    
+print(("adsa asdas"))

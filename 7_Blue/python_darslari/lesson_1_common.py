@@ -89,16 +89,9 @@ ism1 = "Muhammad"
 ism2 = "Mansurbek"
 ism3 = "Hasanboy"
 
-print(ism1)
-print(ism2)
-print(ism3)
-
-
-
-
-
-
-
+# print(ism1)
+# print(ism2)
+# print(ism3)
 
 
 

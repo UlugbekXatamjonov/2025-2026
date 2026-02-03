@@ -1,5 +1,6 @@
 """ Lists - Ro'yhatlar """  
 ismlar = ["Abbos", "Azizbek", "Oisha", "Dilmurod", "Anvar", "Husnida", "Muhlisa"]
+bm_maktabining_7sinf_oquvchilari = ["Abbos", "Azizbek", "Oisha", "Dilmurod", "Anvar", "Husnida", "Muhlisa"]
 # print(ismlar)
 
 """

@@ -38,8 +38,9 @@ while True:
 
 """ Abadiyt tsikl """
 x = 1
-while x < 10:
+while True:
     print(x)
+    x+=1
 
 
 """ ishora | 1-0"""

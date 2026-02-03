@@ -416,4 +416,3 @@ bo'lsa narhini ko'rsating, aks holda "bizda bunday taom yo'q" degan xabarni chiq
 
 
 
-

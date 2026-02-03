@@ -285,7 +285,82 @@ def password_checker(password:str):
 # print(password_checker("2802010Mm$"))
 
 
-""" 
-15) 1 dan N gacha bo'lgan sonlar yig'indisini topuvchi funksiya tuzing.
-"""
+
+
+""" Tub sonlar """
+def tub(son1:int, son2:int):
+    """  """
+    tub_sonlar  = []
+    sonlar = list(range(son1, son2))
+    
+    for son in sonlar:
+        if son%2 != 0 and son%3 != 0 and son%4 != 0 and son%5 != 0 and son%6 != 0 and son%7 != 0 and son%8 != 0: 
+            tub_sonlar.append(son)
+    
+    return tub_sonlar
+
+
+
+# print(tub(10, 50))
+# print(tub(10, 123))
+
+
+def tub(son1:int, son2:int):
+    """  """
+    tub_sonlar  = []
+    sonlar = list(range(son1, son2))
+    
+    for son in sonlar:
+        is_tub = True
+        
+        for s in range(2, son):
+            if son%s == 0:
+                is_tub = False
+        
+        if is_tub == True:
+            tub_sonlar.append(son)
+    
+    
+    return tub_sonlar
+
+# print(tub(10, 50))
+# print(tub(10, 123))
+# print(tub(10, 1000))
+
+
+# [] - list
+# () - tuple
+# {} - set
+def our_max(*sonlar:int):
+    """ Berilgan sonlar ichidan eng sini kattasini qaytaradi """
+    
+    return sorted(sonlar)[-1]
+
+# print(our_max(-9, 0, 5666, 9999999, -23, 111))
+# print(our_max(-9, 0, 5666, 99, 777777, 88, 444, 99999, -23, 111))
+
+
+def our_min(*sonlar:int):
+    """ Berilgan sonlar ichidan eng kichigini qaytaradi """
+    return sorted(sonlar)[0]
+# print(our_min(-9, 0, -5666,  -23, 111))
+
+
+def our_range(a:int, b:int, c=1): # standart qimat
+    """ Sonli oraliq hosil qilib beradi """
+    sonlar = [a]
+    
+    while True:
+        if a < b-c:
+            a += c
+            sonlar.append(a)
+        else:
+            break  
+    return sonlar
+    
+    
+# print(our_range(1, 10, 2))
+# print(our_range(0, 100, 5))
+# print(our_range(30, 60))
+
 

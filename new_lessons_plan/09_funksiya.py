@@ -222,25 +222,36 @@ Vazifa:
 
 12) Parametr sifatida uzatilgan sonlarning o'rta arifmetigini topib beruvchi funksiya tuzing.
 
-13) Foydalanuvchi funksiyaga parametr sifatida o'zi yasagan parolni uzatsin. 
+13) 1 dan N gacha bo'lgan sonlar yig'indisini topuvchi funksiya tuzing.
+
+14) Tasodifiy son o'yinini funksiyaga aylantiring.
+
+15) Parametr sifatida uzatilgan songacha(0 dan boshlab) bo'lgan juft sonli ro'yhat tuzadigan funksiya yozing.
+
+*16) Parametr sifatida uzatilgan harfni unli yoki undoshga ajratib beradigan funksiya yozing.
+    unli --> e u i o a o'
+
+17*) Foydalanuvchi funksiyaga parametr sifatida o'zi yasagan parolni uzatsin. 
     Siz uni tekshirib parolning kuchli yoki kuchsiz ekanini tekshirib bering. 
     Kuchli parolning xususiyatlari:
         eng kamida 8 ta belgidan ibotar bo'lishi;
         katta va kichik harflar bo'lishi;
         biror belgi qatnashishi;
 
-14) Tasodifiy son o'yinini funksiyaga aylantiring.
-
-15) 1 dan N gacha bo'lgan sonlar yig'indisini topuvchi funksiya tuzing.
-
-16) Berilgan oraliqdagi tub sonlar ro'yxatini qaytaruvchi funksiya 
+*18) Berilgan oraliqdagi tub sonlar ro'yxatini qaytaruvchi funksiya 
     yozing (tub sonlar —faqat birga va o'ziga qoldiqsiz bo'linuvchi, 1 dan 
     katta musbat sonlar)
 
-17) Foydalanuvchidan son qabul qilib, shu son miqdoricha Fibonachchi ketma-ketligidagi 
+*19) Foydalanuvchidan son qabul qilib, shu son miqdoricha Fibonachchi ketma-ketligidagi 
     sonlar ro'yxatni qaytaruvchi funksiya yozing.  
     Ta'rif: Har bir hadi o'zidan oldingi ikkita hadning yig'indisiga teng bo'lgan 
     ketma-ketlik Fibonachchi ketma-ketligi deyiladi. Bunda boshlang'ish had ko'pincha 
     1 deb olinadi.  1, 1, 2, 3, 5, 8, 13, 21, 34, 55,...
+
+*20) max() funksiyasini o'zingiz tuzishga urinib ko'ring. max() ni ishlatmasdan ❗
+
+*21) min() funksiyasini o'zingiz tuzishga urinib ko'ring. min() ni ishlatmasdan ❗
+
+*22) range() funksiyasini o'zingiz tuzishga urinib ko'ring. range() ni ishlatmasdan ❗
 
 """
