@@ -3,59 +3,59 @@ While tsikli
 """
 
 """ for() """
-sonlar = [1,2,3,4,5,6,7,8,9,10]
-for son in sonlar:
-    print(son)
+# sonlar = [1,2,3,4,5,6,7,8,9,10]
+# for son in sonlar:
+#     print(son)
 
 
 """ 3 """
-while True: # abadiy tsikl
-    savol = input("son kiriting: ")
-    if savol == 'exit':
-        break # tsiklni to'xtatish uchun 
-    elif savol.isdigit():
-        savol = int(savol)
-        print(f"{savol} ning kavadrati {savol**2}")
-    else:
-        print("son kiriting!!!")
+# while True: # abadiy tsikl
+#     savol = input("son kiriting: ")
+#     if savol == 'exit':
+#         break # tsiklni to'xtatish uchun 
+#     elif savol.isdigit():
+#         savol = int(savol)
+#         print(f"{savol} ning kavadrati {savol**2}")
+#     else:
+#         print("son kiriting!!!")
 
 
 
 """ Tug'ilgan yil """
-while True:
-    yosh = input("Yoshingizni kiriting: ")
-    if yosh.isdigit():
-        yosh = int(yosh)
-        print(f"Siz {2025-yosh}-yilda tug'ilgansiz")
+# while True:
+#     yosh = input("Yoshingizni kiriting: ")
+#     if yosh.isdigit():
+#         yosh = int(yosh)
+#         print(f"Siz {2025-yosh}-yilda tug'ilgansiz")
     
-    elif yosh == "exit":
-        print("Dastur tugadi")
-        break
+#     elif yosh == "exit":
+#         print("Dastur tugadi")
+#         break
     
-    else:
-        print("Siz son kiritmadingiz !!!")
+#     else:
+#         print("Siz son kiritmadingiz !!!")
  
 
 """ Abadiyt tsikl """
-x = 1
-while True:
-    print(x)
-    x+=1
+# x = 1
+# while True:
+#     print(x)
+#     x+=1
 
 
 """ ishora | 1-0"""
-print("Kiritilgan sonning kvadratini qaytaruvchi dastur.")
+# print("Kiritilgan sonning kvadratini qaytaruvchi dastur.")
 
-ishora = True
-while ishora: # = while True -> abadiy tsikl
-    savol = input("Istalgan son kiriting(dasturni to'xtatish uchun 'exit' deb yozing):")
-    if savol == 'exit':
-        ishora = False # dastur to'xtashi uchun
+# ishora = True
+# while ishora: # = while True -> abadiy tsikl
+#     savol = input("Istalgan son kiriting(dasturni to'xtatish uchun 'exit' deb yozing):")
+#     if savol == 'exit':
+#         ishora = False # dastur to'xtashi uchun
         
-    elif savol.isdigit():
-        print(int(savol)**2)
-    else:
-        print("Siz son kiritmadingiz!!!")
+#     elif savol.isdigit():
+#         print(int(savol)**2)
+#     else:
+#         print("Siz son kiritmadingiz!!!")
 
 
 """ continue """

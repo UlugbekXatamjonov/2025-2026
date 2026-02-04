@@ -1,26 +1,20 @@
-""" 1-Dars. Ummumiy tushunchalar
-
-    - dastur;
-    - dasturlash tili -> komputerga buyruq beruvchi maxsus kodlar;
-    - Python -> yozilishi sodda, tushinish osson bo'lgan daturlash tili;
-    - Python va kod yozish dasturini o'rnatish.
-    - Birinchi dastur: print("Salom, dunyo!")
-    - # — izoh (kompyuter o'qimaydigan kod, faqat dasturchi uchun). 
-    - Mashqlar bajarish
-"""
+""" 1-Dars. Ummumiy tushunchalar """
 
 
 """ print() - ma'lumotni konsulga chiqaruvchi funksiyasi """
-print("Salom, dunyo!")
-print("Men Python o'rganayapman!")
+# print("Salom, dunyo!")
+# print("Men Python o'rganayapman!")
 
-print("Salom mening ismim Ai")
-print("Men 24 yoshdaman")
+# print("Salom mening ismim Ai")
+# print("Men 24 yoshdaman")
 
 
 """ Kommentlar """
 # Mening birinchi dasturim
+# Comment  -->  Ctrl + ?
 
+
+""" Shift + "  3 marta """
 """
 Bu ko'p qatorli kommnet.
 unga ko'plab ma'lumotlarni yozish mumkin.

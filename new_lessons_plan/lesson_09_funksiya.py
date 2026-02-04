@@ -137,8 +137,8 @@ def oila(n):
         
     return oila
 
-oila1 = oila(4)
-oila2 = oila(7) 
+# oila1 = oila(4)
+# oila2 = oila(7) 
 # print(oila1)
 # print(oila2)
 

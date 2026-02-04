@@ -360,7 +360,7 @@ def our_range(a:int, b:int, c=1): # standart qimat
     
     
 # print(our_range(1, 10, 2))
-# print(our_range(0, 100, 5))
+# print(our_range(0, 100))
 # print(our_range(30, 60))
 
 

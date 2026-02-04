@@ -140,7 +140,43 @@ def katta_kichik2(son1:int, son2:int, son3:int):
 10) Parametr sifatida uzatilgan matnning  uzunligini topuvchi funksiya tuzing.
 """
 def len2(matn:str):
+    uzunlik = 0
     
-    return 
+    for m in matn:
+        if m != " ":
+            uzunlik = uzunlik + 1
+        
+    return uzunlik 
     
-print(("adsa asdas"))
+# print(len2("Bugun kun juda quyoshli bo'lyapdi"))
+# print(len2("Muhammadqodir"))
+
+
+"""
+11) parametr sifatida uzatilgan sonlar ichidan faqat toq sonlarni ajratib qaytaradigan funksiya yozing.
+"""
+"""
+[2, 5, 6, 9, 94] - list
+(2, 5, 6, 9, 94) - tuple
+{2, 5, 6, 9, 94} - set
+"""
+
+def toq(*sonlar:int): #  *args - arguments
+    toqlar = []
+
+    for son in sonlar:
+        if son%2 != 0:
+            toqlar.append(son)
+            
+    return toqlar
+
+# print(toq(3))
+# print(toq(3, 5, 10))
+# print(toq(7, 133, 4, 6))
+
+
+"""  
+sum() funksiyasini qo'lda yasash. Haqiqiy sum() ni ishlatmasdan ❗
+"""
+
+

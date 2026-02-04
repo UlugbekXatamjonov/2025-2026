@@ -23,12 +23,16 @@ from datetime import datetime, date
 # print(hozir.date()) # sanani ajratib olish
 # print(hozir.time()) # vaqtni ajratib olish
 
+# print(hozir.year) # yilni ajratib olish
+# print(hozir.month) # oyni ajratib olish
+# print(hozir.day) # kunni ajratib olish
 # print(hozir.hour) # soatni ajratib olish
 # print(hozir.minute) # minutni ajratib olish
 # print(hozir.second) # sekundni ajratib olish
+# print(hozir.microsecond) # microsekundni ajratib olish
 
-# hozir = datetime.now()
-# print(f"Hozir soat: {hozir}")
+# print(f"Hozir soat: {hozir.time()}")
+# print(f"Hozir soat: {hozir.hour}:{hozir.minute}")
 
 """ Vaqt yasash """
 # vaqt = datetime(2026, 3, 4, 20, 5, 22)
@@ -41,7 +45,7 @@ from datetime import datetime, date
 
 
 """ date - Faqat sana bilan ishlash uchun """
-bugun = date.today()
+# bugun = date.today()
 # print(bugun)
 # print(bugun.year)
 # print(bugun.month)
