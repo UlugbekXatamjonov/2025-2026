@@ -178,5 +178,33 @@ def toq(*sonlar:int): #  *args - arguments
 """  
 sum() funksiyasini qo'lda yasash. Haqiqiy sum() ni ishlatmasdan ❗
 """
+def our_sum(*sonlar:int):
+    """Bu kiritlgan sonlarning yig'indisini aniqlovchi dastur"""
+    jami = 0  
+    
+    for son in sonlar:
+        jami = jami + son  
+        
+    return jami
 
+# print(our_sum(2,2, 6,8))
+# print(our_sum(-45, 50))
+
+
+"""
+12) Parametr sifatida uzatilgan sonlarning o'rta arifmetigini topib beruvchi funksiya tuzing.
+"""
+def middle(*sonlar:int):
+    """Bu kiritlgan sonlarning yig'indisini aniqlovchi dastur"""
+    jami = 0  
+    soni = 0
+    
+    for son in sonlar:
+        jami = jami + son
+        soni = soni + 1  
+        
+    return jami/soni
+
+# print(middle(2,2, 6,8))
+# print(middle(-45, 50))
 

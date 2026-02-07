@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets
 
 from .models import Category, Meal, Meal_type, QR_code
-from .serializers import Category_List_Serializers, Category_Serializers, Meal_Serializer
+from .serializers import Category_List_Serializers, Category_Serializers, Meal_Serializer, Meal_detail_Serializer
 
 # Create your views here.
 
@@ -15,7 +15,10 @@ class Category_Viewset(viewsets.ModelViewSet):
     queryset = Category.objects.filter(status='have')
     serializer_class = Category_Serializers
 
-
+class Meal_detail_Viewset(viewsets.ModelViewSet):
+    queryset = Meal.objects.filter(status='have')
+    serializer_class = Meal_detail_Serializer
+    
 
 
 

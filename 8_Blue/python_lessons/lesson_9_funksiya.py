@@ -364,3 +364,25 @@ def our_range(a:int, b:int, c=1): # standart qimat
 # print(our_range(30, 60))
 
 
+def unli(harf:str):
+    """  """
+    unlilar = ['a', 'e', 'u', 'i', 'o', "o'"]
+    ikktalilar = ['sh', 'ch', 'ng', "g'", "o'"]
+
+    if len(harf) == 1 or harf.lower() in ikktalilar:
+        if harf.lower() in unlilar:
+            return f"{harf} - unli"
+        else:
+            return f"{harf} - undosh"
+    else:
+        return "Siz faqat harf kirgazishingiz kerak !"
+
+
+# print(unli("aa"))
+# print(unli("Va yana bitt anarsa"))
+# print(unli("o"))
+# print(unli("O'"))
+# print(unli("a"))
+# print(unli("Sh"))
+# print(unli("nG"))
+# print(unli("g"))
