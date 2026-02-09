@@ -186,8 +186,6 @@ def name(ism):
 """ funksiyani import qilish """
 
 
-
-
 """
 Vazifa:
 
