@@ -208,3 +208,13 @@ def middle(*sonlar:int):
 # print(middle(2,2, 6,8))
 # print(middle(-45, 50))
 
+
+def summm(*sonlar:int):
+    yigindi = 0
+    
+    for son in sonlar:
+        yigindi = yigindi + son
+
+    return yigindi
+
+print(summm(3,5,7,-8,545,34))

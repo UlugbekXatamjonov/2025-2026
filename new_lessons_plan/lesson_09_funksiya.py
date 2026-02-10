@@ -177,7 +177,7 @@ pass - operatori malum vaqt funksiyani ishlatmaslik kerak bo'lganda kerak bo'lad
 def name(ism):
     pass
     
-# name("Abbos")
+# print(name("Abbos"))
 
 def name(ism):
     pass
