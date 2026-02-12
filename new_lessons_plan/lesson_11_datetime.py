@@ -15,7 +15,7 @@ Dars jadvali
 Vaqt hisoblash
 Qancha kun o'tdi?
 """
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 
 """ datetime """
 # hozir = datetime.now()
@@ -131,6 +131,10 @@ link -> https://www.w3schools.com/python/python_datetime.asp
 #     print(f"Sizning tug'ilgan kuningga yana {(tugilgan_sana-bugun).days} kun qoldi.")
 # else:
 #     print(f"Tug'ilgan kuningiz bilan 😇🥳🥳! Sizning tug'ilgan kuningiz bugun !!!")
+
+""" timedelta """
+
+
 
 """
 -------- Sodda --------

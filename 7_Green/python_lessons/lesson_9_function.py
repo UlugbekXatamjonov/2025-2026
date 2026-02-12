@@ -230,15 +230,58 @@ def yigindi(son:int):
 """
 15) Parametr sifatida uzatilgan songacha(0 dan boshlab) bo'lgan juft sonli ro'yhat tuzadigan funksiya yozing.
 """
+def juft(son:int):
+    juftlar = list(range(0, son, 2))
+
+    return juftlar
+    
+# print(juft(90))
+# print(juft(55))
 
 
 """
 Tasodifiy son o'yinini funksiyaga aylantiring.
 """
 
+from random import randrange, choice, choices
+def game():
+ 
+    komputer = randrange(1, 5) # 1 dan 5 gacha ixtiyoriy biro sonni tanlab beradi
+    print("Komputer tanlagan sonni taxmin qiling !")
+    player = int(input("Biror sonni kiriting: "))
+
+    if komputer == player:
+        print("Siz yutdingiz ✅")
+    else:
+        print("Siz yutqazdiz ❌👎")
+    
+    return f"Komputer {komputer} sonini  o'ylagan edi"
+
+# print(game())
 
 
 
+"""
+*16) Parametr sifatida uzatilgan harfni unli yoki undoshga ajratib beradigan funksiya yozing.
+    unli --> e u i o a o'
+"""
 
+# def unli(harf:str):
+#     if harf == "a" or harf == "o'" or harf == "o" or harf == "e" or harf == "u" or harf == "i": 
+#         return f"{harf} unli"
+#     else:
+#         return f"{harf} undosh"
+
+def unli(harf:str):
+    unlilar = ['a', 'o', 'u', 'i', 'e', "o'"]
+    if harf in unlilar:
+        return f"{harf} unli"
+    else:
+        return f"{harf} undosh"
+
+
+print(unli("a"))
+print(unli("b"))
+print(unli("ertaki"))
 
 

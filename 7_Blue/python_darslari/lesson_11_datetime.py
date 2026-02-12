@@ -15,7 +15,7 @@ Dars jadvali
 Vaqt hisoblash
 Qancha kun o'tdi?
 """
-from datetime import datetime, date, time
+from datetime import datetime, date, timedelta
 
 
 """ datetime """
@@ -215,6 +215,7 @@ strftime metodi yordamida bugungi sananing qaysi oy ekanligini
 matn ko'rinishida (uzun formatda) konsolga chiqaring.
 Namuna: April.
 """
+# print(bugun.strftime("Month %B"))
 
 
 """
@@ -223,6 +224,7 @@ strftime metodi yordamida bugungi sananing haftaning qaysi kuni ekanligini
 qisqa formatda konsolga chiqaring.
 Namuna: Fri.
 """
+# print(bugun.strftime("Week day %a %A"))
 
 
 """
@@ -230,7 +232,65 @@ Namuna: Fri.
 Hozirgi vaqtni AM/PM formatida konsolga chiqaring.
 Namuna: It is 2:13 PM o'clock now.
 """
+# print(hozir.strftime("It is %I:%M %p "))
 
 
+""" Tug'ilgan kunga necha kun qoldi ? """
+# oy = int(input("Oy: "))
+# kun = int(input("Kun: "))
+
+# tkun = date(bugun.year, oy, kun)
+
+# if tkun > bugun:
+#     print(f"Sizning tug'ilgan kuningizga {(tkun-bugun).days} kun qoldi")
+# elif tkun == bugun:
+#     print(f"Tabriklaymiz ! Bugun sizning tug'ilgan kuningiz !")
+# else:
+#     tkun = date(bugun.year+1, oy, kun)
+#     print(f"Sizning tug'ilgan kuningizga {(tkun-bugun).days} kun qoldi")
+        
+
+""" timedelta """
+"""
+14-mashq.
+2010-03-10 sanasidan 8 hafta, 325 soat va 854 minutni ayring va
+hosil bo'lgan sana va vaqtni konsolga chiqaring.
+"""
+# print(hozir)
+# print(hozir - timedelta(hours=1, weeks=2, days=5))
+
+# sana14 = date(2010, 3, 10)
+# print(sana14 - timedelta(weeks=8, hours=325, minutes=854))
 
 
+"""
+15-mashq.
+Foydalanuvchidan uning maktabga birinchi marta borgan sanasini so'rang va
+o'sha kundan bugungi kungacha qancha vaqt o'tganini hisoblab, konsolga chiqaring.
+"""
+
+# yil = int(input("Yil: "))
+# oy = int(input("Oy: "))
+# kun = int(input("Kun: "))
+
+# maktab = date(yil, oy, kun)
+# print(f"Maktabga chiqganingizga {(bugun-maktab).days} kun bo'ldi")
+
+
+"""
+16-mashq.
+Foydalanuvchidan istalgan soat miqdorini so'rang, uni hozirgi vaqtga qo'shing va
+hosil bo'lgan yangi vaqtni konsolga chiqaring.
+Namuna: 283 soatdan keyin vaqt 21:45 bo'ladi.
+"""
+
+soat = int(input("Kiritmoqchi bo'lgan soatingizni kiriting: "))
+vaqt16 = hozir + timedelta(hours=soat)
+print(vaqt16.strftime(f"{soat} soatdan keyin vaqt %H:%M bo'ladi."))
+
+
+"""
+17-mashq.
+Foydalanuvchining tug'ilgan sanasi (faqat kun va oy) ni so'rab oling va
+uning so'nggi nishonlagan tug'ilgan kuni nechta kun avval o'tib ketganini hisoblab bering.
+"""
