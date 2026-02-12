@@ -8,8 +8,8 @@ class New(models.Model):
     body = models.TextField(verbose_name='Matn')
     author = models.CharField(max_length=100, default="Q. Abdurahmon")
     tag = models.CharField(max_length=50)
-    photo = models.ImageField(upload_to='photos/')
-    video = models.FileField(upload_to='videos/')
+    photo = models.ImageField(upload_to='photos/', null=True, blank=True)
+    video = models.FileField(upload_to='videos/', null=True, blank=True)
     views_count = models.PositiveIntegerField(default=1)
 
 

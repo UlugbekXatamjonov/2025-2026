@@ -183,29 +183,29 @@ While tsikli
 """ random """
 from random import randrange, choice, choices
 
-# player_score = 0
-# komputer_score = 0
+player_score = 0
+komputer_score = 0
 
-# while True:
-#     komputer = randrange(1, 5) # 1 dan 5 gacha ixtiyoriy biro sonni tanlab beradi
-#     print("Komputer tanlagan sonni taxmin qiling !")
-#     player = input("Biror sonni kiriting: ")
+while True:
+    komputer = randrange(1, 5) # 1 dan 5 gacha ixtiyoriy biro sonni tanlab beradi
+    print("Komputer tanlagan sonni taxmin qiling !")
+    player = input("Biror sonni kiriting: ")
 
-#     if player == 'exit':
-#         break
+    if player == 'exit':
+        break
     
-#     if player.isdigit():
-#         player = int(player)
+    if player.isdigit():
+        player = int(player)
 
-#         if komputer == player:
-#             print("Siz yutdingiz ✅")
-#             player_score += 1
-#         else:
-#             print("Siz yutqazdiz ❌👎")
-#             komputer_score += 1
-#         print(f"Komputer {komputer} sonini  o'ylagan edi")
+        if komputer == player:
+            print("Siz yutdingiz ✅")
+            player_score += 1
+        else:
+            print("Siz yutqazdiz ❌👎")
+            komputer_score += 1
+        print(f"Komputer {komputer} sonini  o'ylagan edi")
     
-#     print(f"Player {player_score}:{komputer_score} Komputer")
+    print(f"Player {player_score}:{komputer_score} Komputer")
   
 
 """ Tosh, qaychi, qog'oz """

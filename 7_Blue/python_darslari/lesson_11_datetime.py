@@ -135,9 +135,9 @@ bugun = date.today()
 hozir = datetime.now()
 
 """ strftime """
-print(hozir.strftime("Today is the day of %A"))
-print(hozir.strftime("Today is the day of %A and date %d %B"))
-print(hozir.strftime("Bugungi sana va vaqt: %d-%B %Y-year  soat %H:%M:%S  | %j of year  | %U"))
+# print(hozir.strftime("Today is the day of %A"))
+# print(hozir.strftime("Today is the day of %A and date %d %B"))
+# print(hozir.strftime("Bugungi sana va vaqt: %d-%B %Y-year  soat %H:%M:%S  | %j of year  | %U"))
 
 
 """
@@ -181,7 +181,7 @@ link -> https://www.w3schools.com/python/python_datetime.asp
 Bugungi sanani haftaning qaysi kuni ekanligini raqam ko'rinishida konsolga chiqaring.
 Namuna: 0 — dushanba, 6 — yakshanba.
 """ 
-print(bugun.strftime("Bugun haftaning %w-kuni"))
+# print(bugun.strftime("Bugun haftaning %w-kuni"))
 
 
 """
@@ -189,14 +189,47 @@ print(bugun.strftime("Bugun haftaning %w-kuni"))
 Bugungi sanani olib, uni quyidagi ko'rinishda konsolga chiqaring:
 Bugun 2025-yil, 4-oyning 4-kuni.
 """
-print(bugun.strftime("Bugun %Y-yilning %m-oyning  %d-kuni"))
+# print(bugun.strftime("Bugun %Y-yilning %m-oyning  %d-kuni"))
 
 
+"""
+8-mashq.
+Bugungi sanadan foydalanib, yilni, oyini va kunini alohida-alohida qilib konsolga chiqaring.
+"""
+# print(bugun.strftime("%Y"))
+# print(bugun.strftime("%m"))
+# print(bugun.strftime("%d"))
+
+"""
+9-mashq.
+strftime metodi yordamida bugungi sananing haftaning qaysi kuni ekanligini
+uzun formatda konsolga chiqaring.
+Namuna: Today is Friday.
+"""
+# print(bugun.strftime("Today is %A"))
 
 
+"""
+10-mashq.
+strftime metodi yordamida bugungi sananing qaysi oy ekanligini
+matn ko'rinishida (uzun formatda) konsolga chiqaring.
+Namuna: April.
+"""
 
 
+"""
+11-mashq.
+strftime metodi yordamida bugungi sananing haftaning qaysi kuni ekanligini
+qisqa formatda konsolga chiqaring.
+Namuna: Fri.
+"""
 
+
+"""
+12-mashq.
+Hozirgi vaqtni AM/PM formatida konsolga chiqaring.
+Namuna: It is 2:13 PM o'clock now.
+"""
 
 
 

@@ -5,5 +5,8 @@ from .models import New
 @admin.register(New)
 class New_Admin(admin.ModelAdmin):
     list_display = ('name', 'author', 'status', 'created_on')
+    list_filter = ('status', 'created_on', 'tag', 'author')
+    search_fields = ('name', 'body')
+    
 
 

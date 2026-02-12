@@ -200,7 +200,7 @@ def middle(*sonlar:int):
     soni = 0
     
     for son in sonlar:
-        jami = jami + son
+        jami += son
         soni = soni + 1  
         
     return jami/soni
@@ -209,12 +209,36 @@ def middle(*sonlar:int):
 # print(middle(-45, 50))
 
 
-def summm(*sonlar:int):
-    yigindi = 0
+"""
+13) 1 dan N gacha bo'lgan sonlar yig'indisini topuvchi funksiya tuzing.
+"""
+
+def yigindi(son:int):
+    """  """
+    sonlar = list(range(1, son))
     
+    summa = 0  
     for son in sonlar:
-        yigindi = yigindi + son
+        summa += son  
+        
+    return summa
 
-    return yigindi
+# print(yigindi(4))
+# print(yigindi(10))
 
-print(summm(3,5,7,-8,545,34))
+
+"""
+15) Parametr sifatida uzatilgan songacha(0 dan boshlab) bo'lgan juft sonli ro'yhat tuzadigan funksiya yozing.
+"""
+
+
+"""
+Tasodifiy son o'yinini funksiyaga aylantiring.
+"""
+
+
+
+
+
+
+
