@@ -18,7 +18,7 @@ Qancha kun o'tdi?
 from datetime import datetime, date, time
 
 """ datetime """
-# hozir = datetime.now()
+hozir = datetime.now()
 # print(hozir)
 # print(hozir.date()) # sanani ajratib olish
 # print(hozir.time()) # vaqtni ajratib olish
@@ -47,7 +47,7 @@ from datetime import datetime, date, time
 # sana = date(yil, oy, kun)
 # print(sana)
 
-# vaqt = datetime(2002, 6, 8, 9, 33)
+# vaqt = datetime(2002, 6, 3)
 # print(vaqt)
 # print(type(vaqt))
 
@@ -86,7 +86,7 @@ O'tgan yilgi Ramazon oyi 29-mart kuni tugagan. Bugungi sanadan foydalanib,
 Ramazon oyining necha kun avval tugaganini hisoblab beradigan dastur tuzing.
 Namuna: Ramazon 5 kun avval tugadi.
 """
-ramazon = date(2026, 3, 29)
-print(f"Ramazon {(bugun-ramazon).days} kun avval o'tib ketgan")
+# ramazon = date(2025, 3, 29)
+# print(f"Ramazon {(bugun-ramazon).days} kun avval o'tib ketgan")
 
 

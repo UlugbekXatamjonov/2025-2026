@@ -284,9 +284,9 @@ hosil bo'lgan yangi vaqtni konsolga chiqaring.
 Namuna: 283 soatdan keyin vaqt 21:45 bo'ladi.
 """
 
-soat = int(input("Kiritmoqchi bo'lgan soatingizni kiriting: "))
-vaqt16 = hozir + timedelta(hours=soat)
-print(vaqt16.strftime(f"{soat} soatdan keyin vaqt %H:%M bo'ladi."))
+# soat = int(input("Kiritmoqchi bo'lgan soatingizni kiriting: "))
+# vaqt16 = hozir + timedelta(hours=soat)
+# print(vaqt16.strftime(f"{soat} soatdan keyin vaqt %H:%M bo'ladi."))
 
 
 """
@@ -294,3 +294,16 @@ print(vaqt16.strftime(f"{soat} soatdan keyin vaqt %H:%M bo'ladi."))
 Foydalanuvchining tug'ilgan sanasi (faqat kun va oy) ni so'rab oling va
 uning so'nggi nishonlagan tug'ilgan kuni nechta kun avval o'tib ketganini hisoblab bering.
 """
+# oy = int(input("Oy: "))
+# kun = int(input("Kun: "))
+
+# tkun = date(bugun.year, oy, kun)
+
+# if tkun > bugun:
+#     tkun = date(bugun.year-1, oy, kun)
+#     print(f"Sizning tug'ilgan kuningiz {(bugun-tkun).days} kun avval nishonlangan")
+# elif tkun == bugun:
+#     print(f"Tabriklaymiz ! Bugun sizning tug'ilgan kuningiz !")
+# else:
+#     print(f"Sizning tug'ilgan kuningiz {(bugun-tkun).days} kun avval nishonlangan")
+        

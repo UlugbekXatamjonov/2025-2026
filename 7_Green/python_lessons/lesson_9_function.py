@@ -274,14 +274,56 @@ def game():
 
 def unli(harf:str):
     unlilar = ['a', 'o', 'u', 'i', 'e', "o'"]
-    if harf in unlilar:
-        return f"{harf} unli"
+    ikkitalik = ['ng', 'sh', 'ch', "o'", "g'"]
+    
+    if len(harf) == 1 or harf in ikkitalik:
+        if harf in unlilar:
+            return f"{harf} unli"
+        else:
+            return f"{harf} undosh"
     else:
-        return f"{harf} undosh"
+        return "Siz harf kiritmadingiz !"
+
+# print(unli("a"))
+# print(unli("b"))
+# print(unli("ng"))
+# print(unli("o'"))
+# print(unli("oo"))
+# print(unli("sh"))
+# print(unli("ertaki"))
 
 
-print(unli("a"))
-print(unli("b"))
-print(unli("ertaki"))
+"""
+17*) Foydalanuvchi funksiyaga parametr sifatida o'zi yasagan parolni uzatsin. 
+    Siz uni tekshirib parolning kuchli yoki kuchsiz ekanini tekshirib bering. 
+    Kuchli parolning xususiyatlari:
+        eng kamida 8 ta belgidan ibotar bo'lishi;
+
+"""
+
+def password_chacker(password:str):
+    """ Parolni tekshiruvchi funksiya """
+
+    if len(password) >=8:
+        return "Bu kuchli parol ✅"
+    else:
+        return "Bu kuchsiz parol ❌"
+        
+        
+
+# print(password_chacker("dlsl23sas"))
+# print(password_chacker("dlsl2"))        
+
+
+"""
+*20) max() funksiyasini o'zingiz tuzishga urinib ko'ring. max() ni ishlatmasdan ❗
+*21) min() funksiyasini o'zingiz tuzishga urinib ko'ring. min() ni ishlatmasdan ❗
+"""
+
+
+
+
+
+
 
 

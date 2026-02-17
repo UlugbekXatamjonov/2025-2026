@@ -340,11 +340,11 @@ def password_checker(password:str):
     else:
         return f"Bu parol kuchsiz ❗ Qaytadan urining "
 
-# print(password_checker("QWer@$12"))
-# print(password_checker("QWee12"))
-# print(password_checker("QW#$12"))
-# print(password_checker("er#$21"))
-# print(password_checker("er#$WE"))
+print(password_checker("QWer@$12"))
+print(password_checker("QWee12"))
+print(password_checker("QW#$12"))
+print(password_checker("er#$21"))
+print(password_checker("er#$WE"))
 
 
 """ pass operatori """
