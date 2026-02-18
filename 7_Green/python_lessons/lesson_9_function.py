@@ -320,9 +320,51 @@ def password_chacker(password:str):
 *21) min() funksiyasini o'zingiz tuzishga urinib ko'ring. min() ni ishlatmasdan ❗
 """
 
+"""max"""
+def our_max(*sonlar:int):
+    return sorted(sonlar)[-1]
+
+# print(our_max(3,3,4,5,6,67,5,3,3))
+# print(our_max(3,3,4,5,6,3,13))
+
+
+"""min"""
+def our_min(*sonlar:int):
+    return sorted(sonlar)[0]
+
+# print(our_min(3,3,4,5,-6,-67,-5,3,3))
+
+
+sonlar = list(range(5, 100))
+print(sonlar)
 
 
 
+""" our range() """
+def my_range(son1:int, son2:int):
+    royhat = [son1,]
+    
+    for s in  royhat:
+        if s < son2-1:
+            royhat.append(s+1)
+    
+    return royhat 
+
+# print(my_range(1, 100))
+# print(my_range(50, 90))
+
+
+
+""" Standar qiymat uzatish """
+"""
+    Funksiya yaratishda, standart qiymatga ega parametrlar doim oxirida yozilishi kerak. 
+    Aks holda xatolik yuzaga keladi.
+"""     
+def full_name(ism, familya="Aliyev"):
+    return f"Sizning ismingiz {ism} {familya}"
+    
+print(full_name("Olim"))
+print(full_name("Asadbek","Mirzanvarov"))
 
 
 

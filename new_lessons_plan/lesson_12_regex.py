@@ -13,6 +13,7 @@ search()    -   Agar satrning istalgan joyida moslik mavjud bo'lsa, Match ob'ekt
 \b - So'z chegarasi --> $
 \s - bo'shliq
 ^  - boshlanish
+? - ixtiyoriylik
 """
 
 from re import match, findall, search
