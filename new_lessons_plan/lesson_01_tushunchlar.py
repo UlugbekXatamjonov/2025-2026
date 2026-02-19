@@ -2,11 +2,11 @@
 
 
 """ print() - ma'lumotni konsulga chiqaruvchi funksiyasi """
-# print("Salom, dunyo!")
-# print("Men Python o'rganayapman!")
+print("Salom, dunyo!") # buni mening birinchi kodim
+print("Men Python o'rganayapman!")
 
-# print("Salom mening ismim Ai")
-# print("Men 24 yoshdaman")
+print("Salom mening ismim Ai")
+print("Men 24 yoshdaman")
 
 
 """ Kommentlar """
@@ -29,7 +29,6 @@ unga ko'plab ma'lumotlarni yozish mumkin.
 6) "Python oson!" so'zini konsulda chiqaring
 7) Sevimli uchta taomingizni alohida qatorda konsulda chiqaring.
 """
-
 
 
 

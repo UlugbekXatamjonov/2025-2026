@@ -89,4 +89,35 @@ Namuna: Ramazon 5 kun avval tugadi.
 # ramazon = date(2025, 3, 29)
 # print(f"Ramazon {(bugun-ramazon).days} kun avval o'tib ketgan")
 
+"""
+13-mashq.
+Foydalanuvchidan uning tug'ilgan sanasini so'rang va
+keyingi tug'ilgan kuniga necha kun qolganini aniqlang.
+Namuna: Sizning keyingi tug'ilgan kuningiz 234 kundan keyin keladi.
+"""
+
+
+oy = int(input("Oy: "))
+kun = int(input("Kun: "))
+sana = date(bugun.year, oy, kun)
+
+if bugun < sana:
+    print(f"Sizning keyingi tug'ilgan kuningizga {(sana-bugun).days} kun qoldi")
+elif bugun == sana:
+    print(f"Tug'ilgan kuningiz bilan !")
+else:
+    sana = date(bugun.year+1, oy, kun)
+    print(f"Sizning keyingi tug'ilgan kuningizga {(sana-bugun).days} kun qoldi")
+    
+
+"""
+17-mashq.
+Foydalanuvchining tug'ilgan sanasi (faqat kun va oy) ni so'rab oling va
+uning so'nggi nishonlagan tug'ilgan kuni nechta kun avval o'tib ketganini hisoblab bering.
+"""
+
+
+
+
+
 

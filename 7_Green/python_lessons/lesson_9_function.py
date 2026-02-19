@@ -335,8 +335,8 @@ def our_min(*sonlar:int):
 # print(our_min(3,3,4,5,-6,-67,-5,3,3))
 
 
-sonlar = list(range(5, 100))
-print(sonlar)
+# sonlar = list(range(5, 100))
+# print(sonlar)
 
 
 
@@ -363,9 +363,38 @@ def my_range(son1:int, son2:int):
 def full_name(ism, familya="Aliyev"):
     return f"Sizning ismingiz {ism} {familya}"
     
-print(full_name("Olim"))
-print(full_name("Asadbek","Mirzanvarov"))
+# print(full_name("Olim"))
+# print(full_name("Asadbek","Mirzanvarov"))
 
 
+
+""" our range() """
+def my_range(son1:int, son2:int):
+    royhat = [son1,]
+    
+    for s in  royhat:
+        if s < son2-1:
+            royhat.append(s+1)
+    
+    return royhat 
+
+# print(my_range(1, 100))
+# print(my_range(50, 90))
+
+
+
+
+def my_range(son1=1, son2=int, son3=1):
+    royhat = [son1,]
+
+
+    for s in royhat:
+        if s < son2-1:
+            royhat.append(s+son3)
+
+    return royhat
+
+print(my_range(1,100,2))
+print(my_range(50,90))
 
 
