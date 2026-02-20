@@ -15,8 +15,7 @@ Dars jadvali
 Vaqt hisoblash
 Qancha kun o'tdi?
 """
-from datetime import datetime, date, time
-
+from datetime import datetime, date, timedelta
 """ datetime """
 hozir = datetime.now()
 # print(hozir)
@@ -97,17 +96,17 @@ Namuna: Sizning keyingi tug'ilgan kuningiz 234 kundan keyin keladi.
 """
 
 
-oy = int(input("Oy: "))
-kun = int(input("Kun: "))
-sana = date(bugun.year, oy, kun)
+# oy = int(input("Oy: "))
+# kun = int(input("Kun: "))
+# sana = date(bugun.year, oy, kun)
 
-if bugun < sana:
-    print(f"Sizning keyingi tug'ilgan kuningizga {(sana-bugun).days} kun qoldi")
-elif bugun == sana:
-    print(f"Tug'ilgan kuningiz bilan !")
-else:
-    sana = date(bugun.year+1, oy, kun)
-    print(f"Sizning keyingi tug'ilgan kuningizga {(sana-bugun).days} kun qoldi")
+# if bugun < sana:
+#     print(f"Sizning keyingi tug'ilgan kuningizga {(sana-bugun).days} kun qoldi")
+# elif bugun == sana:
+#     print(f"Tug'ilgan kuningiz bilan !")
+# else:
+#     sana = date(bugun.year+1, oy, kun)
+#     print(f"Sizning keyingi tug'ilgan kuningizga {(sana-bugun).days} kun qoldi")
     
 
 """
@@ -115,6 +114,44 @@ else:
 Foydalanuvchining tug'ilgan sanasi (faqat kun va oy) ni so'rab oling va
 uning so'nggi nishonlagan tug'ilgan kuni nechta kun avval o'tib ketganini hisoblab bering.
 """
+# oy = int(input("Oy: "))
+# kun = int(input("Kun: "))
+# sana = date(bugun.year, oy, kun)
+
+# if bugun < sana:
+#     sana = date(bugun.year-1, oy, kun)
+#     print(f"Sizning eng oxirgi  tug'ilgan kuningiz {(bugun-sana).days} kun oldin bo'lgan")
+# elif bugun == sana:
+#     print(f"Tug'ilgan kuningiz bilan !")
+# else:
+#     print(f"Sizning eng oxirgi  tug'ilgan kuningiz {(bugun-sana).days} kun oldin bo'lgan")
+    
+
+"""  timedelta"""
+# print(bugun - timedelta(weeks=2))
+# print(hozir + timedelta(hours=66))
+
+
+"""
+14-mashq.
+2010-03-10 sanasidan 8 hafta, 325 soat va 854 minutni ayring va
+hosil bo'lgan sana va vaqtni konsolga chiqaring.
+"""
+# sana14 = date(2010, 3, 10)
+# print(sana14 - timedelta(weeks=8, hours=325, minutes=854))
+
+
+"""
+15-mashq.
+Foydalanuvchidan uning maktabga birinchi marta borgan sanasini so'rang va
+o'sha kundan bugungi kungacha qancha vaqt o'tganini hisoblab, konsolga chiqaring.
+
+16-mashq.
+Foydalanuvchidan istalgan soat miqdorini so'rang, uni hozirgi vaqtga qo'shing va
+hosil bo'lgan yangi vaqtni konsolga chiqaring.
+Namuna: 283 soatdan keyin vaqt 21:45 bo'ladi.
+"""
+
 
 
 
