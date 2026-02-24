@@ -394,7 +394,7 @@ def my_range(son1=1, son2=int, son3=1):
 
     return royhat
 
-print(my_range(1,100,2))
-print(my_range(50,90))
+# print(my_range(1,100,2))
+# print(my_range(50,90))
 
 

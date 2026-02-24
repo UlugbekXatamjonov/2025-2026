@@ -151,10 +151,11 @@ Foydalanuvchidan istalgan soat miqdorini so'rang, uni hozirgi vaqtga qo'shing va
 hosil bo'lgan yangi vaqtni konsolga chiqaring.
 Namuna: 283 soatdan keyin vaqt 21:45 bo'ladi.
 """
+""" 16-mashq """
+hozir = datetime.now()
 
-
-
-
-
+soat = int(input("Biror soatning kiring: "))
+yangi_vaqt = hozir + timedelta(hours=soat)
+print(f"{soat} soatdan keyin vaqt {yangi_vaqt.strftime("%H:%M")} bo'ladi.")
 
 

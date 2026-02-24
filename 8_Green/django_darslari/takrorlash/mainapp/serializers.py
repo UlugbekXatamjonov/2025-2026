@@ -5,7 +5,7 @@ from .models  import New
 class New_Serializer(serializers.ModelSerializer):
     class Meta:
         model = New
-        fields = '__all__'
+        fields = ('id', 'title', 'body')
 
 
 
