@@ -66,8 +66,9 @@ uzunligi 4 dan 12 gacha bo'lgan login kiriting. Ushbu shartlar uchun RegEx tuzin
 
 pattern3 = r"[+][0-9]{3}[(][0-9]{2}[)][ ][0-9]{3}[-][0-9]{2}[-][0-9]{2}"
 car1 = r"[0-9]{2}[\s][A-Z]{1}[\s][0-9]{3}[\s][A-Z]{2}"
-matn = "Salom do'stim 50 A 117 AD Uyqichining telefon 50 A 117 AD raqami +998(96) 333-22-11 50 A 117 AD  va +998(96) \
-555-88-5 meniki esa +998(66) 998-66-33"
+
+matn = "Salom 444 98 Salima do'stimm python 50 A 117 AD Uyqichining Saida 235 telefon ython 50 A 117 AD raqami +998(96) 333-22-11 50 A 117 AD  va +998(96) \
+555-88-5 meniki 11 esa pytho Sasha +998(66) 998-66-33"
 
 # print(findall(pattern3, matn))
 # print(findall(car1, matn))
@@ -81,7 +82,64 @@ Berilgan matndan 3 xonali raqamlarni toping.
 Matndan faqat 5 xonagacha bo'lgan sonlarni ajratib oling.
 """
 
-
 matn3="4444 333 22 1 55555"
 pattern5  = r"[ ][0-9]{3}[ ]"
-print(findall(pattern5, matn3))
+# print(findall(pattern5, matn3))
+
+
+""" ---- search() ---- """
+
+"""
+1-mashq
+Berilgan matnda raqam mavjud yoki yo'qligini search() metodi yordamida tekshiring.
+
+2-mashq
+Berilgan matnda "python" so'zi bor-yo'qligini search() metodi orqali aniqlang.
+"""
+""" 1-mashq """
+regex1 = r"[0-9]{1,10}"
+# print(search(regex1, matn))
+# print(findall(regex1, matn))
+
+""" 2-mashq """
+regex2 = r"python"
+# print(search(regex2, matn))
+
+
+""" if-else bilan """
+# if findall(regex2, matn):
+#     print("Matnda  python so'zi bor")
+# else:
+#     print("yo'q")
+
+"""
+5-mashq
+Matndan faqat 7 ta harfdan iborat so'zlarni ajratib oling.
+
+6-mashq
+Berilgan matndan “S” harfi bilan boshlanib “a” harfi bilan tugaydigan ismlarni toping.
+"""
+
+""" 5 """
+pattern5 = r" [\w]{7} "
+# print(search(pattern5, matn))
+
+""" 6 """
+pattern6 = r" S[\w]{0,15}a "
+# print(search(pattern6, matn))
+# print(findall(pattern6, matn))
+
+
+"""
+7-mashq
+Berilgan matndan barcha email manzillarini toping.
+Namuna: olimova@gmail.com
+
+8-mashq
+Berilgan matndan @username ko'rinishidagi barcha foydalanuvchi nomlarini findall() metodi yordamida toping.
+
+9-mashq
+Berilgan matndan barcha telefon raqamlarini toping. Telefon raqami formati: +998-xx-xxx-xx-xx
+"""
+
+

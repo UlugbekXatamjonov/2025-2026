@@ -2,7 +2,6 @@ unique=True
 null=True
 blank=True
 
-
 ------------------
 phone regex
 QR code
