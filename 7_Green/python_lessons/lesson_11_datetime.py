@@ -57,16 +57,36 @@ agar bugungi sana bo'lsa — “Siz bugungi sanani kiritdingiz” degan xabar ko
 """
 
 
-yil = int(input("Yil: "))
-oy = int(input("Oy: "))
-kun = int(input("Kun: "))
+# yil = int(input("Yil: "))
+# oy = int(input("Oy: "))
+# kun = int(input("Kun: "))
 
-sana1  = date(yil, oy, kun)
+# sana1  = date(yil, oy, kun)
 
-if bugun > sana1:
-    print("O'tib ketgan sana")
-elif bugun < sana1:
-    print("Endi keladigan sana")
-elif bugun == sana1:
-    print("Siz bugungi sanani kiritdingiz")
+# if bugun > sana1:
+#     print("O'tib ketgan sana")
+# elif bugun < sana1:
+#     print("Endi keladigan sana")
+# elif bugun == sana1:
+#     print("Siz bugungi sanani kiritdingiz")
+    
+    
+    
+"""
+3-mashq.
+Bugungi sanadan foydalanuvchi kiritgan sanagacha bo'lgan kunlar sonini hisoblab chiqaring.
+Bunda kiritilgan sana bugungi sanadan kichik bo'lmasligi kerak.
+
+4-mashq.
+Keyingi o'quv yili 2-sentyabr sanasida boshlanadi.
+Bugungi sanadan boshlab, o'sha kungacha necha kun qolganini hisoblab beradigan dastur tuzing.
+
+5-mashq.
+Bu yilgi o'quv yili 2025-yil 4-sentyabr sanasida boshlangan bo'lsa,
+bugungi kungacha maktab boshlanganiga necha kun bo'lganini aniqlang.
+Namuna: Maktab boshlanganiga 153 kun bo'ldi.
+"""
+
+
+
 

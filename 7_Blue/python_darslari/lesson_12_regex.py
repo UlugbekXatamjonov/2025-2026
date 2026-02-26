@@ -143,3 +143,40 @@ Berilgan matndan barcha telefon raqamlarini toping. Telefon raqami formati: +998
 """
 
 
+matn = "Salom 444 98 Salima 22-10-2026 +998-12-122-44-44  do'stimm python 50 A 117 AD Uyqichining +998-12-122-55-55 Saida 235 telefon ython  22-10-2026 50 A 117 AD \
+raqami +998(96) 333-22-11 50 A 117 AD  va +998(96) \
+555-88-5 meniki 11 esa pytho Sasha +998(66) 998-66-33 salom@gmail.com s@gmail.com  @asaa +998-12-122-12-12 "
+
+""" 7 """
+# gmail = r"[a-z]{1,15}@[a-z]{1,10}[.][a-z]{2,3}"
+# print(findall(gmail,matn))
+
+""" 8 """
+# gmail1 = r'[ ]@[a-zA-Z0-9_-]{1,15}[ ]'
+# print(findall(gmail1,matn))
+
+""" 9 """
+phonenumber = r'[+]998[-][0-9]{2}[-][0-9]{3}[-][0-9]{2}[-][0-9]{2}'
+print(search(phonenumber,matn))
+print(findall(phonenumber,matn))
+
+
+""" 
+10-mashq
+Biror matn olib, undan dd-mm-yyyy formatidagi barcha sanalarni toping.
+"""
+regex10 = r" [0-9]{2}[-][0-9]{2}[-][0-9]{4} "
+# regex10 = r"&dd-&m-&y"
+# print(findall(regex10,matn))
+
+
+"""
+11-mashq
+Biror matndan email mavjud yoki yo'qligini search() yordamida tekshiring.
+Email uchun RegEx ni ihateregex.io saytidan oling.
+
+12-mashq. Berilgan matnda passport seriyasi bor-yo'qligini aniqlang.
+Namuna: Passport: AC1236547
+"""
+
+
