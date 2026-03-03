@@ -88,5 +88,19 @@ Namuna: Maktab boshlanganiga 153 kun bo'ldi.
 """
 
 
+"""
+3-mashq
+Eng yaqin do’stingiz va sizning o’rtangizda necha kun farq bor ? Dastur yordamida buni  aniqlang. 
+Namuna: Abdulloh va mening oramizda 35 kun farq bor.
+"""
+yil = int(input("Yil: "))
+oy = int(input("Oy: "))
+kun = int(input("Kun: "))
+friend = date(yil, oy, kun)
 
+my = date(2013, 5, 2)
 
+if my > friend:
+    print(f"Bizning oramizdagi farq {(my - friend).days} kun qoldi")
+else:
+    print(f"Bizning oramizdagi farq {(friend - my).days} kun qoldi")

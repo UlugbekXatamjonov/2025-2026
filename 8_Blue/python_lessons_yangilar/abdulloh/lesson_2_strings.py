@@ -63,15 +63,15 @@ ism3 = "Hasanboy"
 
 
 """ input() """
-ism = input("Ismingizni kiriting: ")
-familiya = input("Familiyangizni kiriting: ")
+# ism = input("Ismingizni kiriting: ")
+# familiya = input("Familiyangizni kiriting: ")
 
-print(ism)
-print(familiya)
+# print(ism)
+# print(familiya)
 
 
 """ f"" --> string """
-print(f"Salom {ism} {familiya} tanishganimdan hursandman !")
+# print(F"Salom {ism} {familiya} tanishganimdan hursandman !")
 
 
 """
