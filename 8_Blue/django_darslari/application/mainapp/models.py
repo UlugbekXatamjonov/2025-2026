@@ -1,5 +1,4 @@
 from django.db import models
-
 # Create your models here.
 
 APPLICATION_STATUS = (
@@ -8,6 +7,8 @@ APPLICATION_STATUS = (
     ("rad_etilgan","Rad etilgan"), 
     ("hal_qilingan","Hal qilingan")
 )
+
+PHONE_REGEX = r"^[+]998[0-9]{9}$"
 
 
 class Category(models.Model):
@@ -21,17 +22,32 @@ class Category(models.Model):
 class Application(models.Model):
     """  """
     name = models.CharField(max_length=50, verbose_name="Nomi", unique=True)
-    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True, related_name="applications")
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, 
+                                blank=True, related_name="applications")
     body = models.TextField(verbose_name="Batafsil")
     photo = models.ImageField(upload_to='photos/', null=True, blank=True)
     video = models.FileField(upload_to='videos/', null=True, blank=True)
     applicant = models.CharField(max_length=40, verbose_name="Arizachi")
-    phone1 = models.CharField(max_length=13, verbose_name="Tel. raqam 1") # regex
-    phone2 = models.CharField(max_length=13, verbose_name="Tel. raqam 2", null=True, blank=True) # regex
+    phone1 = models.CharField(max_length=13, validators=(PHONE_REGEX), verbose_name="Tel. raqam 1") # regex
+    phone2 = models.CharField(max_length=13, validators=(PHONE_REGEX), verbose_name="Tel. raqam 2", 
+                              null=True, blank=True) # regex
     
-    status = models.CharField(max_length=50, choices=APPLICATION_STATUS, default="qabul_qilingan")
-
+    status = models.CharField(max_length=50, choices=APPLICATION_STATUS, 
+                              default="qabul_qilingan")
+    created_on = models.DateTimeField(auto_now_add=True)
+    
     def __str__(self):
         return self.name
     
+    
+class Worker(models.Model):
+    """  """
+    full_name = models.CharField(max_length=100, verbose_name="Ism familiya")
+    photo = models.ImageField(upload_to='worker_photo/')
+    stage = models.CharField(max_length=100, verbose_name="Lavozim")
+    phone1 = models.CharField(max_length=13, validators=(PHONE_REGEX), verbose_name="Tel. raqam 1") # regex
+    phone2 = models.CharField(max_length=13, validators=(PHONE_REGEX), verbose_name="Tel. raqam 2", 
+                              null=True, blank=True) # regex
+    
+    status = models.BooleanField(default=True)
 

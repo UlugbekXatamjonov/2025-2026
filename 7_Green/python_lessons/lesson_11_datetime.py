@@ -93,14 +93,119 @@ Namuna: Maktab boshlanganiga 153 kun bo'ldi.
 Eng yaqin do’stingiz va sizning o’rtangizda necha kun farq bor ? Dastur yordamida buni  aniqlang. 
 Namuna: Abdulloh va mening oramizda 35 kun farq bor.
 """
-yil = int(input("Yil: "))
-oy = int(input("Oy: "))
-kun = int(input("Kun: "))
-friend = date(yil, oy, kun)
+# yil = int(input("Yil: "))
+# oy = int(input("Oy: "))
+# kun = int(input("Kun: "))
+# friend = date(yil, oy, kun)
 
-my = date(2013, 5, 2)
+# my = date(2013, 5, 2)
 
-if my > friend:
-    print(f"Bizning oramizdagi farq {(my - friend).days} kun qoldi")
-else:
-    print(f"Bizning oramizdagi farq {(friend - my).days} kun qoldi")
+# if my > friend:
+#     print(f"Bizning oramizdagi farq {(my - friend).days} kun qoldi")
+# else:
+#     print(f"Bizning oramizdagi farq {(friend - my).days} kun qoldi")
+
+""" strftime """
+
+# sana = date(2026, 3, 4)
+# print(sana.strftime("Today is the week of %j"))
+
+""" strftime """
+hozir = datetime.now()
+print(hozir.strftime("Today is the day of %A"))
+print(hozir.strftime("Today is the day of %A and date %d %B"))
+print(hozir.strftime("Bugungi sana va vaqt: %d-%B %Y-year  soat %H:%M:%S  | %j of year  | %U"))
+
+
+
+"""
+link -> https://docs.python.org/3/library/datetime.html
+link -> https://www.w3schools.com/python/python_datetime.asp
+
+%a	  Weekday, short version	                        Wed	
+%A	  Weekday, full version	                                Wednesday	
+%w	  Weekday as a number 0-6, 0 is Sunday	                3	
+%d	  Day of month                                          01-31	31	
+%b	  Month name, short version	                        Dec	
+%B	  Month name, full version	                        December	
+%m	  Month as a number                                     01-12	12	
+%y	  Year, short version, without century	                18	
+%Y	  Year, full version	                                2018	
+%H	  Hour                                                  00-23	17	
+%I	  Hour                                                  00-12	05	
+%p	  AM/PM	                                                PM	
+%M	  Minute                                                00-59	41	
+%S	  Second                                                00-59	08	
+%f	  Microsecond 000000-999999	                        548513	
+%z	  UTC offset	                                        +0100	
+%Z	  Timezone	                                        CST	
+%j	  Day number of year 001-366          	                365	
+%U	  Week number of year, 
+        Sunday as the first day of week, 00-53	            52	
+%W	  Week number of year, 
+        Monday as the first day of week, 00-53	            52	
+%c	  Local version of date and time	                  Mon Dec 31 17:41:00 2018	
+%C	  Century	                                          20	
+%x	  Local version of date	                              12/31/18	
+%X	  Local version of time	                              17:41:00	
+%%	  A % character	                                    %	
+%G	  ISO 8601 year	                                    2018	
+%u	  ISO 8601 weekday (1-7)	                        1	
+%V	  ISO 8601 weeknumber (01-53)	                        01
+"""
+
+"""
+6-mashq.
+Bugungi sanani haftaning qaysi kuni ekanligini raqam ko'rinishida konsolga chiqaring.
+Namuna: 0 — dushanba, 6 — yakshanba.
+
+7-mashq.
+Bugungi sanani olib, uni quyidagi ko'rinishda konsolga chiqaring:
+Bugun 2025-yil, 4-oyning 4-kuni.
+
+8-mashq.
+Bugungi sanadan foydalanib, yilni, oyini va kunini alohida-alohida qilib konsolga chiqaring.
+"""
+
+
+# """ 6-mashq """
+# hozir = datetime.now()
+# print(bugun.strftime("%w"))
+
+# """ 7-mashq """
+# sana = date.today()
+# print(sana.strftime("%Y-yil, %m-oyining, %d - kuni."))
+
+# """ 8-mashq """
+# print(sana.strftime("%Y-yil."))
+# print(sana.strftime("%m-oyi. "))
+# print(sana.strftime("%d - kun."))
+
+
+"""
+9-mashq.
+strftime metodi yordamida bugungi sananing haftaning qaysi kuni ekanligini
+uzun formatda konsolga chiqaring.
+Namuna: Today is Friday.
+"""
+# print(bugun.strftime("Today is %A."))
+
+
+"""
+10-mashq.
+strftime metodi yordamida bugungi sananing qaysi oy ekanligini
+matn ko'rinishida (uzun formatda) konsolga chiqaring.
+Namuna: April.
+
+11-mashq.
+strftime metodi yordamida bugungi sananing haftaning qaysi kuni ekanligini
+qisqa formatda konsolga chiqaring.
+Namuna: Fri.
+
+12-mashq.
+Hozirgi vaqtni AM/PM formatida konsolga chiqaring.
+Namuna: It is 2:13 PM o'clock now.
+"""
+
+
+

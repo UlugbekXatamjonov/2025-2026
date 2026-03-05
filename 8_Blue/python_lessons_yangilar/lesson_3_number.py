@@ -57,9 +57,9 @@ Thame:Sonlar(Lists) bilan ishalsh
 
 
 """ int()/ str()/ float() """
-# a = 5           # butun son  --> int
-# b = 12.3        # o'nlik son --> float
-# c = "Salom"     # matn       --> str
+a = 5           # butun son  --> int - integer
+b = 12.3        # o'nlik son --> float - float
+c = "Salom"     # matn       --> str - string
 
 # print(type(a))  # a ni turini tekshiramiz
 # print(a)        # a ni konsulga chiqaramiz
@@ -68,7 +68,7 @@ Thame:Sonlar(Lists) bilan ishalsh
 # print(a1)       # a1 ni konsulga chiqaramiz
 
 """Bir vaqting o'zida bir nechta o'zgaruvchi yaratish"""
-# x,y,z  = 4,9,-7
+# x,y,z  = 4,9, -7
 # print(x,y,z)
 
 """ Ko'p honali sonlar """
@@ -78,8 +78,8 @@ Thame:Sonlar(Lists) bilan ishalsh
 # print(yer)
 
 """Yoshni topuvchi dastur"""
-# year = int(input("Qaysi yilda tug'ilgansiz: "))
-# age = 2022-year
+# year = int(input("Qaysi yilda tug'ilgansiz: "))# "2009"
+# age = 2026-year
 # print(f"Siz {year} yili tug'ilgansiz va yoshingiz {age} yoshda")
 
 """ Sonni kvga va kubga ko'tarish """
