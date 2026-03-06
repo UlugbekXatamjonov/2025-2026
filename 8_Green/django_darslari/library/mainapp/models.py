@@ -20,6 +20,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
 class Author(models.Model):
     """  """
     name = models.CharField(max_length=50, unique=True)
@@ -30,6 +31,7 @@ class Author(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class Book(models.Model):
     """  """
