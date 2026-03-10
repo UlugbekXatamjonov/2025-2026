@@ -98,3 +98,28 @@
 #     print(mashq(yosh))
 
 
+"""
+3) To'g'ri burchakli uchburchakning gipotenuzasini hisoblash. Ushbu kodda yuzaga kelishi mumkin bo'lgan hatoliklarni
+    'try-except' yordamida oldini oling
+    a = int(input("Birinchi katetni kiriting: "))
+    b = int(input("Ikkinchi katetni kiriting: "))
+    c**2=a**2+b**2
+
+print(f"Katetlari {a} va {b} ga teng bo'lgan uchburchakning giputenuzasi {c} ga teng")
+"""
+
+try:
+    a = int(input("Birinchi katetni kiriting: "))
+    b = int(input("Ikkinchi katetni kiriting: "))
+except ValueError:
+    print("Siz faqat raqam kiritishingiz kerak !!!")
+except:
+    print("Uzr dasturda xatolik sodir bo'ldi !")
+else:
+    from math import sqrt
+    if a > 0 and b > 0:
+        c = round(sqrt(a**2+b**2),2)
+        print(f"Katetlari {a} va {b} ga teng bo'lgan uchburchakning giputenuzasi {c} ga teng")  
+    else:
+        print("Katetlarning uzunligi 0 bo'lmasligi kerak !")
+        

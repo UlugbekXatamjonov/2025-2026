@@ -112,9 +112,9 @@ Namuna: Abdulloh va mening oramizda 35 kun farq bor.
 
 """ strftime """
 hozir = datetime.now()
-print(hozir.strftime("Today is the day of %A"))
-print(hozir.strftime("Today is the day of %A and date %d %B"))
-print(hozir.strftime("Bugungi sana va vaqt: %d-%B %Y-year  soat %H:%M:%S  | %j of year  | %U"))
+# print(hozir.strftime("Today is the day of %A"))
+# print(hozir.strftime("Today is the day of %A and date %d %B"))
+# print(hozir.strftime("Bugungi sana va vaqt: %d-%B %Y-year  soat %H:%M:%S  | %j of year  | %U"))
 
 
 
@@ -207,5 +207,26 @@ Hozirgi vaqtni AM/PM formatida konsolga chiqaring.
 Namuna: It is 2:13 PM o'clock now.
 """
 
+print(bugun.strftime("%B"))
+print(bugun.strftime("%b"))
+print(hozir.strftime("%I:%M %p"))
 
 
+""" timedelta """
+sana1 = date(2012, 9, 23)
+print(sana1)
+print(sana1-timedelta(weeks=2, days=3))
+
+print(hozir)
+print(hozir+timedelta(hours=200))
+
+
+"""
+14-mashq.
+2010-03-10 sanasidan 8 hafta, 325 soat va 854 minutni ayring va
+hosil bo'lgan sana va vaqtni konsolga chiqaring.
+
+15-mashq.
+Foydalanuvchidan uning maktabga birinchi marta borgan sanasini so'rang va
+o'sha kundan bugungi kungacha qancha vaqt o'tganini hisoblab, konsolga chiqaring.
+"""

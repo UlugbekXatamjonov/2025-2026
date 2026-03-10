@@ -198,15 +198,6 @@ import math
 c = round(math.sqrt(a**2+b**2),2)
 print(f"Katetlari {a} va {b} ga teng bo'lgan uchburchakning giputenuzasi {c} ga teng")
 
-4) mevalar deb nomlangan ro'yhat(list ) yarating. Avval uni o'zgarmas ro'yhat turiga , keyin esa set turiga o'zgartiring va konsulga ularning 
-turini chiqaring.
-	-remove() yordamida 3 ta discard() yordamida 3 ta elementni o'chirib tashlang va ro'yhatni konsulga chiqaring.
-	-va yangi 5 ta element qo'shing va ro'yhatni konsulga chiqaring;
-	-so'ngra ro'yhatni tozalang va uni konsulga chiqaring;
-	-keyin esa ro'yhatni o'chirib tashlang;
- 
-    Ushbu kodda yuzaga kelishi mumkin bo'lgan hatoliklarni 'try-except' yordamida oldini oling
-
 """
 
 
