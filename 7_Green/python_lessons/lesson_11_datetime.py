@@ -207,18 +207,18 @@ Hozirgi vaqtni AM/PM formatida konsolga chiqaring.
 Namuna: It is 2:13 PM o'clock now.
 """
 
-print(bugun.strftime("%B"))
-print(bugun.strftime("%b"))
-print(hozir.strftime("%I:%M %p"))
+# print(bugun.strftime("%B"))
+# print(bugun.strftime("%b"))
+# print(hozir.strftime("%I:%M %p"))
 
 
 """ timedelta """
-sana1 = date(2012, 9, 23)
-print(sana1)
-print(sana1-timedelta(weeks=2, days=3))
+# sana1 = date(2012, 9, 23)
+# print(sana1)
+# print(sana1-timedelta(weeks=2, days=3))
 
-print(hozir)
-print(hozir+timedelta(hours=200))
+# print(hozir)
+# print(hozir+timedelta(hours=200))
 
 
 """
@@ -230,3 +230,49 @@ hosil bo'lgan sana va vaqtni konsolga chiqaring.
 Foydalanuvchidan uning maktabga birinchi marta borgan sanasini so'rang va
 o'sha kundan bugungi kungacha qancha vaqt o'tganini hisoblab, konsolga chiqaring.
 """
+
+"""14"""
+# sana=date(2010,3,10)
+# print(sana-timedelta(weeks=8,hours=325,minutes=854))
+
+"""15"""
+# yil=int(input("yil kiriting: "))
+# oy=int(input("oy kiriting: "))
+# kun=int(input("kun kiriting: "))
+# maktab=date(yil,oy,kun)
+# print(bugun-maktab)
+
+"""
+13-mashq.
+Foydalanuvchidan uning tug'ilgan sanasini so'rang va
+keyingi tug'ilgan kuniga necha kun qolganini aniqlang.
+Namuna: Sizning keyingi tug'ilgan kuningiz 234 kundan keyin keladi.
+"""
+# bugun = date.today()
+
+# oy = int(input("Oy: "))
+# kun = int(input("Kun: "))
+
+# tsana = date(bugun.year, oy, kun)
+# if tsana > bugun:
+#         print(f"Sizning keyingi tug'ilgan kuningizga {(tsana-bugun).days} kun qoldi")
+# elif bugun > tsana:
+#         tsana = date(bugun.year+1, oy, kun)
+#         print(f"Sizning keyingi tug'ilgan kuningizga {(tsana-bugun).days} kun qoldi")
+# else:
+#     print(f"Tug'ilgan kuningiz bilan !")
+
+"""
+16-mashq.
+Foydalanuvchidan istalgan soat miqdorini so'rang, uni hozirgi vaqtga qo'shing va
+hosil bo'lgan yangi vaqtni konsolga chiqaring.
+Namuna: 283 soatdan keyin vaqt 21:45 bo'ladi.
+
+17-mashq.
+Foydalanuvchining tug'ilgan sanasi (faqat kun va oy) ni so'rab oling va
+uning so'nggi nishonlagan tug'ilgan kuni nechta kun avval o'tib ketganini hisoblab bering.
+"""
+    
+
+
+

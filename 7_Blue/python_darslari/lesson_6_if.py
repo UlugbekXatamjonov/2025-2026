@@ -1,64 +1,64 @@
 """ if-else """
 
 
-# son = int(input("Son kiriting: "))
+son = int(input("Son kiriting: "))
 
-# if son > 0:
-#     print(f"{son} musbat")
-# else:
-#     print(f"{son} manfiy")
+if son > 0:
+    print(f"{son} musbat")
+else:
+    print(f"{son} manfiy")
     
 
 
-# savol = input("Siz olma yeganmisiz: ").lower()
+savol = input("Siz olma yeganmisiz: ").lower()
 
-# if savol == "ha":
-#     print(f"Menga qani ?")
-# else:
-#     print(f"Olma yeyishni tafsiya qilaman !")
-
-
+if savol == "ha":
+    print(f"Menga qani ?")
+else:
+    print(f"Olma yeyishni tafsiya qilaman !")
 
 
-# cars = ['toyota', 'mazda', 'hyundai', 'gm', 'kia']
-
-# for car in cars:
-#     if car == 'gm':
-#         print(car.upper())
-#     else:
-#         print(car.title())
 
 
-# for car in cars:
-#     if car != 'gm':
-#         print(car.title())
-#     else:
-#         print(car.upper())
+cars = ['toyota', 'mazda', 'hyundai', 'gm', 'kia']
+
+for car in cars:
+    if car == 'gm':
+        print(car.upper())
+    else:
+        print(car.title())
 
 
-# login = input("Loginni kiriting: ").lower()
+for car in cars:
+    if car != 'gm':
+        print(car.title())
+    else:
+        print(car.upper())
 
-# if login == "admin":
-#     print("Xush kelibsiz, Admin. Foydalanuvchilar ro'yxatini ko'rasizmi?")
-# else:
-#     print(f"Xush kelibsiz, {login}!" )
+
+login = input("Loginni kiriting: ").lower()
+
+if login == "admin":
+    print("Xush kelibsiz, Admin. Foydalanuvchilar ro'yxatini ko'rasizmi?")
+else:
+    print(f"Xush kelibsiz, {login}!" )
 
 
-# son1 = int(input("1-sonni kiriting: "))
-# son2 = int(input("2-sonni kiriting: "))
-# if son1 == son2:
-#     print(f"{son1} = {son2}")
-# else:
-#     print("Sonlar teng emas !")
+son1 = int(input("1-sonni kiriting: "))
+son2 = int(input("2-sonni kiriting: "))
+if son1 == son2:
+    print(f"{son1} = {son2}")
+else:
+    print("Sonlar teng emas !")
 
 from math import sqrt
 
-# son3 = int(input("Sonni kiriting: "))
+son3 = int(input("Sonni kiriting: "))
 
-# if son3 > 0:
-#     print(f"{son3} ning ildizi {sqrt(son3)}")
-# else:
-#     print("Musbat son kiriting")
+if son3 > 0:
+    print(f"{son3} ning ildizi {sqrt(son3)}")
+else:
+    print("Musbat son kiriting")
 
 
 """
@@ -70,6 +70,8 @@ from math import sqrt
     <=  ---> kichik yoki teng bo'lsa
     or   ---> yoki
     and  ---> va 
+    in   ---> ichida 
+    not in ---> ichida emas
 """
 
 
@@ -229,7 +231,7 @@ Qolgan barcha ismlar uchun   - Salom {ism}.
 
 
 """ 6-mashq """
-ismlar = ['Ali', 'Olim', 'Kamron', 'Abdulloh', 'Karim', 'Usmon']
+# ismlar = ['Ali', 'Olim', 'Kamron', 'Abdulloh', 'Karim', 'Usmon']
 
 # for ism in ismlar:
 #     if ism == "Kamron" or ism == "Karim":
@@ -325,8 +327,8 @@ Agar foydalanuvchi mag’lub bo’lsa unga komputer qaysi sonni taxmin qilganini
 """ Random moduli """
 from random import randrange, choice
 
-# komputer = randrange(1, 10)
-# player = int(input("1 dan 10 gacha biror son tanlang: "))
+komputer = randrange(1, 10)
+player = int(input("1 dan 10 gacha biror son tanlang: "))
 
 # if komputer == player:
 #     print(f"Siz g'olib bo'ldingiz !")
@@ -366,7 +368,7 @@ from random import randrange, choice
 #     print(f"Komputer: {komputer}")
     
 # else:
-#     print("Siz noto'g'ri tanlov kiritdingiz ❗❌❌❌")
+    # print("Siz noto'g'ri tanlov kiritdingiz ❗❌❌❌")
 
 
 """
