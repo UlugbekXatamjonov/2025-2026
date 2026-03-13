@@ -274,5 +274,39 @@ uning so'nggi nishonlagan tug'ilgan kuni nechta kun avval o'tib ketganini hisobl
 """
     
 
+bugun = date.today()
+
+oy = int(input("Ttuglgan oy: "))
+kun = int(input("Tuglgan kun: "))
+
+tsana = date(bugun.year, oy, kun)
+
+if bugun > tsana:
+    print(f"oxrgi tuglgan kunda {(bugun - tsana).days} kun oldin o'tdi")
+else:
+    tsana = date(bugun.year - 1, oy, kun)
+    print(f"oxrgi tuglgan kuni {(bugun - tsana).days} kunda oldin utdi")
 
 
+
+
+sana1 = date(2026, 3, 11)
+print(sana1)
+print(sana1+timedelta(hours=283))
+
+
+
+
+bugun = date.today()
+
+oy = int(input("Oy: "))
+kun = int(input("Kun: "))
+
+tsana = date(bugun.year, oy, kun)
+if tsana > bugun:
+        print(f"Sizning keyingi tug'ilgan kuningizga {(tsana-bugun).days} kun qoldi")
+elif bugun > tsana:
+        tsana = date(bugun.year+1, oy, kun)
+        print(f"Sizning keyingi tug'ilgan kuningizga {(tsana-bugun).days} kun qoldi")
+else:
+    print(f"Tug'ilgan kuningiz bilan !")

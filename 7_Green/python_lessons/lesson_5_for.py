@@ -15,11 +15,11 @@ Xuddi sen savatdagi har bir mevani navbat bilan olib, stol ustiga qo‘yayotgand
 """
 
 
-# mevalar = ["olma", "banan", "gilos"]
-# for meva in mevalar:
-#     print(meva)
+mevalar = ["olma", "banan", "gilos"]
+for meva in mevalar:
+    print(meva)
 
-# print("Mevalar juda foydali")
+print("Mevalar juda foydali")
 
 
 
@@ -47,7 +47,7 @@ Foydalanuvchidan 7 ta ism so'rang va ismlar deb nomlangan ro'yhatga qo'shing.
 # print(ismlar)
 
 
-from math import sqrt
+# from math import sqrt
 
 # sonlar1 = list(range(1, 100))
 # for son in sonlar1:

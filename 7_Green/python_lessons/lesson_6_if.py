@@ -26,6 +26,8 @@
     <=  ---> kichik yoki teng bo'lsa
     or   ---> yoki
     and  ---> va 
+    in  --> ichida
+    not in  --> ichida bo'lmasa
 """
 
 """ != """
@@ -361,33 +363,33 @@ from random import randrange, choice, choices
 
 """ Tosh, qaychi, qog'oz """
 
-tqq = ["tosh", 'qaychi', "qogoz"]
-komputer = choice(tqq)
-player = input("Tosh-qaychi-qogoz: ").lower()
+# tqq = ["tosh", 'qaychi', "qogoz"]
+# komputer = choice(tqq)
+# player = input("Tosh-qaychi-qogoz: ").lower()
 
-if player in tqq:
-    if komputer == player:
-        print("Durrang 🤝")
-    elif komputer == 'tosh' and  player == "qaychi":
-        print(f"Siz yutqazdingiz ❌")
-    elif komputer == 'qaychi' and  player == "qogoz":
-        print(f"Siz yutqazdingiz ❌")
-    elif komputer == 'qogoz' and  player == "tosh":
-        print(f"Siz yutqazdingiz ❌")
-    else:
-        print("Siz yutdingiz ✅")
+# if player in tqq:
+#     if komputer == player:
+#         print("Durrang 🤝")
+#     elif komputer == 'tosh' and  player == "qaychi":
+#         print(f"Siz yutqazdingiz ❌")
+#     elif komputer == 'qaychi' and  player == "qogoz":
+#         print(f"Siz yutqazdingiz ❌")
+#     elif komputer == 'qogoz' and  player == "tosh":
+#         print(f"Siz yutqazdingiz ❌")
+#     else:
+#         print("Siz yutdingiz ✅")
     
-    print(f"🤖 Komputer \"{komputer}\" ni tanlagan edi")
-else:
-    print("Siz noto'g'ri tanlov qildingiz ❗❗❗")
+#     print(f"🤖 Komputer \"{komputer}\" ni tanlagan edi")
+# else:
+#     print("Siz noto'g'ri tanlov qildingiz ❗❗❗")
 
 
 
-students = [ "Mamadaliyev Abdurashid", "Mirsaydullayev Mirziyo", "Sobirov Muhammadqodir", "Tursunboyev Boburjon", "Tursunboyeva Saida", "Umaraliyev Isroil", "Osimjonov Dilmurod", "Shuxratova Ruxsora", "Shuxratov Abrorbek", "Arabbayev Muhammadyusuf", "Mashrabxanova Oyshaxon", "Mirjalolov Saidakbar", "Imamova Nigora",  "Abdurahimova Nodira",  "Turg'unova Sabina", "Yahyayev Muhammadali", "Saidjalolov Shoxjahon", "Mamadov Abubakr"]
+# students = [ "Mamadaliyev Abdurashid", "Mirsaydullayev Mirziyo", "Sobirov Muhammadqodir", "Tursunboyev Boburjon", "Tursunboyeva Saida", "Umaraliyev Isroil", "Osimjonov Dilmurod", "Shuxratova Ruxsora", "Shuxratov Abrorbek", "Arabbayev Muhammadyusuf", "Mashrabxanova Oyshaxon", "Mirjalolov Saidakbar", "Imamova Nigora",  "Abdurahimova Nodira",  "Turg'unova Sabina", "Yahyayev Muhammadali", "Saidjalolov Shoxjahon", "Mamadov Abubakr"]
 
 
-print("O'tgan mavzuni aytib berish uchun biror o'quvchini tanlab beradigan dastur")
-print(f"Doskaga {choices(students)} chiqadi 👏")
+# print("O'tgan mavzuni aytib berish uchun biror o'quvchini tanlab beradigan dastur")
+# print(f"Doskaga {choices(students, k=5)} chiqadi 👏")
 
 
 

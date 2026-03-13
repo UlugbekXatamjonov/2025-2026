@@ -146,11 +146,10 @@ def oila(n):
 """ *args - arguments --> istalgancha parametr berish imkonini beradi """
 def our_max(*sonlar:int) ->int:
     """  """
-    for son in sonlar:
-        
+    return sorted(sonlar)[-1]    
 
-print(our_max(23, 45))
-print(our_max(43, 5435, 5 ,36,3 ,3, 45634, 98 ,34 ,3 ))
+# print(our_max(23, 45))
+# print(our_max(43, 5435, 5 ,36,3 ,3, 45634, 98 ,34 ,3 ))
 
 
 def our_min(*sonlar:int) ->int:
@@ -170,3 +169,30 @@ def our_sum(*sonlar:int) ->int:
 
 # print(our_sum(1,2,3,4,5,6,7,8,9,10))  
 # print(our_sum(1,2,3,4,5))  
+
+
+def our_len(matn:str) -> int:
+    """  """    
+    uzunlik = 0
+    for m in matn:
+        if m != ' ':
+            uzunlik += 1
+
+    return uzunlik
+
+# print(our_len("Salom"))
+# print(our_len("Muslima va Maftuna"))
+
+
+def our_len(*sonlar:int) -> int:
+    """  """    
+    uzunlik = 0
+    for m in sonlar:
+        uzunlik += 1
+
+    return uzunlik
+
+print(our_len(4, 7, 9, 0, -4, 6, 44))
+print(our_len(98, 45, 2 ,5))
+
+

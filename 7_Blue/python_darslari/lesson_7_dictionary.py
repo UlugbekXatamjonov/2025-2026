@@ -85,7 +85,7 @@ python = {
     "int":"Butun son"
 }
 
-# print(f"print - {python['print']}")
+# print(f"print - {python['pint']}")
 
 
 """ get() metodi """
@@ -308,10 +308,10 @@ Yana yangi 2 ta elementni 2 xil usulda qo'shing, 2 ta elementni 2 xil usulda yan
 Mashina nomidan iborat lug'at Tuzing. {“Mashina nomi”:mashinaning narxi} bo'lsin. Foydalanuvchidan biror mashina nomini so'rang agar u sizning lug'atingizda bor mashina nomini aytsa, unga o'sha mashinaning  narxini ayting, agar bo'lmasa “Bizda bu mashina yo'q edi” degan habarni chiqaring.
 # """
 
-# cars = {
-#     'bmw':222000,
-#     'matiz':5000,
-# }
+cars = {
+    'bmw':222000,
+    'matiz':5000,
+}
 
 # savol = input("Mashina nomini kiriting: ").lower()
 # print(cars.get(savol, "Bizda bu mashina yo'q"))
@@ -371,3 +371,20 @@ Mashina nomidan iborat lug'at Tuzing. {“Mashina nomi”:mashinaning narxi} bo'
 # print(f"Siz sotib olmoqchi bo'lgan {len(bor)} ta mahsuloit bizda bor, va ularning ummuniy narxi {summa} so'm")
 # print(f"Lekin bizda quidagi {len(yoq)} ta mahsulotlar yo'q: {yoq}")
 
+
+
+eng_uzb = {
+    'apple':"olma",
+    "pear":"nok",
+    "good":"yaxshi"
+}
+
+word = input("so'z kiriting: ")
+for eng, uzb in eng_uzb.items():
+    if word == eng:
+        print(f"{eng} - {uzb}")
+    elif word == uzb:
+        print(f"{uzb} - {eng}")
+        
+if word not in eng_uzb.keys() and word not in eng_uzb.values():
+    print(f"Bizda bu so'z yo'q")
