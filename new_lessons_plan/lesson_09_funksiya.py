@@ -216,7 +216,8 @@ Vazifa:
 
 10) Parametr sifatida uzatilgan matnning  uzunligini topuvchi funksiya tuzing.
     
-11) parametr sifatida uzatilgan sonlar ichidan faqat toq sonlarni ajratib qaytaradigan funksiya yozing.
+11) Foydalanuvchidan son olib, son juft yoki toqligini topuvchi dastur tuzing.
+    Dastur faqat  “chiqish” so’zi kiritilganda to’xtasin.
 
 12) Parametr sifatida uzatilgan sonlarning o'rta arifmetigini topib beruvchi funksiya tuzing.
 

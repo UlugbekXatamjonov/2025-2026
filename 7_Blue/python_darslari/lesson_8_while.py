@@ -4,7 +4,7 @@ While tsikli
 """
 
 """ for() """
-# sonlar = [1,2,3,4,5,6,7,8,9,10]
+sonlar = [1,2,3,4,5,6,7,8,9,10]
 # for son in sonlar:
 #     print(son)
 
@@ -118,8 +118,8 @@ Agar foydalanuvchi 3 marta xato parol kiritsa uni abadiy tsiklga tushurib qo'yin
 
 """
 
-# parol = "123"
-# urinish = 3
+parol = "123"
+urinish = 3
 
 """ Abadiy tsikl """
 # while True:

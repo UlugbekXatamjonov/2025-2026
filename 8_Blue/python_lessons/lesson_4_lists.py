@@ -1,6 +1,6 @@
 """ Lists - Ro'yhatlar """
 
-ismlar = ['ALi', "Olim", "Azizbek", "Abduhalil", "Rashidbek", 34, 9.6, 34]
+ismlar = ['ALi', "Olim", "Azizbek",      "Abduhalil", "Rashidbek", 34, 9.6, 34]
 # print(ismlar)
 # print(type(ismlar)) # list - ro'yhat
 
