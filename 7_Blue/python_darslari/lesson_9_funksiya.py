@@ -351,8 +351,8 @@ print(password_checker("er#$WE"))
 """
 pass - operatori malum vaqt funksiyani ishlatmaslik kerak bo'lganda kerak bo'ladi
 # """
-# def name(ism):
-#     pass
+def name(ism):
+    pass
     
 # print(name("Abbos"))
 

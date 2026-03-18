@@ -52,31 +52,31 @@ student = {
 
 
 """ Elementni o'chirish"""
-""" 1-usul """
+# """ 1-usul """
 # del student["ball"]
 # print(student)
 
-""" 2-usul """
+# """ 2-usul """
 # student.pop('ismm')
 # print(student)
 
-""" 3-usul """
+# """ 3-usul """
 # student.popitem() # oxiridan olib tashlaydi
 # print(student)
 
 
-""" Ro'yhatni tozalash """
+# """ Ro'yhatni tozalash """
 # student.clear()
 # print(student)
 
-""" Ro'yhatdan nusxa olish """
+# """ Ro'yhatdan nusxa olish """
 # meals = student.copy()
 # print(meals)
 
 # meals2 = dict(student)
 # print(meals2)
 
-""" Ro'yhatni o'chirish """
+# """ Ro'yhatni o'chirish """
 # del student
 
 """
@@ -283,15 +283,15 @@ eng_uzb = {
 }
 
 
-# word = input("Enter word: ")
-# for eng, uzb in eng_uzb.items():
-#     if word == eng:
-#         print(f"{eng} - {uzb}")
-#     elif word == uzb:
-#         print(f"{uzb} - {eng}")
+word = input("Enter word: ")
+for eng, uzb in eng_uzb.items():
+    if word == eng:
+        print(f"{eng} - {uzb}")
+    elif word == uzb:
+        print(f"{uzb} - {eng}")
 
-# if word not in eng_uzb.keys() and word not in eng_uzb.values():
-#     print(f"Bizda {word} ning tarjimasi yo'q !")
+if word not in eng_uzb.keys() and word not in eng_uzb.values():
+    print(f"Bizda {word} ning tarjimasi yo'q !")
         
         
         
@@ -333,7 +333,7 @@ Foydalanuvchidan biror o'quvchining ismi yoki familiyasini kiritishini so'rang. 
 #     "Raximdjanov": "Abubakr",
 #     "Shamsiddinov": "Abbos",
 #     "Sobirov": "MUhammadqodir"
-# 
+# }
 # savol = input("Ism yoki familiya kiriting: ")
 
 # for familiya, ism in oquvchilar.items():
@@ -344,5 +344,10 @@ Foydalanuvchidan biror o'quvchining ismi yoki familiyasini kiritishini so'rang. 
 # if savol not in oquvchilar.keys() and savol not in oquvchilar.values():
 #     print(f"Bizda {savol} haqida ma'lumot yo'q !")
     
-    
-    
+
+"""
+Do’stlar degan lug’at yasang unda key sifatida 5 ta do’stingizni ismi, value qismida esa uning sevimli mevasi nomi bo’lsin. Keyin barcha ma’lumotlarni na’munadagi kabi konsulga chiqaring.
+
+Namuna: Naima olmani yoqtiradi.
+"""
+
