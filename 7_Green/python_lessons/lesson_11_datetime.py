@@ -111,7 +111,7 @@ Namuna: Abdulloh va mening oramizda 35 kun farq bor.
 # print(sana.strftime("Today is the week of %j"))
 
 """ strftime """
-hozir = datetime.now()
+# hozir = datetime.now()
 # print(hozir.strftime("Today is the day of %A"))
 # print(hozir.strftime("Today is the day of %A and date %d %B"))
 # print(hozir.strftime("Bugungi sana va vaqt: %d-%B %Y-year  soat %H:%M:%S  | %j of year  | %U"))
@@ -248,19 +248,19 @@ Foydalanuvchidan uning tug'ilgan sanasini so'rang va
 keyingi tug'ilgan kuniga necha kun qolganini aniqlang.
 Namuna: Sizning keyingi tug'ilgan kuningiz 234 kundan keyin keladi.
 """
-# bugun = date.today()
+bugun = date.today()
 
-# oy = int(input("Oy: "))
-# kun = int(input("Kun: "))
+oy = int(input("Oy: "))
+kun = int(input("Kun: "))
 
-# tsana = date(bugun.year, oy, kun)
-# if tsana > bugun:
-#         print(f"Sizning keyingi tug'ilgan kuningizga {(tsana-bugun).days} kun qoldi")
-# elif bugun > tsana:
-#         tsana = date(bugun.year+1, oy, kun)
-#         print(f"Sizning keyingi tug'ilgan kuningizga {(tsana-bugun).days} kun qoldi")
-# else:
-#     print(f"Tug'ilgan kuningiz bilan !")
+tsana = date(bugun.year, oy, kun)
+if tsana > bugun:
+        print(f"Sizning keyingi tug'ilgan kuningizga {(tsana-bugun).days} kun qoldi")
+elif bugun > tsana:
+        tsana = date(bugun.year+1, oy, kun)
+        print(f"Sizning keyingi tug'ilgan kuningizga {(tsana-bugun).days} kun qoldi")
+else:
+    print(f"Tug'ilgan kuningiz bilan !")
 
 """
 16-mashq.

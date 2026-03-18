@@ -42,6 +42,7 @@ def salom_ber(ism:str): # parametr
     """ Bu funksiya salom berish vazifasini bajaradi ! """ #  docstring ->   
     
     return f"Assalomu aleykum {ism.title()} !"
+    
 
 # print(salom_ber("Saida"))
 # print(salom_ber("abrorbek"))
@@ -133,7 +134,7 @@ def katta_kichik2(son1:int, son2:int, son3:int):
 # print(katta_kichik2(5, 8 ,4))
 # print(katta_kichik2(59, 33, 4))
 # print(katta_kichik2(5, 5, 7))
-# print(katta_kichik2(0, 1, 1))
+# print(katta_kichik2(0, 1, 4))
 
 
 """
