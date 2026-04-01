@@ -15,5 +15,5 @@ class CategoryViewSet(viewsets.ModelViewSet):
     serializer_class = Category_Serializer
 
 class WorkerViewSet(viewsets.ModelViewSet):
-    queryset = Worker.objects.filter(status=True)
+    queryset = Worker.objects.all()
     serializer_class = Worker_Serializer

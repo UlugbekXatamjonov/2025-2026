@@ -5,18 +5,22 @@ from .models import Category, Author, Book
 class Category_Serializers(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ['name', 'status']
+        fields = ['id', 'name',]
 
 
 class Author_Serializers(serializers.ModelSerializer):
     class Meta:
         model = Author
-        fields = ['name', 'photo', "about", 'status']
+        fields = ['id', 'name', 'photo', "about"]
 
 
 class Book_Serializers(serializers.ModelSerializer):
+    category_name = serializers.CharField(source='category.name')
+    author_name = serializers.CharField(source='author.name')
+
     class Meta:
         model = Book
-        fields = '__all__'
+        fields = ['id', 'name', 'language', 'about', "publisher",'pages','audio_file','pdf_file',
+                  'photo','created_on','category_name', 'author_name']
 
 
