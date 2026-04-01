@@ -1,17 +1,17 @@
 """ math - Matematik moduli """
-from math import pi, ceil, floor, factorial, gcd, comb, isqrt
+from math import pi, ceil, floor, factorial, gcd, comb, isqrt, sqrt
 
 PI = pi
-# print(f"PI ning qiymati: {PI}")
+print(f"PI ning qiymati: {PI}")
 
-x = abs(-7.25) # elgilangan raqamning mutlaq (musbat) qiymatini qaytaradi
-# print(x)
+x = abs(-7.25) # belgilangan raqamning mutlaq (musbat) qiymatini qaytaradi
+print(x)
 
 x = pow(4, 3) # 'x' ni 'y' darajaga ko'taradi
-# print(x)
+print(x)
 
-x = ceil(1.4) # raqamni yuqoriga qarab eng yaqin butun songa yaxlitlayd
-y = floor(1.4) # raqamni pastga qarab eng yaqin butun songa yaxlitlaydi
+x = ceil(1.111) # raqamni yuqoriga qarab eng yaqin butun songa yaxlitlayd
+y = floor(1.999) # raqamni pastga qarab eng yaqin butun songa yaxlitlaydi
 
 print(x) # javobi - 2
 print(y) # javobi - 1
@@ -23,6 +23,7 @@ print(factorial(7))
 
 print(gcd(10, 5))
 print(comb(5, 3))
+print(sqrt(10))
 print(isqrt(10))
 
 """
@@ -79,4 +80,19 @@ math.tan()               Raqamning tangensini qaytaradi
 math.tanh()              Sonning giperbolik tangensini qaytaradi
 math.trunc()             Raqamning kesilgan butun son qismlarini qaytaradi
 """
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
