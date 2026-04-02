@@ -133,7 +133,7 @@ family = ["Xasanov Husanboy", "Olimov Ahmadjon", "Jo'rabek", 'Shamsiddin' ]
 
 
 """ sum(), max(), min() funksiyalari """
-# sonlar = [32,-323, 4.3, 54,27,3,90, 8.1, 0, -54, 433]
+sonlar = [32,-323, 4.3, 54,27,3,90, 8.1, 0, -54, 433]
 
 # print(max(sonlar)) # eng katta sonni topib beradi
 # print(min(sonlar)) # eng kichik sonni topib beradi
@@ -143,10 +143,10 @@ family = ["Xasanov Husanboy", "Olimov Ahmadjon", "Jo'rabek", 'Shamsiddin' ]
 
 
 """ range() - sonli oraliq hosil qilib beradi """
-# sonlar = list(range(10, 50))
+# sonlar = list(range(80,40))
 # print(sonlar)
 
-# juft = list(range(2, 100, 2))
+# juft = list(range(2, 101, 2))
 # print(juft)
 
 # toq = list(range(1, 100, 2))
@@ -161,8 +161,8 @@ family = ["Xasanov Husanboy", "Olimov Ahmadjon", "Jo'rabek", 'Shamsiddin' ]
 
 
 """ Ro'yhat elementlarini tartiblash """
-# ismlar = ["Xasanov", "Husanboy", "Olimov", "Ahmadjon", "Jo'rabek", 'Shamsiddin', "Abdulaziz", "Abdulloh"]
-# print(ismlar)
+ismlar = ["Xasanov", "Husanboy", "Olimov", "Ahmadjon", "Jo'rabek", 'Shamsiddin', "Abdulaziz", "Abdulloh"]
+print(ismlar)
 
 """ .sort() --> Ro'yhatni alifbo bo'yicha tartiblaydigan metod """
 # ismlar.sort() # Ro'yhatni alifbo bo'yicha tartiblaydi

@@ -53,16 +53,25 @@ class Avto():
         self.tezligi = tezligi
 
     def __str__(self):
-        return f"{self.kompanya} {self.model}"
+        return f"{self.model}"
+    
+    def get_info(self):
+        """ Avto klasinging obyekti haqida ma'lumot beruvchi funksiya """
+        return f"Kompaniyasi: {self.kompanya} \nModeli: {self.model} \nRangi: {self.rang} \nNarxi: {self.narx} \nTezligi: {self.tezligi}\n"
 
 
 malibu = Avto("Shevrolet", "Malibu", 'Qora', 10000, 230)
 jiguli = Avto("Lada", 'Jiguli 06', 'Sariq', 3200, 120)
 t55 = Avto('Bestune', 'T55', 'Kulrang', 22000, 300)
 
-print(malibu)
-print(jiguli)
-print(t55)
+# print(malibu)
+# print(jiguli)
+# print(t55)
+# print(malibu.kompanya)
+# print(malibu.model)
+print(malibu.get_info())
+print(jiguli.get_info())
+print(t55.get_info())
 
 
 
