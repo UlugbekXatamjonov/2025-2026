@@ -24,3 +24,9 @@ class Book_Serializers(serializers.ModelSerializer):
                   'photo','created_on','category_name', 'author_name']
 
 
+class Category_Books_Serializers(serializers.ModelSerializer):
+    books = Book_Serializers(read_only=True, many=True)
+
+    class Meta:
+        model = Category
+        fields = ['id', 'name','books']
