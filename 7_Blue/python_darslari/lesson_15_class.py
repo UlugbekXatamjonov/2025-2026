@@ -41,16 +41,19 @@ Yangi klass yasash uchun class operatoridan foydalanamiz.
 klass bu hali obyekt emas, bu obyekt uchun shablon. Shuning uchun klass yasashda 
 shu klassdagi obyektlar uchun umumiy bo'lgan xususiyatlar va funksiyalarni o'ylashimiz kerak.
 """
+from datetime import date
 
 class Avto():
     """  """
 
-    def __init__(self, kompanya:str, model:str, rang:str, narx:int, tezligi:int):
+    def __init__(self, kompanya:str, model:str, rang:str, narx:int, tezligi:int, yil:int, raqam:str):
         self.kompanya = kompanya
         self.model = model
         self.rang = rang
         self.narx = narx
         self.tezligi = tezligi
+        self.yil = yil
+        self.raqam = raqam
 
     def __str__(self):
         return f"{self.model}"
@@ -59,20 +62,23 @@ class Avto():
         """ Avto klasinging obyekti haqida ma'lumot beruvchi funksiya """
         return f"Kompaniyasi: {self.kompanya} \nModeli: {self.model} \nRangi: {self.rang} \nNarxi: {self.narx} \nTezligi: {self.tezligi}\n"
 
+    def age(self):
+        """ Avtomobilning yoshini hisoblab beruvchi funksiya """
+        
+        return f"{self.model} ishlab chiqarilganiga {date.today().year - self.yil} yil bo'ldi."
 
-malibu = Avto("Shevrolet", "Malibu", 'Qora', 10000, 230)
-jiguli = Avto("Lada", 'Jiguli 06', 'Sariq', 3200, 120)
-t55 = Avto('Bestune', 'T55', 'Kulrang', 22000, 300)
+
+malibu = Avto("Shevrolet", "Malibu", 'Qora', 10000, 230, 2021, "50A766ZB")
+jiguli = Avto("Lada", 'Jiguli 06', 'Sariq', 3200, 120, 1998, "50C423JA")
+t55 = Avto('Bestune', 'T55', 'Kulrang', 22000, 300, 2025, "50Z111AA")
 
 # print(malibu)
 # print(jiguli)
-# print(t55)
-# print(malibu.kompanya)
-# print(malibu.model)
-print(malibu.get_info())
-print(jiguli.get_info())
-print(t55.get_info())
 
+
+
+print(t55.age())
+print(jiguli.age())
 
 
 
