@@ -30,3 +30,11 @@ class Category_Books_Serializers(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = ['id', 'name','books']
+
+
+class Author_Book_Serializers(serializers.ModelSerializer):
+    author_books = Book_Serializers(read_only=True, many=True)
+
+    class Meta:
+        model = Author
+        fields = ['id', 'name',  "author_books"]

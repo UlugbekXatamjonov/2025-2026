@@ -64,21 +64,28 @@ class Avto():
 
     def age(self):
         """ Avtomobilning yoshini hisoblab beruvchi funksiya """
-        
-        return f"{self.model} ishlab chiqarilganiga {date.today().year - self.yil} yil bo'ldi."
+        yosh = date.today().year - self.yil
+        if yosh > 0:
+            return f"{self.model} ishlab chiqarilganiga {yosh} yil bo'ldi."
+        elif yosh == 0:
+            return f"{self.model} bu yil ishlab chiqarilgan."
 
+    def get_number(self):
+        """ Mashinaning raqamini ko'rsatuvchi metod """
+        return f"{self.model} ning davlat raqami {self.raqam}"
+    
 
 malibu = Avto("Shevrolet", "Malibu", 'Qora', 10000, 230, 2021, "50A766ZB")
 jiguli = Avto("Lada", 'Jiguli 06', 'Sariq', 3200, 120, 1998, "50C423JA")
-t55 = Avto('Bestune', 'T55', 'Kulrang', 22000, 300, 2025, "50Z111AA")
+t55 = Avto('Bestune', 'T55', 'Kulrang', 22000, 300, 2026, "50Z111AA")
 
 # print(malibu)
 # print(jiguli)
+# print(t55.age())
 
 
-
-print(t55.age())
-print(jiguli.age())
+print(t55.get_number())
+print(jiguli.get_number())
 
 
 

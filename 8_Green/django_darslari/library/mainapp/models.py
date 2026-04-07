@@ -37,7 +37,7 @@ class Book(models.Model):
     """  """
     name = models.CharField(max_length=50)
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True, related_name='books')
-    author = models.ForeignKey(Author, on_delete=models.SET_NULL, null=True, blank=True)
+    author = models.ForeignKey(Author, on_delete=models.SET_NULL, null=True, blank=True, related_name='author_books')
     language = models.CharField(max_length=20, verbose_name="Til", choices=language, default="uzbek")
     about = models.TextField(verbose_name="Batafsil")
     publisher = models.CharField(max_length=50, verbose_name="Nashriyot")

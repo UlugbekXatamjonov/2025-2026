@@ -38,11 +38,56 @@ Foydalanuvchidan ismini so'rang. Ism faqat harflardan iborat va uzunligi 3 dan 1
 Uni match() yordamida tekshiring.
 """
 
-regex13 = r"^[A-Z][a-z]{2,14}$"
-ism13 = input("ism kiriting: ").title()
+# regex13 = r"^[A-Z][a-z]{2,14}$"
+# ism13 = input("ism kiriting: ").title()
 
-if match(regex13, ism13):
-    print(f"Siz kiritildingiz {ism13}")
-else:
-    print("Xatoooo !!!!")
-    
+# if match(regex13, ism13):
+#     print(f"Siz kiritildingiz {ism13}")
+# else:
+#     print("Xatoooo !!!!")
+
+
+"""
+
+14-mashq
+Foydalanuvchidan tizimga kirish uchun faqat kichik harflar va raqamlardan iborat, 
+uzunligi 4 dan 12 gacha bo'lgan login kiriting. Ushbu shartlar uchun RegEx tuzing.
+
+15-mashq
++7 921 014-96-13 formatdagi telefon raqami uchun RegEx tuzing va match() yordamida tekshiring.
+"""
+""" 14-mashq """
+# regex14 = r"^[a-z0-9]{4,12}$"
+# savol14 = input("Login kiriting: ") 
+# if match(regex14, savol14):
+#     print("Login to'g'ri")
+# else:
+#     print("Xatoo ! Qayta urining !")
+
+
+""" 15-mashq """
+# regex15 = r"^[\+]7 [0-9]{3}[\s][0-9]{3}[-][0-9]{2}[-][0-9]{2}"
+# savol15 = input("Tel kiriting: ") 
+# if match(regex15, savol15):
+#     print("Login to'g'ri")
+# else:
+#     print("Xatoo ! Qayta urining !")
+
+"""
+19-mashq
+Matndan # belgisi bilan boshlanib, maksimal 12 ta belgigacha bo'lgan so'zlarni topib bering.
+Masalan: #python_darsi
+"""
+
+"""
+16-mashq
++998(90)233-25-66 formatdagi telefon raqami uchun RegEx tuzing va match() funksiyasi bilan tekshiring.
+
+17-mashq
+Quyidagi avtomobil raqami uchun RegEx tuzing va match() bilan tekshiring:
+D 234 OKJ
+
+18-mashq
+Quyidagi avtomobil raqamlari uchun bitta RegEx tuzing:
+50 A 117BD va 50 117ABC
+"""
