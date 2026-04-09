@@ -94,9 +94,30 @@ Quyidagi avtomobil raqamlari uchun bitta RegEx tuzing:
 """
 
 
-matn1 = " Bugun kun quyoshli va issiq bo'lyapdi. Aziz dadasining  6-2-2021 mashinasida maktabga keldi.  Mashinaning raqami 50 A327CB ed. Uning do'sti Maruf esa 40 V456AA raqamli mashinada keldi. Abduvali yangi telefon raqami oldi u +998(90) 545-50-75 edi.  Uning oldingi raqami esa +998(95) 963-12-81 edi. Oyisiniki esa +998(55) 325-65-95 bo'lgan. 12-12-2023"
+matn1 = " Bugun kun quyoshli 5662 va issiq bo'lyapdi. +998(55) 325-5-95 Aziz dadasining  6-2-2021 mashinasida maktabga keldi.  Mashinaning raqami 50 A327CB ed. Uning do'sti Maruf esa 40 V456AA raqamli mashinada keldi. Abduvali yangi telefon raqami oldi u +998(90) 545-50-75 edi.  Uning oldingi raqami esa +998(95) 963-12-81 edi. Oyisiniki esa +998(55) 325-65-95 bo'lgan. 12-12-2023"
 
-regex = r"^[\+][0-9]{3}[(][0-9]{2}[)][\s][0-9]{3}[-][0-9]{2}[-][0-9]{20}$"
+regex = r"[\+][0-9]{3}[(][0-9]{2}[)][\s][0-9]{3}[-][0-9]{2}[-][0-9]{2}"
 
-print(findall(regex, matn1))
-print(search(regex, matn1))
+# print(findall(regex, matn1))
+# print(search(regex, matn1))
+
+
+"""
+1-mashq
+Berilgan matnda raqam mavjud yoki yo'qligini search() metodi yordamida tekshiring.
+"""
+
+regex1 = r"[0-9]{1,}"
+print(search(regex1, matn1))
+
+"""
+2-mashq
+Berilgan matnda "python" so'zi bor-yo'qligini search() metodi orqali aniqlang.
+
+3-mashq
+Berilgan matndan 3 xonali raqamlarni toping.
+
+5-mashq
+Matndan faqat 7 ta harfdan iborat so'zlarni ajratib oling.
+
+"""

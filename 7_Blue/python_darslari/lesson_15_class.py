@@ -105,13 +105,32 @@ t55 = Avto('Bestune', 'T55', 'Kulrang', 22000, 300, 2026, "50Z111AA")
 # print(t55.get_number())
 
 
-print(jiguli.get_price())
-print(jiguli.change_price(5100))
-
-print(jiguli.get_price())
-
+# print(jiguli.get_price())
+# print(jiguli.change_price(5100))
+# print(jiguli.get_price())
 
 
+class Student:
+    """ O'quvchi classi """
+    def __init__(self, FULL_NAME:str, YEAR:int, MARKS:list,FRIENDS:list, class_type:str, grade:int=1,):
+        """ Student haqidagi malumotlarni o'zida saqlovchi funksiya """
+        self.full_name = FULL_NAME
+        self.year = YEAR
+        self.marks = MARKS
+        self.friends = FRIENDS
+        self.class_type = class_type
+        self.grade = grade
 
+    def get_name(self):
+        return self.full_name
+    
+    def get_info(self):
+        return f"{self.full_name} {self.year} yoshda. Va u {self.grade} - sinf o'quvchisi "
+    
 
+student1 = Student("Aziz Alimov",13, [20,26,42,36], ["Olim", "Abbos", "Ali"], 'Matematika', 7)
+student2 = Student("Sarvinoz", 17, [17, 45, 43, 50], ['Guli', "Aziza", "Husnora", "Madina", "Barno"], "Kimyo", 11)
+
+print(student1.get_name())
+print(student2.get_name())
 
