@@ -78,6 +78,7 @@ uzunligi 4 dan 12 gacha bo'lgan login kiriting. Ushbu shartlar uchun RegEx tuzin
 Matndan # belgisi bilan boshlanib, maksimal 12 ta belgigacha bo'lgan so'zlarni topib bering.
 Masalan: #python_darsi
 """
+# regex19= r"^[#][A-Za-z]{,11}"
 
 """
 16-mashq
@@ -91,3 +92,11 @@ D 234 OKJ
 Quyidagi avtomobil raqamlari uchun bitta RegEx tuzing:
 50 A 117BD va 50 117ABC
 """
+
+
+matn1 = " Bugun kun quyoshli va issiq bo'lyapdi. Aziz dadasining  6-2-2021 mashinasida maktabga keldi.  Mashinaning raqami 50 A327CB ed. Uning do'sti Maruf esa 40 V456AA raqamli mashinada keldi. Abduvali yangi telefon raqami oldi u +998(90) 545-50-75 edi.  Uning oldingi raqami esa +998(95) 963-12-81 edi. Oyisiniki esa +998(55) 325-65-95 bo'lgan. 12-12-2023"
+
+regex = r"^[\+][0-9]{3}[(][0-9]{2}[)][\s][0-9]{3}[-][0-9]{2}[-][0-9]{20}$"
+
+print(findall(regex, matn1))
+print(search(regex, matn1))

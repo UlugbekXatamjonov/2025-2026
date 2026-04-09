@@ -74,6 +74,26 @@ class Avto():
         """ Mashinaning raqamini ko'rsatuvchi metod """
         return f"{self.model} ning davlat raqami {self.raqam}"
     
+    def get_price(self):
+        """ Mashinang narxini ko'rsatuvchi funksiya """
+        return f"{self.model} ning narxi {self.narx} $"
+    
+    def change_price(self, new_price:int):
+        """ 
+            Mashinaning narxini o'zgartiruvchi metod 
+            new_price -> yangi narx
+        """
+        self.narx = new_price
+        return f"{self.model} ning narxi {self.narx} $ ga o'zgardi"
+
+    def change_color(self, new_color:int):
+        """ 
+            Mashinaning rangini o'zgartiruvchi metod 
+            new_color -> yangi rang
+        """
+        self.rang = new_color
+        return f"{self.model} ning rangi {self.rang} ga o'zgardi"
+
 
 malibu = Avto("Shevrolet", "Malibu", 'Qora', 10000, 230, 2021, "50A766ZB")
 jiguli = Avto("Lada", 'Jiguli 06', 'Sariq', 3200, 120, 1998, "50C423JA")
@@ -82,11 +102,13 @@ t55 = Avto('Bestune', 'T55', 'Kulrang', 22000, 300, 2026, "50Z111AA")
 # print(malibu)
 # print(jiguli)
 # print(t55.age())
+# print(t55.get_number())
 
 
-print(t55.get_number())
-print(jiguli.get_number())
+print(jiguli.get_price())
+print(jiguli.change_price(5100))
 
+print(jiguli.get_price())
 
 
 

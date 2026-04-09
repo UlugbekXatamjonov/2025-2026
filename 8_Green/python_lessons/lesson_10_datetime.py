@@ -19,35 +19,35 @@ from datetime import datetime, date, timedelta
 
 """ datetime """
 hozir = datetime.now()
-print(hozir)
-print(hozir.date()) # sanani ajratib olish
-print(hozir.time()) # vaqtni ajratib olish
+# print(hozir)
+# print(hozir.date()) # sanani ajratib olish
+# print(hozir.time()) # vaqtni ajratib olish
 
-print(hozir.year) # yilni ajratib olish
-print(hozir.month) # oyni ajratib olish
-print(hozir.day) # kunni ajratib olish
-print(hozir.hour) # soatni ajratib olish
-print(hozir.minute) # minutni ajratib olish
-print(hozir.second) # sekundni ajratib olish
-print(hozir.microsecond) # microsekundni ajratib olish
+# print(hozir.year) # yilni ajratib olish
+# print(hozir.month) # oyni ajratib olish
+# print(hozir.day) # kunni ajratib olish
+# print(hozir.hour) # soatni ajratib olish
+# print(hozir.minute) # minutni ajratib olish
+# print(hozir.second) # sekundni ajratib olish
+# print(hozir.microsecond) # microsekundni ajratib olish
 
-print(f"Hozir soat: {hozir.time()}")
-print(f"Hozir soat: {hozir.hour}:{hozir.minute}")
+# print(f"Hozir soat: {hozir.time()}")
+# print(f"Hozir soat: {hozir.hour}:{hozir.minute}")
 
 """ Sana yasash """
-yil = int(input("Yil: "))
-oy = int(input("Oy: "))
-kun = int(input("Kun: "))
+# yil = int(input("Yil: "))
+# oy = int(input("Oy: "))
+# kun = int(input("Kun: "))
 
-sana1 = date(yil,oy, kun)
-print(sana1)
+# sana1 = date(yil,oy, kun)
+# print(sana1)
 
-vaqt1 = datetime(2023, 8, 6, 21, 30)
-print(vaqt1)
+# vaqt1 = datetime(2023, 8, 6, 21, 30)
+# print(vaqt1)
 
-""" Sanadan sanani ayrish """
+# """ Sanadan sanani ayrish """
 bugun = date.today()
-print(bugun- sana1)
+# print(bugun- sana1)
 
 
 """ 
@@ -65,7 +65,8 @@ Keyingi o'quv yili 2-sentyabr sanasida boshlanadi.
 Bugungi sanadan boshlab, o'sha kungacha necha kun qolganini hisoblab beradigan dastur tuzing.
 """
 
-
+""" timedelta """
+print(hozir - timedelta(days=21, hours=5))
 
 
 
