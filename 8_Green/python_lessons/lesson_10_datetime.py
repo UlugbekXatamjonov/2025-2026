@@ -66,9 +66,28 @@ Bugungi sanadan boshlab, o'sha kungacha necha kun qolganini hisoblab beradigan d
 """
 
 """ timedelta """
-print(hozir - timedelta(days=21, hours=5))
+# print(hozir - timedelta(days=21, hours=5))
+
+"""
+13-mashq.
+Foydalanuvchidan uning tug'ilgan sanasini so'rang va
+keyingi tug'ilgan kuniga necha kun qolganini aniqlang.
+Namuna: Sizning keyingi tug'ilgan kuningiz 234 kundan keyin keladi.
+"""
 
 
+oy = int(input("Oy: "))
+kun = int(input("Kun: "))
 
+t_sana = date(bugun.year, oy, kun)
+if t_sana > bugun:
+    print(f"Sizning keyingi tug'ilgan kuningiz {(t_sana-bugun).days} kundan keyin keladi !")
+elif t_sana < bugun:
+    t_sana = date(bugun.year+1, oy, kun)
+    print(f"Sizning keyingi tug'ilgan kuningiz {(t_sana-bugun).days} kundan keyin keladi !")
 
-
+"""
+17-mashq.
+Foydalanuvchining tug'ilgan sanasi (faqat kun va oy) ni so'rab oling va
+uning so'nggi nishonlagan tug'ilgan kuni nechta kun avval o'tib ketganini hisoblab bering.
+"""

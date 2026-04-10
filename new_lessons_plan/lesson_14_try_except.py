@@ -122,7 +122,7 @@ else - xech qanday xatolik yuzaga kelmagan xollarda ishlatiladi
 # a = 4
 # b = 10
 # try:
-#     print(a+b)
+#     print(a+c)
 # except NameError:
 #     print("Name Error")
 # raise NameError("Name Error - berilgan nomdagi o'zgaruvchi topilmaganda yuzaga keladi") 
