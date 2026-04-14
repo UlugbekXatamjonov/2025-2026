@@ -127,10 +127,15 @@ class Student:
     def get_info(self):
         return f"{self.full_name} {self.year} yoshda. Va u {self.grade} - sinf o'quvchisi "
     
+    def get_marks(self):
+        """ Baholarni ko'rsatuvchi funksiya """
+
+        return f"Ummumiy bahosi: {sum(self.marks)} ball \nO'rtacha bahosi: {sum(self.marks)/len(self.marks)} ball"
+
 
 student1 = Student("Aziz Alimov",13, [20,26,42,36], ["Olim", "Abbos", "Ali"], 'Matematika', 7)
 student2 = Student("Sarvinoz", 17, [17, 45, 43, 50], ['Guli', "Aziza", "Husnora", "Madina", "Barno"], "Kimyo", 11)
 
-print(student1.get_name())
-print(student2.get_name())
+# print(student1.get_name())
+print(student2.get_marks())
 
