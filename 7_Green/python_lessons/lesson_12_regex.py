@@ -107,8 +107,8 @@ regex = r"[\+][0-9]{3}[(][0-9]{2}[)][\s][0-9]{3}[-][0-9]{2}[-][0-9]{2}"
 Berilgan matnda raqam mavjud yoki yo'qligini search() metodi yordamida tekshiring.
 """
 
-regex1 = r"[0-9]{1,}"
-print(search(regex1, matn1))
+# regex1 = r"[0-9]{1,}"
+# print(search(regex1, matn1))
 
 """
 2-mashq
@@ -119,5 +119,31 @@ Berilgan matndan 3 xonali raqamlarni toping.
 
 5-mashq
 Matndan faqat 7 ta harfdan iborat so'zlarni ajratib oling.
+"""
 
 """
+6-mashq
+Berilgan matndan “S” harfi bilan boshlanib “a” harfi bilan tugaydigan ismlarni toping.
+"""
+matn6 = """ Salima Saida @sdsds Ruxsora Madina 5-7-2009  @4343_sdfdsfsd 12-11-1998 Sabina Sarvinoz"""
+# regex6 = r"S[a-z]{1,}a"
+# print(findall(regex6, matn6))
+
+
+"""
+8-mashq
+Berilgan matndan @username ko'rinishidagi barcha foydalanuvchi nomlarini findall() metodi yordamida toping
+"""
+# regex8 = r"@[a-z_0-9]{5,}"
+# print(findall(regex8, matn6))
+
+
+"""
+10-mashq
+Biror matn olib, undan dd-mm-yyyy formatidagi barcha sanalarni toping.
+"""
+regex10 = r"[0-9]{1,2}[-][0-9]{1,2}[-][0-9]{4}"
+print(findall(regex10, matn6))
+
+
+

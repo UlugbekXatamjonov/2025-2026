@@ -16,7 +16,7 @@ class ApplicationAdmin(admin.ModelAdmin):
     list_display = ('name', "category", "applicant", "phone1", "status")
     list_filter = ('status', "category", "created_on")
     search_fields = ('name', 'body', 'phone1', "phone2")
-    list_per_page = 5
+    list_per_page = 1
 
 @admin.register(Worker)
 class WorkerAdmin(admin.ModelAdmin):

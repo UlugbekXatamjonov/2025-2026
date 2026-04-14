@@ -132,10 +132,19 @@ class Student:
 
         return f"Ummumiy bahosi: {sum(self.marks)} ball \nO'rtacha bahosi: {sum(self.marks)/len(self.marks)} ball"
 
+    def get_friends(self):
+        """  """
+        # javob = f"{self.full_name}ning do'stlari: "
+        # for ism in self.friends:
+        #     javob += f"{ism} "
+
+        # return javob
+        return f"{self.full_name}ning do'stlari {self.friends}"
+    
 
 student1 = Student("Aziz Alimov",13, [20,26,42,36], ["Olim", "Abbos", "Ali"], 'Matematika', 7)
 student2 = Student("Sarvinoz", 17, [17, 45, 43, 50], ['Guli', "Aziza", "Husnora", "Madina", "Barno"], "Kimyo", 11)
 
 # print(student1.get_name())
-print(student2.get_marks())
+print(student2.get_friends())
 
