@@ -1,5 +1,5 @@
 """ math - Matematik moduli """
-from math import pi, ceil, floor, factorial, gcd, comb, isqrt
+from math import pi, ceil, floor, factorial, gcd, comb, isqrt, sqrt
 
 PI = pi
 print(f"PI ning qiymati: {PI}")
@@ -10,20 +10,19 @@ print(x)
 x = pow(4, 3) # 'x' ni 'y' darajaga ko'taradi
 print(x)
 
-x = ceil(1.0001) # raqamni yuqoriga qarab eng yaqin butun songa yaxlitlayd
-y = floor(1.9999) # raqamni pastga qarab eng yaqin butun songa yaxlitlaydi
-
-print(x) # javobi - 2
-print(y) # javobi - 1
+print(ceil(1.01)) # raqamni yuqoriga qarab eng yaqin butun songa yaxlitlayd
+print(floor(1.99)) # raqamni pastga qarab eng yaqin butun songa yaxlitlaydi
 
 
-# print(factorial(5))
-# print(factorial(1000))
-# print(factorial(7))
 
-# print(gcd(10, 5))
-# print(comb(5, 3))
-# print(isqrt(10))
+print(factorial(5))
+print(factorial(10))
+print(factorial(7))
+
+print(gcd(12, 8))
+print(comb(5, 3))
+print(sqrt(10))
+print(isqrt(10))
 
 """
 link -> https://www.w3schools.com/python/module_math.asp

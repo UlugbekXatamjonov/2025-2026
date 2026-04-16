@@ -141,10 +141,58 @@ class Student:
         # return javob
         return f"{self.full_name}ning do'stlari {self.friends}"
     
+    def add_friend(self, new_friend):
+        self.friends.append(new_friend)
+
+        return f"{self.full_name} ning do'stlari qatoriga {new_friend} qo'shildi !"
+
+    def add_friends(self, *new_friend):
+
+        for new_name in new_friend:
+            self.friends.append(new_name)
+
+        return f"{self.full_name} ning do'stlari qatoriga {new_friend} qo'shildi !"
+
+    def remove_friend(self, name:str):
+
+        if name in self.friends:
+            self.friends.remove(name)
+            return f"{name} o'chirilib yuborildi !"
+        else:
+            return f"{name} sizning do'stingiz emas, uni o'chirilib bo'lmaydi !"
+
+    def get_class(self):
+        return f"{self.full_name} hozirda {self.grade} sinf o'quvchisi"
+
+    def change_class(self):
+        if self.grade == 11:
+            return f"{self.full_name} boshqa sinfga o'ta olmaydi !!!"
+        else:
+            self.grade += 1
+            return f"{self.full_name} ning sinfi endi {self.grade} ga o'zgardi"
+
+
+
 
 student1 = Student("Aziz Alimov",13, [20,26,42,36], ["Olim", "Abbos", "Ali"], 'Matematika', 7)
 student2 = Student("Sarvinoz", 17, [17, 45, 43, 50], ['Guli', "Aziza", "Husnora", "Madina", "Barno"], "Kimyo", 11)
 
 # print(student1.get_name())
-print(student2.get_friends())
+# print(student2.get_friends())
+# print(student2.add_friend("Bobur"))
+# print(student2.add_friends("Anvar", "Olim", "Nurmuhammad"))
+# print(student2.get_friends())
+# print(student2.remove_friend("Aziza"))
+# print(student2.remove_friend("Madina"))
+# print(student2.get_friends())
+
+print(student1.get_class())
+print(student1.change_class())
+print(student1.change_class())
+print(student1.change_class())
+print(student1.change_class())
+print(student1.change_class())
+print(student1.change_class())
+
+print(student1.get_class())
 
