@@ -14,7 +14,6 @@ class our_pagination(pagination.PageNumberPagination):
     max_page_size = 10000
 
 
-
 class ApplicationViewSet(viewsets.ModelViewSet):
     queryset = Application.objects.filter(status='qabul_qilingan')
     serializer_class = Application_Serializer
