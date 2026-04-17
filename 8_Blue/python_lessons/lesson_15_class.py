@@ -53,16 +53,23 @@ class Odam():
         self.manzil = manzil
         self.tel_raqam = tel_raqam
 
-    def __str__(self):
+    def __str__(self): # dunder - duble under score
         return f"{self.ism} {self.familiya}"
 
+    def get_info(self):
+        """ Obyekt haqida batafsil ma'lumot beruvchi metod """
+
+        return f"{self.ism} {self.familiya} {self.t_yil} yilda {self.manzil}da tug'ilgan. "
 
 
 odam1 = Odam( "Oybek", "Ahmadullayev",2002, "Yangiqo'rg'on tumani, Birlashgan qishlog'i", "+998941232323")
 odam2 = Odam( "Iqboljon", "Nabiyev",2001, "Pop tumani, Sang qishlog'i", "+998944445566")
 
 print(odam1)
-print(odam2)
+# print(odam1.t_yil)
+# print(odam1.manzil)
+print(odam1.get_info())
+print(odam2.get_info())
 
 
 

@@ -165,13 +165,11 @@ class Student:
         return f"{self.full_name} hozirda {self.grade} sinf o'quvchisi"
 
     def change_class(self):
-        if self.grade == 11:
-            return f"{self.full_name} boshqa sinfga o'ta olmaydi !!!"
-        else:
+        if 1 < self.grade < 11:
             self.grade += 1
             return f"{self.full_name} ning sinfi endi {self.grade} ga o'zgardi"
-
-
+        else:
+            return f"{self.full_name} boshqa sinfga o'ta olmaydi !!!"
 
 
 student1 = Student("Aziz Alimov",13, [20,26,42,36], ["Olim", "Abbos", "Ali"], 'Matematika', 7)
@@ -186,13 +184,26 @@ student2 = Student("Sarvinoz", 17, [17, 45, 43, 50], ['Guli', "Aziza", "Husnora"
 # print(student2.remove_friend("Madina"))
 # print(student2.get_friends())
 
-print(student1.get_class())
-print(student1.change_class())
-print(student1.change_class())
-print(student1.change_class())
-print(student1.change_class())
-print(student1.change_class())
-print(student1.change_class())
+# print(student1.get_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
 
-print(student1.get_class())
+# print(student1.get_class())
+
+"""
+3) Avto degan yangi klass yasang. Unga avtomobillarga doir bo'lgan bir nechta xususiyatlar
+    (model, rang, korobka, narh va hokazo) qo'shing. Ayrim xususiyatlarga standart 
+    qiymat bering (masalan, kilometer=0). Avto ga oid obyektning xususiyatlarini qaytaradigan 
+    metodlar yozing. get_info() metodi avto haqida to'liq ma'lumotni matn ko'rinishida qaytarsin
+    Avto ga oid obyektning xususiyatlarini yangilaydigan metodlar yozing.
+    update_km(200) metodi son qabul qilib olib, avtomobilning yurgan kilometrajini yangilab borsin
+"""
+
+
+
+
 
