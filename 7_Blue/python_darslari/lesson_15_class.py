@@ -41,7 +41,7 @@ Yangi klass yasash uchun class operatoridan foydalanamiz.
 klass bu hali obyekt emas, bu obyekt uchun shablon. Shuning uchun klass yasashda 
 shu klassdagi obyektlar uchun umumiy bo'lgan xususiyatlar va funksiyalarni o'ylashimiz kerak.
 """
-from datetime import date
+# from datetime import date
 
 class Avto():
     """  """
@@ -204,6 +204,50 @@ student2 = Student("Sarvinoz", 17, [17, 45, 43, 50], ['Guli', "Aziza", "Husnora"
 """
 
 
+class Fanlar:
+    """  """
+    def __init__(self, nomi:str, turi:str, sana:str):
+        self.nomi = nomi
+        self.turi = turi
+        self.sana = sana
+    
+    def __str__(self):
+        return self.nomi
 
 
+fan1 = Fanlar("Informatika", "Chuqirlashtirilgan", "2026-4-21")
+fan2 = Fanlar("Matematika", "Chuqirlashtirilgan", "2026-4-21")
 
+# print(fan1)
+# print(fan2)
+
+class Sinf:
+    """ """
+    def __init__(self, sinf_rahbar:str, oqituvchilar:list, fanlar:list, students:list):
+        self.sinf_rahbar =sinf_rahbar 
+        self.oqituvchilar =oqituvchilar 
+        self.fanlar =fanlar 
+        self.students =students 
+
+    def get_sinfrahber(self):
+        return f"Bu sinfning sinf rahbari {self.sinf_rahbar}"
+    
+    def get_fanlar(self):
+        return f"{self.fanlar}"
+    
+    def get_oqituvchilar(self):
+        return self.oqituvchilar
+    
+    def get_students(self):
+        return self.students
+    
+    def get_students_number(self):
+        return len(self.students)
+    
+
+# seven_blue = Sinf("Malika", ["Ibrohim", "Ulug'bek", "Malika", "Botir"], ["Matem", "Inglistili", "rus tili", "IT"], ["Inomjon", "Shavkat", "Javohir", "Saidbek", "Shavkat", "Javohir", "Saidbek", "Shavkat", "Javohir", "Saidbek"])
+# print(seven_blue.get_fanlar())
+# print(seven_blue.get_oqituvchilar())
+# print(seven_blue.get_students())
+# print(seven_blue.get_sinfrahber())
+# print(seven_blue.get_students_number())

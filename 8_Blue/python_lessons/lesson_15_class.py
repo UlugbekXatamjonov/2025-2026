@@ -61,16 +61,23 @@ class Odam():
 
         return f"{self.ism} {self.familiya} {self.t_yil} yilda {self.manzil}da tug'ilgan. "
 
+    def get_age(self):
+        from datetime import date
+     
+        return f"{self.ism} {date.today().year-self.t_yil} yoshda"
+
+
 
 odam1 = Odam( "Oybek", "Ahmadullayev",2002, "Yangiqo'rg'on tumani, Birlashgan qishlog'i", "+998941232323")
-odam2 = Odam( "Iqboljon", "Nabiyev",2001, "Pop tumani, Sang qishlog'i", "+998944445566")
+odam2 = Odam( "Iqboljon", "Nabiyev",1990, "Pop tumani, Sang qishlog'i", "+998944445566")
 
-print(odam1)
+# print(odam1)
 # print(odam1.t_yil)
 # print(odam1.manzil)
-print(odam1.get_info())
-print(odam2.get_info())
-
+# print(odam1.get_info())
+# print(odam2.get_info())
+# print(odam1.get_age())
+# print(odam2.get_age())
 
 
 
