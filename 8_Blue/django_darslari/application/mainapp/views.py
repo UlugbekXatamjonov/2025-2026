@@ -2,9 +2,10 @@ from django.shortcuts import render
 
 from django.urls import path, include
 from django.contrib.auth.models import User
-from rest_framework import routers, serializers, viewsets, pagination
+from rest_framework import routers, serializers, viewsets, pagination, throttling
 from .serializers import Application_Serializer, Category_Serializer, Worker_Serializer
 from .models import Application, Worker, Category
+from .our_throttle import Our_throttle
 
 
 """ Pagination class """
@@ -27,3 +28,4 @@ class WorkerViewSet(viewsets.ModelViewSet):
     queryset = Worker.objects.filter(status=True)
     serializer_class = Worker_Serializer
     pagination_class = our_pagination
+    throttle_classes = Our_throttle

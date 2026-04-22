@@ -107,6 +107,23 @@ ZeroDivisionError -  Bo'linish yoki modul operatsiyasining ikkinchi operandi nol
     mumiin bo'lgan xatoliklarni oldini oling
 """
 
+try:
+    yosh = int(input("Yoshingizni kiriting: "))
+    natija = []
+
+    for i in range(0, 1000):
+        if i % yosh == 0:
+            natija.append(i)
+
+    print("Qoldiqsiz bolinadigan sonlar royxati")
+    print(natija)
+
+except ValueError:
+    print("butun son kiriting")
+except ZeroDivisionError:
+    print(f"0 kiritish mumkun emas")
+except:
+    print("Xato")
 
 
 

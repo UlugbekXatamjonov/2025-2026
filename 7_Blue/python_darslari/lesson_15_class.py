@@ -206,28 +206,35 @@ student2 = Student("Sarvinoz", 17, [17, 45, 43, 50], ['Guli', "Aziza", "Husnora"
 
 class Fanlar:
     """  """
-    def __init__(self, nomi:str, turi:str, sana:str):
+    def __init__(self, nomi:str, turi:str):
         self.nomi = nomi
         self.turi = turi
-        self.sana = sana
-    
+ 
     def __str__(self):
         return self.nomi
 
+informatika = Fanlar("Informatika", "Chuqirlashtirilgan")
+matematika = Fanlar("Matematika", "Chuqirlashtirilgan")
+ingliz_tili = Fanlar("Ingliz tili", "Chuqirlashtirilgan")
+rus_tili = Fanlar("Rus tili", "Chuqirlashtirilgan")
+kimyo = Fanlar("Kimyo", "Chuqirlashtirilgan")
+biologiya = Fanlar("Biologiya", "Chuqirlashtirilgan")
+j_tarbiya = Fanlar("Jismoniy tarbiya", "Chuqirlashtirilgan")
 
-fan1 = Fanlar("Informatika", "Chuqirlashtirilgan", "2026-4-21")
-fan2 = Fanlar("Matematika", "Chuqirlashtirilgan", "2026-4-21")
-
-# print(fan1)
-# print(fan2)
+print(matematika)
+print(informatika)
 
 class Sinf:
     """ """
-    def __init__(self, sinf_rahbar:str, oqituvchilar:list, fanlar:list, students:list):
+    def __init__(self, nomi, sinf_rahbar:str, oqituvchilar:list, fanlar:list, students:list):
+        self.nomi = nomi
         self.sinf_rahbar =sinf_rahbar 
         self.oqituvchilar =oqituvchilar 
         self.fanlar =fanlar 
         self.students =students 
+
+    def __str__(self):
+        return self.nomi
 
     def get_sinfrahber(self):
         return f"Bu sinfning sinf rahbari {self.sinf_rahbar}"
@@ -245,8 +252,9 @@ class Sinf:
         return len(self.students)
     
 
-# seven_blue = Sinf("Malika", ["Ibrohim", "Ulug'bek", "Malika", "Botir"], ["Matem", "Inglistili", "rus tili", "IT"], ["Inomjon", "Shavkat", "Javohir", "Saidbek", "Shavkat", "Javohir", "Saidbek", "Shavkat", "Javohir", "Saidbek"])
-# print(seven_blue.get_fanlar())
+seven_blue = Sinf("7 Blue","Malika", ["Ibrohim", "Ulug'bek", "Malika", "Botir"], 
+                  [informatika, matematika, ingliz_tili, rus_tili], ["Inomjon", "Shavkat", "Javohir", "Saidbek", "Shavkat", "Javohir", "Saidbek", "Shavkat", "Javohir", "Saidbek"])
+print(seven_blue.get_fanlar())
 # print(seven_blue.get_oqituvchilar())
 # print(seven_blue.get_students())
 # print(seven_blue.get_sinfrahber())
