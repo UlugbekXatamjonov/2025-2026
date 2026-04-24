@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/2025-2026//**)",
+      "Read(//d/2025-2026/**)",
+      "Bash(python3 -m py_compile /d/2025-2026/7_Blue/python_darslari/lesson_15_class.py)",
+      "Bash(find /d/2025-2026/8_Blue/django_darslari -name \"*.py\" -exec grep -l \"our_throttle\" {} \\\\;)"
+    ]
+  }
+}

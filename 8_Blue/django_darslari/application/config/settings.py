@@ -133,7 +133,6 @@ REST_FRAMEWORK = {
 
     # Throttle
      'DEFAULT_THROTTLE_CLASSES': [
-        'mainapp.our_throttle.Our_throttle',
         'rest_framework.throttling.AnonRateThrottle',
         'rest_framework.throttling.UserRateThrottle',
     ],

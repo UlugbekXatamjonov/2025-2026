@@ -2,6 +2,8 @@
 Thame: Pythonda OOP va Class lar bilan tanishuv
 """
 
+from datetime import date
+
 """
 Python - bu ob'ektga yo'naltirilgan dasturlash tili.
 OPP - Object Oriented Programming ya'ni obyektga yo'naltiriglan dasturlash.
@@ -221,8 +223,8 @@ kimyo = Fanlar("Kimyo", "Chuqirlashtirilgan")
 biologiya = Fanlar("Biologiya", "Chuqirlashtirilgan")
 j_tarbiya = Fanlar("Jismoniy tarbiya", "Chuqirlashtirilgan")
 
-print(matematika)
-print(informatika)
+# print(matematika)
+# print(informatika)
 
 class Sinf:
     """ """
@@ -254,8 +256,53 @@ class Sinf:
 
 seven_blue = Sinf("7 Blue","Malika", ["Ibrohim", "Ulug'bek", "Malika", "Botir"], 
                   [informatika, matematika, ingliz_tili, rus_tili], ["Inomjon", "Shavkat", "Javohir", "Saidbek", "Shavkat", "Javohir", "Saidbek", "Shavkat", "Javohir", "Saidbek"])
-print(seven_blue.get_fanlar())
+# print(seven_blue.get_fanlar())
 # print(seven_blue.get_oqituvchilar())
 # print(seven_blue.get_students())
 # print(seven_blue.get_sinfrahber())
 # print(seven_blue.get_students_number())
+
+
+""" Super class - Vorislik class """
+
+class Qahramon:
+    """  """
+    def __init__(self, nom:str, jon:int, qobilyatlar:list, qurol:str):
+        self.nom = nom
+        self. jon = jon
+        self.qobilyatlar = qobilyatlar
+        self.qurol = qurol
+
+    def __str__(self):
+        return self.nom
+    
+    def get_health(self):
+        """  """
+        return f"{self.nom} - {self.jon}% joni bor"
+
+    def get_skills(self):
+        """  """
+        return f"{self.nom} ning qobilyatlari {len(self.qobilyatlar)} ta. {self.qobilyatlar}"
+
+uranus = Qahramon("Uranus", 120, ["Sakrash", "Ko'rinmaslik"], "Pistolet")
+
+print(uranus)
+print(uranus.get_health())
+print(uranus.get_skills())
+
+
+class Avangers(Qahramon):
+    """ """
+    def __init__(self, nom, jon, qobilyatlar, qurol, kostyum, kozoynak):
+        super().__init__(nom, jon, qobilyatlar, qurol)
+
+        self.kostyum = kostyum
+        self.kozoynak = kozoynak
+
+spider_man = Avangers("Spiderman", 200, ['uchish', 'tirmashish', 'super sezgirlik', "to'r"], "To'r", "Super X kastyum", "Aqilli ko'zoynak")
+print(spider_man)
+print(spider_man.get_health())
+print(spider_man.get_skills())
+
+
+

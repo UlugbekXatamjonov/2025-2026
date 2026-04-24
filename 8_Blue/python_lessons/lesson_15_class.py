@@ -80,11 +80,58 @@ odam2 = Odam( "Iqboljon", "Nabiyev",1990, "Pop tumani, Sang qishlog'i", "+998944
 # print(odam2.get_age())
 
 
+class Car:
+    """ Mashina klassi """
+    def __init__(self, brend, model, year, price): # klasni hususiyatlarini o'zida saqlovchi funksiya
+        """ Mashinaning xusiyatlari 
+        self.xususiyat = argument
+        """
+        self.brend = brend
+        self.model = model
+        self.year = year
+        self.price = price
+        
+    def __str__(self):
+        return f"{self.brend} {self.model}"
+
+    def get_info(self):
+        return f"{self.brend} kompaniyasining  {self.model} rusumli aftomobili {self.year}-yilda ishlab chiqarilgan. Narxi: {self.price} $"
 
 
+    def get_year(self):
+            """ Mashinaning ishlab chiqarilgan yilini aniqlovchi metod(funksiya)"""
+            info = f"Ushbu mashina {self.year} da ishlab chiqarilgan"
+            return info
+            
+    def get_age(self):
+        """ Mashina ishlab chiqarilgan vaqtgacha bo'lgan yil """
+        from datetime import datetime, date
+        bu_yil=date.today().year
+
+        return  f"Mashina ishlab chiqarilganiga {bu_yil - self.year} yil bo'lgan"
+        
+    def get_price(self):
+        """ Mashinaning narxini aniqlovchi metod(funksiya)"""
+        return f"Ushbu mashina {self.price} $ turadi"
+
+    def change_price(self, new_price:int):
+        """  """
+        self.price = new_price
+        return f"{self.model} ning narxi {self.price}$ ga o'zgardi"
 
 
+malibu = Car("Shevrolet", "Malibu 2", 2021, 23000)
+k5 = Car("KIA", "K5", 2024, 34000)
 
+# print(malibu)
+# print(k5.get_info())
+print(k5.get_price())
+# print(k5.get_year())
+# print(k5.get_age())
+# print(malibu.get_age())
+
+print(k5.change_price(12000))
+print(k5.get_price())
 
 
 
