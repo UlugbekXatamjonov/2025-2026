@@ -19,24 +19,24 @@ search()    -   Agar satrning istalgan joyida moslik mavjud bo'lsa, Match ob'ekt
 from re import match, findall, search
 """ match """
 
-# phone = input("Telefon raqami kiriting: ")
-# pattern = r"^[+]998[\d]{9}$"
-# print(match(pattern, phone))
+phone = input("Telefon raqami kiriting: ")
+pattern = r"^[+]998[\d]{9}$"
+print(match(pattern, phone))
 
 
-# car_number = input("Car number: ")
-# car_pattern = r"^[A-Z]{2}[\s][0-9]{4}[A-Z]{2}$"
-# print(match(car_pattern, car_number))
+car_number = input("Car number: ")
+car_pattern = r"^[A-Z]{2}[\s][0-9]{4}[A-Z]{2}$"
+print(match(car_pattern, car_number))
 
 
-# word = input("Enter a word: ")
-# word_regex = r"^[a-z]{3,8}$"
-# print(match(word_regex, word))
+word = input("Enter a word: ")
+word_regex = r"^[a-z]{3,8}$"
+print(match(word_regex, word))
 
-# if match(word_regex, word):
-#     print(f"Siz tog'ri so'z kiritdingiz. U: {word}")
-# else:
-#     print(f"Siz notog'ri so'z kiritdingiz 🔴")
+if match(word_regex, word):
+    print(f"Siz tog'ri so'z kiritdingiz. U: {word}")
+else:
+    print(f"Siz notog'ri so'z kiritdingiz 🔴")
     
 
 matn1 = """
@@ -48,14 +48,14 @@ matn1 = """
 
 
 """ finall() """
-# phone2_pattern = r"[+]998[(][0-9]{2}[)] [0-9]{3}-[0-9]{2}-[0-9]{2}"
-# a_name = r"A[a-zA-Z]{3,10}"
-# print(findall(phone2_pattern, matn1))
+phone2_pattern = r"[+]998[(][0-9]{2}[)] [0-9]{3}-[0-9]{2}-[0-9]{2}"
+a_name = r"A[a-zA-Z]{3,10}"
+print(findall(a_name, matn1))
 
 
 """ search() - """
-# sana = r"[0-9]{1,2}-[0-9]{1,2}-[0-9]{4}"
-# print(search(sana, matn1))
+sana = r"[0-9]{1,2}-[0-9]{1,2}-[0-9]{4}"
+print(search(sana, matn1))
 
 
 

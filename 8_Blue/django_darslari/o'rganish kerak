@@ -1,10 +1,10 @@
 unique=True
 null=True
 blank=True
+phone regex
 
 
 ------------------
-phone regex
 QR code
 UUID
 ko'p rasmli qilish
