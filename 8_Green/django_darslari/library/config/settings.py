@@ -125,8 +125,20 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly"
     ],
+
+    # Pagination
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination', # default
-    'PAGE_SIZE': 2
+    'PAGE_SIZE': 2,
+
+    #Throttling
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',  # Anon - Anonim - Notanish foydalanuvchi1
+        'rest_framework.throttling.UserRateThrottle' # User - Dastur taniydigan foydalanuvchi
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '5/minute', #second, minute, hour, day
+        'user': '50/minute'
+    }
 }
 
 

@@ -53,8 +53,9 @@ matn1 = """
 """
 
 regexx = r"[+]998[(][0-9]{2}[)] [0-9]{3}[-][0-9]{2}[-][0-9]{2}"
-print(findall(regexx, matn1))
-print(search(regexx, matn1))
+# print(findall(regexx, matn1))
+# print(search(regexx, matn1))
+
 
 
 

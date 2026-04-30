@@ -283,6 +283,8 @@ class Qahramon:
     def get_skills(self):
         """  """
         return f"{self.nom} ning qobilyatlari {len(self.qobilyatlar)} ta. {self.qobilyatlar}"
+    
+
 
 uranus = Qahramon("Uranus", 120, ["Sakrash", "Ko'rinmaslik"], "Pistolet")
 
@@ -299,10 +301,24 @@ class Avangers(Qahramon):
         self.kostyum = kostyum
         self.kozoynak = kozoynak
 
-spider_man = Avangers("Spiderman", 200, ['uchish', 'tirmashish', 'super sezgirlik', "to'r"], "To'r", "Super X kastyum", "Aqilli ko'zoynak")
+    def heal(self):
+        """ Qahramonning jonini ko'paytiradi """
+
+        if self.jon < 100 and self.jon > 0:
+            self.jon += 10
+            return f"{self.nom}ning jonni 10 ga ortdi"
+        else:
+            return f"{self.nom}ning joni yetarli ! qo'shish shart, emas !"
+
+
+spider_man = Avangers("Spiderman", 60, ['uchish', 'tirmashish', 'super sezgirlik', "to'r"], "To'r", "Super X kastyum", "Aqilli ko'zoynak")
 print(spider_man)
 print(spider_man.get_health())
-print(spider_man.get_skills())
+# print(spider_man.get_skills())
+print(spider_man.heal())
+print(spider_man.heal())
+print(spider_man.get_health())
+
 
 
 
