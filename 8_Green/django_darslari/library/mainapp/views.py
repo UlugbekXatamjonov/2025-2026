@@ -34,4 +34,7 @@ class Category_Books_Viewset(viewsets.ModelViewSet):
 class Author_Book_Viewset(viewsets.ModelViewSet):
     queryset = Author.objects.filter(status=True)
     serializer_class = Author_Book_Serializers
-    
+
+
+
+

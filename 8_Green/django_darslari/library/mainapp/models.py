@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 # Create your models here.
 
@@ -10,6 +11,9 @@ language = (
     ("german","Nemischa"),
     ("others","Boshqa til")
 )
+
+MIN_PAGE = MinValueValidator(1, message="Minimum 1 sahifa bo'lishi kerak"),
+MAX_PAGE = MaxValueValidator(9999, message="Maximum 9999 sahifa bo'lishi kerak")
 
 
 class Category(models.Model):
@@ -41,10 +45,14 @@ class Book(models.Model):
     language = models.CharField(max_length=20, verbose_name="Til", choices=language, default="uzbek")
     about = models.TextField(verbose_name="Batafsil")
     publisher = models.CharField(max_length=50, verbose_name="Nashriyot")
-    pages = models.PositiveIntegerField(verbose_name="Sahifalar soni")
-    audio_file = models.FileField(upload_to='audios/', verbose_name="Audio")
-    pdf_file = models.FileField(upload_to='pdfs/', verbose_name="PDF")
-    photo = models.ImageField(upload_to='books_photo/', verbose_name="Rasm")
+    pages = models.PositiveIntegerField(verbose_name="Sahifalar soni", 
+                                        validators=[
+                                            MinValueValidator(1, message="Minimum 1 sahifa bo'lishi kerak"),
+                                            MaxValueValidator(9999, message="Maximum 9999 sahifa bo'lishi kerak")
+                                        ])
+    audio_file = models.FileField(upload_to='audios/', verbose_name="Audio", null=True, blank=True)
+    pdf_file = models.FileField(upload_to='pdfs/', verbose_name="PDF", null=True, blank=True)
+    photo = models.ImageField(upload_to='books_photo/', verbose_name="Rasm", null=True, blank=True)
 
     status = models.BooleanField(default=True)
     created_on = models.DateTimeField(auto_now_add=True)
