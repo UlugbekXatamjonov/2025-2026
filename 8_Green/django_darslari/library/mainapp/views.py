@@ -4,7 +4,7 @@ from rest_framework import viewsets
 from .serializers import Category_Serializers, Author_Serializers, Book_Serializers, Category_Books_Serializers, Author_Book_Serializers
 from .models import Category, Author, Book
 from .pagination import My_Pagination
-
+from .throttling import My_RateThrottle
 
 
 
@@ -24,11 +24,13 @@ class Book_ViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.filter(status=True, language='uzbek')
     serializer_class = Book_Serializers
     pagination_class = My_Pagination
+    throttle_classes = [My_RateThrottle,]
 
 
 class Category_Books_Viewset(viewsets.ModelViewSet):
     queryset = Category.objects.filter(status=True)
     serializer_class = Category_Books_Serializers
+
 
 
 class Author_Book_Viewset(viewsets.ModelViewSet):

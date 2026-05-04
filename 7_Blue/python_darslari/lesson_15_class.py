@@ -284,13 +284,16 @@ class Qahramon:
         """  """
         return f"{self.nom} ning qobilyatlari {len(self.qobilyatlar)} ta. {self.qobilyatlar}"
     
+    def get_info(self):
+
+        return f"Nom: {self.nom} \nJon: {self.jon} \nQobilyatlar: {self.qobilyatlar} \nQurol: {self.qurol}"
 
 
 uranus = Qahramon("Uranus", 120, ["Sakrash", "Ko'rinmaslik"], "Pistolet")
 
-print(uranus)
-print(uranus.get_health())
-print(uranus.get_skills())
+# print(uranus)
+# print(uranus.get_health())
+# print(uranus.get_skills())
 
 
 class Avangers(Qahramon):
@@ -310,15 +313,19 @@ class Avangers(Qahramon):
         else:
             return f"{self.nom}ning joni yetarli ! qo'shish shart, emas !"
 
+    def get_info(self):
+
+        return f"Nom 🧑: {self.nom} \nJon🔋 : {self.jon} \nQobilyatlar ⚡: {self.qobilyatlar} \nQurol 🔫: {self.qurol} \nKostyum: {self.kostyum} \n ko'zoynak: {self.kozoynak}"
 
 spider_man = Avangers("Spiderman", 60, ['uchish', 'tirmashish', 'super sezgirlik', "to'r"], "To'r", "Super X kastyum", "Aqilli ko'zoynak")
-print(spider_man)
-print(spider_man.get_health())
+# print(spider_man)
+# print(spider_man.get_health())
 # print(spider_man.get_skills())
-print(spider_man.heal())
-print(spider_man.heal())
-print(spider_man.get_health())
+# print(spider_man.heal())
+# print(spider_man.heal())
+# print(spider_man.get_health())
 
-
+print(uranus.get_info())
+print(spider_man.get_info())
 
 

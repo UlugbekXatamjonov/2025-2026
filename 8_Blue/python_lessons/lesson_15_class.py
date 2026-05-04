@@ -125,17 +125,102 @@ k5 = Car("KIA", "K5", 2024, 34000)
 
 # print(malibu)
 # print(k5.get_info())
-print(k5.get_price())
+# print(k5.get_price())
 # print(k5.get_year())
 # print(k5.get_age())
 # print(malibu.get_age())
 
-print(k5.change_price(12000))
-print(k5.get_price())
+# print(k5.change_price(12000))
+# print(k5.get_price())
 
 
 
 
+class Student:
+    """ O'quvchi classi """
+    def __init__(self, FULL_NAME:str, YEAR:int, MARKS:list,FRIENDS:list, class_type:str, grade:int=1,):
+        """ Student haqidagi malumotlarni o'zida saqlovchi funksiya """
+        self.full_name = FULL_NAME
+        self.year = YEAR
+        self.marks = MARKS
+        self.friends = FRIENDS
+        self.class_type = class_type
+        self.grade = grade
+
+    def get_name(self):
+        return self.full_name
+    
+    def get_info(self):
+        return f"{self.full_name} {self.year} yoshda. Va u {self.grade} - sinf o'quvchisi "
+    
+    def get_marks(self):
+        """ Baholarni ko'rsatuvchi funksiya """
+
+        return f"Ummumiy bahosi: {sum(self.marks)} ball \nO'rtacha bahosi: {sum(self.marks)/len(self.marks)} ball"
+
+    def get_friends(self):
+        """  """
+        # javob = f"{self.full_name}ning do'stlari: "
+        # for ism in self.friends:
+        #     javob += f"{ism} "
+
+        # return javob
+        return f"{self.full_name}ning do'stlari {self.friends}"
+    
+    def add_friend(self, new_friend):
+        self.friends.append(new_friend)
+
+        return f"{self.full_name} ning do'stlari qatoriga {new_friend} qo'shildi !"
+
+    def add_friends(self, *new_friend):
+
+        for new_name in new_friend:
+            self.friends.append(new_name)
+
+        return f"{self.full_name} ning do'stlari qatoriga {new_friend} qo'shildi !"
+
+    def remove_friend(self, name:str):
+
+        if name in self.friends:
+            self.friends.remove(name)
+            return f"{name} o'chirilib yuborildi !"
+        else:
+            return f"{name} sizning do'stingiz emas, uni o'chirilib bo'lmaydi !"
+
+    def get_class(self):
+        return f"{self.full_name} hozirda {self.grade} sinf o'quvchisi"
+
+    def change_class(self):
+        if 1 < self.grade < 11:
+            self.grade += 1
+            return f"{self.full_name} ning sinfi endi {self.grade} ga o'zgardi"
+        else:
+            return f"{self.full_name} boshqa sinfga o'ta olmaydi !!!"
+
+
+student1 = Student("Aziz Alimov",13, [20,26,42,36], ["Olim", "Abbos", "Ali"], 'Matematika', 7)
+student2 = Student("Sarvinoz", 17, [17, 45, 43, 50], ['Guli', "Aziza", "Husnora", "Madina", "Barno"], "Kimyo", 11)
+
+# print(student1.get_name())
+print(student2.get_friends())
+print(student2.add_friend("Bobur"))
+print(student2.get_friends())
+print(student2.add_friends("Anvar", "Olim", "Nurmuhammad"))
+print(student2.get_friends())
+# print(student2.get_friends())
+# print(student2.remove_friend("Aziza"))
+# print(student2.remove_friend("Madina"))
+# print(student2.get_friends())
+
+# print(student1.get_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
+
+# print(student1.get_class())
 
 
 

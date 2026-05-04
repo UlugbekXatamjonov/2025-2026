@@ -137,7 +137,8 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_THROTTLE_RATES': {
         'anon': '5/minute', #second, minute, hour, day
-        'user': '50/minute'
+        'user': '50/minute',
+        'my_throttle':"10/minutes"
     }
 }
 
