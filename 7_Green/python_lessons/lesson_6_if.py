@@ -44,7 +44,7 @@
 Foydalanuvchidan son kiritishini so'rang. Agar son musbat(+) bo'lsa uning ildizni toping.
 Agar son manfiy bo'lsa unda uning 4-darajasini toping.
 """
-# from math import sqrt
+from math import sqrt
 # son = int(input("Son kiriting: "))
 # if son > 0:
 #     print(f"Siz kiritkan sonning ildizi {sqrt(son)}")
