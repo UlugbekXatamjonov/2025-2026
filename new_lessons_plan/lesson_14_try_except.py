@@ -1,34 +1,34 @@
 """
 Thame: Try - except
 """
-# son  = int(input("Son kiriting: "))
-# print(f"{son} ning kvadrati {son**2} ga teng")
+son  = int(input("Son kiriting: "))
+print(f"{son} ning kvadrati {son**2} ga teng")
 
-# try:
-#     son  = int(input("Son kiriting: "))
-#     print(f"{son} ning kvadrati {son**2} ga teng")
-# except:
-#     print("Siz son kiritmadingiz")
+try:
+    son  = int(input("Son kiriting: "))
+    print(f"{son} ning kvadrati {son**2} ga teng")
+except:
+    print("Siz son kiritmadingiz")
     
-# print("Dasturning davomi")
+print("Dasturning davomi")
 
 """
 try - sizga xatolarni tekshirishga imkon beradi
 except - sizga xatoni xal qilishga, va uning o'rniga boshqa ma'lumot chiqishiga imkon beradi
 else - xato bo'lmaganda kodni bajarishga imkon beradi.
 """
-# x = "SAlom"
+x = "SAlom"
 
-# print(x)
-# print("Hello, world!")
+print(x)
+print("Hello, world!")
 
 """ try """
-# try:
-#     print(x)
-# except:
-#     print("try-except yordamida, xatolik yuzaga kelmaydi va dastur to'xtab qolmaydi.")
+try:
+    print(x)
+except:
+    print("try-except yordamida, xatolik yuzaga kelmaydi va dastur to'xtab qolmaydi.")
 
-# print("Hello, world")
+print("Hello, world")
 
 """
 'try' bloki xatoga yo'l qo'yganligi sababli, 'except' bloki bajariladi.
@@ -36,20 +36,20 @@ else - xato bo'lmaganda kodni bajarishga imkon beradi.
 """
 
 """ bir nechta except va xato turlari """
-# x = 5
-# y = 0
-# print(x/y)
+x = 5
+y = 0
+print(x/y)
 
-# x = 5
-# y = 0
-# try:
-#     z = x/y
-# except ZeroDivisionError:
-#     print("Sonni nolga bo'lib bo'lmaydi")
-# except NameError:
-#     print("'x' degan o'zgaruvchi topilmadi")
-# except:
-#     print("Bu yerda xato matni bo'ladi")
+x = 5
+y = 0
+try:
+    z = x/y
+except ZeroDivisionError:
+    print("Sonni nolga bo'lib bo'lmaydi")
+except NameError:
+    print("'x' degan o'zgaruvchi topilmadi")
+except:
+    print("Bu yerda xato matni bo'ladi")
 
 """
 https://www.tutorialsteacher.com/python/error-types-in-python
@@ -92,13 +92,13 @@ ZeroDivisionError -  Bo'linish yoki modul operatsiyasining ikkinchi operandi nol
 """ 
 else - xech qanday xatolik yuzaga kelmagan xollarda ishlatiladi
 """
-# a = 5
-# try:
-#     print(a**2)
-# except:
-#     print("Bu yerda xato matni bo'ladi")
-# else:
-#     print("Xech qanday xatolik yuzaga kelmadi") # va hech qanday xatolik bo'lmasa 'else' ham ishlaydi
+a = 5
+try:
+    print(a**2)
+except:
+    print("Bu yerda xato matni bo'ladi")
+else:
+    print("Xech qanday xatolik yuzaga kelmadi") # va hech qanday xatolik bo'lmasa 'else' ham ishlaydi
 
 
 """ finally """
@@ -106,26 +106,26 @@ else - xech qanday xatolik yuzaga kelmagan xollarda ishlatiladi
 'try' - blokida xatolik bo'ladimi yoki yo'qmi, qat'iy nazar 'finally' bajariladi.
 """
 
-# a = 4
-# b = 10
-# try:
-#     print(a+b)
-# except:
-#     print("Error Error Error")
-# finally:
-#     print("'finally' doim ishlaydi")
+a = 4
+b = 10
+try:
+    print(a+b)
+except:
+    print("Error Error Error")
+finally:
+    print("'finally' doim ishlaydi")
 
 """ raise """
 """ 'raise' xato matnini dasturchiga o'zimiz hohlagan ko'rinishda ko'rsatishga imkon beradi
 """
 
-# a = 4
-# b = 10
-# try:
-#     print(a+c)
-# except NameError:
-#     print("Name Error")
-# raise NameError("Name Error - berilgan nomdagi o'zgaruvchi topilmaganda yuzaga keladi") 
+a = 4
+b = 10
+try:
+    print(a+b)
+except NameError:
+    print("Name Error")
+raise NameError("Name Error - berilgan nomdagi o'zgaruvchi topilmaganda yuzaga keladi") 
 
 """ 
 try:
@@ -140,38 +140,38 @@ finally:
 
 """ Masalalar """
 """ 1 """
-# def bigger():
-#     try:
-#         a = float(input("1-sonni kirirting:"))
-#         b = float(input("2-sonni kirirting:"))
-#     except ValueError:
-#         print("Siz son kiritmadingiz")
-#     except:
-#         print("Error Error Error ")
-#     else:
-#         if a>b: 
-#             print(f"{a}>{b}")
-#         elif a<b:
-#             print(f"{a}<{b}")
-#         else :
-#             print(f"{a}={b}")
+def bigger():
+    try:
+        a = float(input("1-sonni kirirting:"))
+        b = float(input("2-sonni kirirting:"))
+    except ValueError:
+        print("Siz son kiritmadingiz")
+    except:
+        print("Error Error Error ")
+    else:
+        if a>b: 
+            print(f"{a}>{b}")
+        elif a<b:
+            print(f"{a}<{b}")
+        else :
+            print(f"{a}={b}")
 # bigger()
 
 """ 2 """
-# def bithday():
-#     try:
-#         yil = int(input("Tug'ilgan yilingizni kiriting: "))
-#     except ValueError:
-#         print("Siz butun son kiritmadingiz !!!")
-#     except:
-#         print("Ma'lumot kiritishda xatolik yuzaga keldi.")
-#     else:
-#         if 2023 > yil > 0:
-#             print(f"Siz {2023-yil} yoshda ekansiz")
-#         elif -2023 < yil < 0:
-#             print(f"Siz {2023-(-yil)} yoshda ekansiz")
-#         else:
-#             print("Siz hali mavjud bo'lmagan yil kiritdingiz")
+def bithday():
+    try:
+        yil = int(input("Tug'ilgan yilingizni kiriting: "))
+    except ValueError:
+        print("Siz butun son kiritmadingiz !!!")
+    except:
+        print("Ma'lumot kiritishda xatolik yuzaga keldi.")
+    else:
+        if 2023 > yil > 0:
+            print(f"Siz {2023-yil} yoshda ekansiz")
+        elif -2023 < yil < 0:
+            print(f"Siz {2023-(-yil)} yoshda ekansiz")
+        else:
+            print("Siz hali mavjud bo'lmagan yil kiritdingiz")
 
 # bithday()
 
