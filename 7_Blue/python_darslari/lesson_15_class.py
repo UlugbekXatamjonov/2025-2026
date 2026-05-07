@@ -325,7 +325,18 @@ spider_man = Avangers("Spiderman", 60, ['uchish', 'tirmashish', 'super sezgirlik
 # print(spider_man.heal())
 # print(spider_man.get_health())
 
-print(uranus.get_info())
-print(spider_man.get_info())
+# print(uranus.get_info())
+# print(spider_man.get_info())
+
+
+
+
+
+
+
+
+
+
+
 
 
