@@ -279,13 +279,12 @@ Shuningdek dasturga manfiy(-) va 50 dan katta sonlar kiritilganda;
 
 
 """ Toq juft """
-# son = int(input("Son kiriting: "))
+son = int(input("Son kiriting: "))
 
-# if son%2 == 0: # % --> sonni bo'lganda necha xona qoldiq qolishini o'lchaydi
-#     print(f"{son} juft")
-# else:
-#     print(f"{son} toq")
-
+if son%2 == 0: # % --> sonni bo'lganda necha xona qoldiq qolishini o'lchaydi
+    print(f"{son} juft")
+else:
+    print(f"{son} toq")
 
 # if son%5 == 0: # % --> sonni bo'lganda necha xona qoldiq qolishini o'lchaydi
 #     print(f"{son} 5 ga qoldiqsiz bo'linadi ✅") # windows + .

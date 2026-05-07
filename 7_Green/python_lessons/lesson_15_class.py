@@ -40,7 +40,15 @@ class Student: # class
             return f"{delf} do'stlaringiz qatoridan o'chirildi !"
         else:
             return f"{delf} sizning do'stingiz emas ! uni o'chira olmaysiz !"
-        
+
+    def overall_ball(self):
+        """ ummumiy ballni hisoablab beradi """
+        return sum(self.ballar)
+
+    def middle_ball(self):
+        """ o'rtacha bahoni hisoblab beradi """
+        return sum(self.ballar) / len(self.ballar)
+
 dilmurod = Student("Dilmurod", 'Osimjonov', 2013, "To'raqo'rg'on tumani", 7, ["Siadakbar", "Isroil", "Muhammadyusuf", "Abror"],[50, 40, 35, 45]) # obyekt
 saida = Student("Saida", "Tursunboyeva", 2012, "To'raqo'rg'on tumani", 7, ['Nodira', "Oysha", "Nigora"], [45, 36, 29, 50]) # obyekt
 

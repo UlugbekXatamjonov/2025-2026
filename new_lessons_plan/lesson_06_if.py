@@ -279,7 +279,7 @@ Qolganlar → “Salom {ism}.”
 Foydalanuvchidan uning ismini so'rang:
 Azizbek and Anvar bo'lsa — “Salom Azizbek/Anvar. Ishlaring yaxshimi?”
 Hadicha and Muslima bo'lsa — “Hayrli kun Hadicha/Muslima.”
-(“and” operatori shart.)
+(“or” operatori shart.)
 
 6-mashq
 Foydalanuvchidan o'tgan haftadagi imtihon ballini so'rang:
