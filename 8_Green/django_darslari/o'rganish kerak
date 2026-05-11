@@ -1,13 +1,20 @@
 unique=True
 null=True
 blank=True
+phone regex
 
 ------------------
-phone regex
-QR code
-UUID
+swagger - drf_yasg
+DRF searching va filtering
 ko'p rasmli qilish
+Postman
+Trello
+Git Hub
 
+
+--------- Keyingi yil
+UUID
+QR code
 authentification
 login
 logout
