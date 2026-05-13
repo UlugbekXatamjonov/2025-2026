@@ -342,12 +342,11 @@ inson = Shaxs("Hasan","Alimov","FB001122",1995)
 
 class Talaba(Shaxs):
     """Talaba klassi"""
-    def __init__(self, ism, familiya, passport, tyil, idraqam, manzil):
-        """Talabaning xususiyatlari"""
-        super().__init__(ism,familiya,passport,tyil)
+    def __init__(self, ism, familiya, passport, tyil, idraqam, bosqich, manzil):
+        super().__init__(ism, familiya, passport, tyil)
         
         self.idraqam = idraqam
-        self.bosqich = 1
+        self.bosqich = bosqich
         self.manzil = manzil
 
     def get_id(self):

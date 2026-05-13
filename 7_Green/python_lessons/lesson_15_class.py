@@ -49,6 +49,14 @@ class Student: # class
         """ o'rtacha bahoni hisoblab beradi """
         return sum(self.ballar) / len(self.ballar)
 
+    def change_class(self):
+        if 1 <= self.sinf < 11:
+            self.sinf += 1
+            return f"Siz endi {self.sinf} ga o'tdingiz !"
+        else:
+            return f"Siz endi yangi sinfga o'ta olmaysiz !"
+
+
 dilmurod = Student("Dilmurod", 'Osimjonov', 2013, "To'raqo'rg'on tumani", 7, ["Siadakbar", "Isroil", "Muhammadyusuf", "Abror"],[50, 40, 35, 45]) # obyekt
 saida = Student("Saida", "Tursunboyeva", 2012, "To'raqo'rg'on tumani", 7, ['Nodira', "Oysha", "Nigora"], [45, 36, 29, 50]) # obyekt
 
@@ -63,13 +71,39 @@ saida = Student("Saida", "Tursunboyeva", 2012, "To'raqo'rg'on tumani", 7, ['Nodi
 # print(dilmurod.get_adress())
 # print(saida.get_adress())
 # print(saida.add_friend("Mehridil"))
-print(saida.get_friends())
-print(saida.delete_friend("Oysha"))
-print(saida.delete_friend("Muhammadyusuf"))
+# print(saida.get_friends())
+# print(saida.delete_friend("Oysha"))
+# print(saida.delete_friend("Muhammadyusuf"))
 
-print(saida.get_friends())
+# print(saida.get_info())
+# print(saida.change_class())
+# print(saida.change_class())
+# print(saida.change_class())
+# print(saida.change_class())
+# print(saida.change_class())
+# print(saida.change_class())
+# print(saida.get_info())
 
 
+class Book:
+    """ Kitob haqidagi class """
+    def __init__(self, name:str, author:str, year:int, price:int, pages:int, heroes:list):
+        self.name = name
+        self.author = author
+        self.year = year
+        self.price = price
+        self.pages = pages
+        self.heros = heroes
+        
+    def get_book_info(self):
+        return f"\"{self.name}\" kitobining muallifi {self.author}. Kitob {self.year}-yili chiqarilgan."
+
+
+book1 = Book("101 day", "Jek Darken", 2019, 45_000, 340, ['Jek', 'Antony', 'Lily'])
+book2 = Book("Bad habbits", "Drayn Pool", 1988, 23_00, 160, ['Sara', 'Hook', 'Anna', 'Tom'])
+
+print(book1.get_book_info())
+print(book2.get_book_info())
 
 
 
