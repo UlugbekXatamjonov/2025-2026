@@ -212,18 +212,77 @@ student2 = Student("Sarvinoz", 17, [17, 45, 43, 50], ['Guli', "Aziza", "Husnora"
 # print(student2.remove_friend("Madina"))
 # print(student2.get_friends())
 
-print(student1.get_class())
-print(student1.change_class())
-print(student1.change_class())
-print(student1.change_class())
-print(student1.change_class())
-print(student1.change_class())
-print(student1.change_class())
+# print(student1.get_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
+# print(student1.change_class())
 
-print(student1.get_class())
+# print(student1.get_class())
+
+
+""" Super class - Vorislik """
+class Shaxs:
+    """Shaxslar haqida ma'lumot"""
+    def __init__(self,ism,familiya,passport,tyil):
+        self.ism = ism
+        self.familiya = familiya
+        self.passport = passport
+        self.tyil = tyil
+    
+    def get_info(self):
+        """Shaxs haqida ma'lumot"""
+        info = f"{self.ism} {self.familiya}. "
+        info += f"Passport:{self.passport}, {self.tyil}-yilda tug`ilgan"
+        return info
+    
+    def get_full_name(self):
+        return f"{self.ism} {self.familiya}"
+        
+    def get_age(self,yil):
+        """Shaxsning yoshini qaytaruvchi metod"""
+        return yil - self.tyil
+
+inson = Shaxs("Hasan","Alimov","FB001122",1995)
+# print(f"{inson.get_info()}. {inson.get_age(2021)} yoshda.")
 
 
 
+class Talaba(Shaxs):
+    """Talaba klassi"""
+    def __init__(self, ism, familiya, passport, tyil, idraqam, bosqich, manzil):
+        super().__init__(ism, familiya, passport, tyil)
+        
+        self.idraqam = idraqam
+        self.bosqich = bosqich
+        self.manzil = manzil
+
+    def get_id(self):
+        return f"Talaba ID: {self.idraqam}"
+    
+    def update_bosqich(self):
+        # self.bosqich += 1
+        self.bosqich = self.bosqich + 1
+        return self.bosqich
+    
+    def get_bosqich(self):
+        return self.bosqich
+    
+    def get_info(self):
+        text = f"{self.ism} {self.familiya}."
+        text += f"\nPassport raqami: {self.passport} va {self.tyil} -yilda tug'ilgan"
+        text += f"\nTalabaning ID raqami: {self.idraqam} va u {self.bosqich}- bosqich talabasi."
+        return text
+        
+talaba = Talaba("Valijon","Aliyev", "AB2345324", 2000, 123456789, 1, "Namangan shahri")
+
+print(talaba.get_info())
+print(talaba.get_age(2026))
+print(talaba.get_full_name())
+# print(talaba.get_id())
+# print(talaba.update_bosqich())
 
 
 
