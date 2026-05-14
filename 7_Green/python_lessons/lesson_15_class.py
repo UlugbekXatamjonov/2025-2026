@@ -94,17 +94,44 @@ class Book:
         self.price = price
         self.pages = pages
         self.heros = heroes
-        
+    
+    def __str__(self):
+        return f"{self.name} - {self.author}"
+
     def get_book_info(self):
-        return f"\"{self.name}\" kitobining muallifi {self.author}. Kitob {self.year}-yili chiqarilgan."
+        return f"\"{self.name}\" kitobining muallifi {self.author}. Kitob {self.year}-yili chiqarilgan. Narxi {self.price} so'm va u {self.pages} sahifadan iborat"
+
+    def change_price(self, new_price):
+        self.price = new_price
+        return f"Kitobning yangi narxi {self.price} so'm"
 
 
 book1 = Book("101 day", "Jek Darken", 2019, 45_000, 340, ['Jek', 'Antony', 'Lily'])
 book2 = Book("Bad habbits", "Drayn Pool", 1988, 23_00, 160, ['Sara', 'Hook', 'Anna', 'Tom'])
 
+print(book1)
+print(book2)
 print(book1.get_book_info())
+print(book2.get_book_info())
+print(book2.change_price(23000))
 print(book2.get_book_info())
 
 
 
+class MyLibrary:
+    """ Kutubxona classi """
+    def __init__(self, name, addres):
+        self.name = name
+        self.adress = addres
+        self.books = [] # kitoblar
+        self.books_count = 0 # kitoblar miqdori
+        
+    def get_info(self):
+        text = f"{self.name} kutubxonasining Manzili: {self.adress} "
+        text += f"Kitoblar soni {self.books_count} ta. "
+        return text
+    
+    def add_book(self, new_book):
+        self.books.append(new_book)
+        self.books_count += 1
 

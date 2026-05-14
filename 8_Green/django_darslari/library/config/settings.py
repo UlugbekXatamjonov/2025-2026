@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'mainapp',
     "rest_framework",
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -140,7 +141,8 @@ REST_FRAMEWORK = {
         'anon': '5/minute', #second, minute, hour, day
         'user': '50/minute',
         'my_throttle':"10/minute"
-    }
+    },
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
 }
 
 
