@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters
 
 from .serializers import Category_Serializers, Author_Serializers, Book_Serializers, Category_Books_Serializers, Author_Book_Serializers
 from .models import Category, Author, Book
@@ -19,8 +20,9 @@ class Category_ViewSet(viewsets.ModelViewSet):
 class Author_ViewSet(viewsets.ModelViewSet):
     queryset = Author.objects.filter(status=True)
     serializer_class = Author_Serializers
-    filter_backends = [DjangoFilterBackend]
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter]
     filterset_fields = ['name', 'status']
+    search_fields = ['name', 'about']
 
 
 class Book_ViewSet(viewsets.ModelViewSet):
