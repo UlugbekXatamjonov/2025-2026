@@ -109,12 +109,12 @@ class Book:
 book1 = Book("101 day", "Jek Darken", 2019, 45_000, 340, ['Jek', 'Antony', 'Lily'])
 book2 = Book("Bad habbits", "Drayn Pool", 1988, 23_00, 160, ['Sara', 'Hook', 'Anna', 'Tom'])
 
-print(book1)
-print(book2)
-print(book1.get_book_info())
-print(book2.get_book_info())
-print(book2.change_price(23000))
-print(book2.get_book_info())
+# print(book1)
+# print(book2)
+# print(book1.get_book_info())
+# print(book2.get_book_info())
+# print(book2.change_price(23000))
+# print(book2.get_book_info())
 
 
 
@@ -126,6 +126,10 @@ class MyLibrary:
         self.books = [] # kitoblar
         self.books_count = 0 # kitoblar miqdori
         
+    def __str__(self):
+        return self.name
+    
+
     def get_info(self):
         text = f"{self.name} kutubxonasining Manzili: {self.adress} "
         text += f"Kitoblar soni {self.books_count} ta. "
@@ -135,3 +139,27 @@ class MyLibrary:
         self.books.append(new_book)
         self.books_count += 1
 
+        return f"Kutubxonamizga yangi kitob qo'shildi. '{new_book}'"
+
+    def del_book(self, book_name):
+        if book_name in self.books:
+            self.books.remove(book_name)
+            self.books_count -= 1
+            return f"{book_name} o'chib ketdi"
+        else:
+            return f"Kutubxonada bunday {book_name} nomli yo'q !"
+            
+
+
+library1 = MyLibrary("Yoshlar kutubxonasi", "Islom kerimov ko'chasi, 56-uy")
+
+print(library1)
+print(library1.get_info())
+print(library1.add_book("Shum bola"))
+print(library1.add_book("O'tgan kunlar"))
+print(library1.add_book("Ikki eshik orasi"))
+print(library1.get_info())
+
+print(library1.del_book("Ikki eshik orasi"))
+print(library1.del_book("Shumtaka bola"))
+print(library1.get_info())
