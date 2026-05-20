@@ -150,16 +150,92 @@ class MyLibrary:
             return f"Kutubxonada bunday {book_name} nomli yo'q !"
             
 
-
 library1 = MyLibrary("Yoshlar kutubxonasi", "Islom kerimov ko'chasi, 56-uy")
 
-print(library1)
-print(library1.get_info())
-print(library1.add_book("Shum bola"))
-print(library1.add_book("O'tgan kunlar"))
-print(library1.add_book("Ikki eshik orasi"))
-print(library1.get_info())
+# print(library1)
+# print(library1.get_info())
+# print(library1.add_book("Shum bola"))
+# print(library1.add_book("O'tgan kunlar"))
+# print(library1.add_book("Ikki eshik orasi"))
+# print(library1.get_info())
 
-print(library1.del_book("Ikki eshik orasi"))
-print(library1.del_book("Shumtaka bola"))
-print(library1.get_info())
+# print(library1.del_book("Ikki eshik orasi"))
+# print(library1.del_book("Shumtaka bola"))
+# print(library1.get_info())
+
+
+
+
+
+
+""" Super class - Vorislik """
+class Shaxs:
+    """Shaxslar haqida ma'lumot"""
+    def __init__(self,ism,familiya,passport,tyil):
+        self.ism = ism
+        self.familiya = familiya
+        self.passport = passport
+        self.tyil = tyil
+    
+    def get_info(self):
+        """Shaxs haqida ma'lumot"""
+        info = f"{self.ism} {self.familiya}. "
+        info += f"Passport:{self.passport}, {self.tyil}-yilda tug`ilgan"
+        return info
+    
+    def get_full_name(self):
+        return f"{self.ism} {self.familiya}"
+        
+    def get_age(self,yil):
+        """Shaxsning yoshini qaytaruvchi metod"""
+        return yil - self.tyil
+
+inson = Shaxs("Hasan","Alimov","FB001122",1995)
+# print(f"{inson.get_info()}. {inson.get_age(2021)} yoshda.")
+
+
+class Talaba(Shaxs):
+    def __init__(self, ism, familiya, passport, tyil, universitet:str, kurs:int, yonalish:str, grant:bool):
+        super().__init__(ism, familiya, passport, tyil)
+
+        self.universitet = universitet
+        self.kurs = kurs
+        self.yonalish = yonalish
+        self.grant = grant
+
+    def get_info(self):
+        info = f"{self.ism} {self.familiya}. "
+        info += f"Passport:{self.passport}, {self.tyil}-yilda tug`ilgan"
+        info += f" {self.universitet} universitetning {self.yonalish} yonalishida  {self.kurs}-kurs talabasi va {self.grant} grant olgan"
+        return info
+
+
+talaba1 = Talaba("Abubakr", "Mamadov", "AB5367389", 2012, "namDTU", 2, "Matematika", "75%")
+print(talaba1)
+print(talaba1.get_info())
+print(talaba1.get_full_name())
+print(talaba1.get_age(2026))
+print(talaba1.get_info())
+
+
+
+
+
+
+
+# class Shifokor
+
+
+# class Biznesmen
+
+
+
+
+
+
+
+
+
+
+
+

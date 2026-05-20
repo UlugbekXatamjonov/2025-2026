@@ -2,14 +2,15 @@ unique=True
 null=True
 blank=True
 phone regex
+DRF searching va filtering
 
 ------------------
 swagger - drf_yasg
-DRF searching va filtering
-ko'p rasmli qilish
 Postman
+
 Trello
 Git Hub
+ko'p rasmli qilish
 
 
 --------- Keyingi yil

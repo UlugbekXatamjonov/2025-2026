@@ -3,6 +3,21 @@ null=True
 blank=True
 phone regex
 
+filtering
+searching
+trothling
+pagination
+
+---- Production ----
++ swagger
++ postman
++ django-cors-headers
++ python-decouple
++ .env
++ .gitnore
+
+req.txt
+
 
 ------------------
 QR code

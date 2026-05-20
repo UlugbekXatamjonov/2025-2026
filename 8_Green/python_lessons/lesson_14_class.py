@@ -13,6 +13,8 @@ class Inson:
     def __str__(self):
         return f"{self.name} {self.surname}"
 
+    def get_info(self):
+        return f"{self.name} {self.surname} {self.year}-yili tug'ilgan va hozirda {2026 - self.year} yoshda. {self.adress} da yashaydi"
 
 
 
@@ -21,6 +23,8 @@ olimjon  = Inson("Olimjon", "Murodov", 2022, "Namangan region, Mingchinor street
 
 print(nozima)
 print(olimjon)
+print(nozima.get_info())
+print(olimjon.get_info())
 
 
 
