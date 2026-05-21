@@ -15,8 +15,7 @@ pagination
 + python-decouple
 + .env
 + .gitnore
-
-req.txt
++ req.txt
 
 
 ------------------

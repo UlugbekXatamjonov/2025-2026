@@ -195,42 +195,52 @@ inson = Shaxs("Hasan","Alimov","FB001122",1995)
 
 
 class Talaba(Shaxs):
-    def __init__(self, ism, familiya, passport, tyil, universitet:str, kurs:int, yonalish:str, grant:bool):
+    def __init__(self, ism, familiya, passport, tyil, universitet:str, kurs:int, yonalish:str, grant:int, baholar:list):
         super().__init__(ism, familiya, passport, tyil)
 
         self.universitet = universitet
         self.kurs = kurs
         self.yonalish = yonalish
         self.grant = grant
+        self.baholar = baholar
 
     def get_info(self):
         info = f"{self.ism} {self.familiya}. "
         info += f"Passport:{self.passport}, {self.tyil}-yilda tug`ilgan"
-        info += f" {self.universitet} universitetning {self.yonalish} yonalishida  {self.kurs}-kurs talabasi va {self.grant} grant olgan"
+        info += f" {self.universitet} universitetning {self.yonalish} yonalishida  {self.kurs}-kurs talabasi va {self.grant} % grant olgan"
         return info
+    
+
+    def grand_berish(self):
+        if 65 <= sum(self.baholar) <= 70:
+            self.grant = 100
+            return f"Tabriklaymiz siz 100% lik grand bilan kirgansiz!!!"
+        
+        elif 50 <= sum(self.baholar) < 65:
+            self.grant = 75
+            return f"Tabriklaymiz siz 75% lik grand bilan kirgansiz!!!"
+        
+        else:
+            return f"Afsuski siz grant olmadingiz"
 
 
-talaba1 = Talaba("Abubakr", "Mamadov", "AB5367389", 2012, "namDTU", 2, "Matematika", "75%")
-print(talaba1)
+
+talaba1 = Talaba("Abubakr", "Mamadov", "AB5367389", 2012, "namDTU", 2, "Matematika", 0, [10, 10,10,10,10,10,10])
+# print(talaba1)
+# print(talaba1.get_info())
+# print(talaba1.get_full_name())
+# print(talaba1.get_age(2026))
+# print(talaba1.get_info())
+# print(talaba1.grand_berish())
+
 print(talaba1.get_info())
-print(talaba1.get_full_name())
-print(talaba1.get_age(2026))
-print(talaba1.get_info())
 
 
-
-
-
-
-
-# class Shifokor
-
-
-# class Biznesmen
-
-
-
-
+"""
+- universitetni o'zgartirish
+- kursdan kursga o'tish
+- yo'nalishini o'zgartirish
+"""
 
 
 
