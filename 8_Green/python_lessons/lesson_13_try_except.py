@@ -31,30 +31,30 @@ o'sha kundan bugungi kungacha qancha vaqt o'tganini hisoblab, konsolga chiqaring
 
 sonlar = [2,3,42,3,421,3,25,3,234,1,3,323424, 0,343,934]
 
-try:
-    raqam = int(input("Son kiritinbg: "))
+# try:
+#     raqam = int(input("Son kiritinbg: "))
 
-    for son in sonlar:
-        print(raqam/son)
-except ValueError:
-    print()
-except ZeroDivisionError:
-    print()
-except:
-    print()
+#     for son in sonlar:
+#         print(raqam/son)
+# except ValueError:
+#     print()
+# except ZeroDivisionError:
+#     print()
+# except:
+#     print()
 
-"""  """
+# """  """
 
-try:
-    raqam = int(input("Son kiritinbg: "))
-except:
+# try:
+#     raqam = int(input("Son kiritinbg: "))
+# except:
+#     pass
 
-
-try:
-    for son in sonlar:
-        print(raqam/son)
-except:
-
+# try:
+#     for son in sonlar:
+#         print(raqam/son)
+# except:
+#     pass
 
 
 
