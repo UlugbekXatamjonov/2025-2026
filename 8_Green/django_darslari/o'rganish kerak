@@ -2,6 +2,8 @@ unique=True
 null=True
 blank=True
 phone regex
+throtling
+pagination
 DRF searching va filtering
 
 ------------------
