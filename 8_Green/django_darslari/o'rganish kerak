@@ -7,9 +7,25 @@ pagination
 DRF searching va filtering
 
 ------------------
+ordering    
 swagger - drf_yasg
 Postman
     
+
+---- Production ----
+- swagger
+- postman
+- django-cors-headers
+- python-decouple
+- .env
+- .gitnore
+- req.txt
+
+
+------------------
+CRUD functions
+
+
 Trello
 Git Hub
 ko'p rasmli qilish

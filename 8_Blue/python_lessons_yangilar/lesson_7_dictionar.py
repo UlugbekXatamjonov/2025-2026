@@ -1,6 +1,6 @@
 """ Dictionary - Lug'at """
 """
-Dictionary — bu ma'lumotlarni “kalit: qiymat” (key: value) ko‘rinishida saqlaydigan ma'lumot turi.
+Dictionary — bu ma'lumotlarni “kalit: qiymat” (key: value) ko'rinishida saqlaydigan ma'lumot turi.
 """
 
 
@@ -14,41 +14,41 @@ talaba = {
 Kalit (key) - "ism", "yosh", "sinfi"
 Qiymat (value) - "Ali", 14, 7
 """
-print(talaba)
-print(talaba["ism"])
-print(talaba["yosh"])
-print(f"Talabaning ismi {talaba['ism']} va u {talaba['yosh']} yoshda")
+# print(talaba)
+# print(talaba["ism"])
+# print(talaba["yosh"])
+# print(f"Talabaning ismi {talaba['ism']} va u {talaba['yosh']} yoshda")
 
 
-""" Qiymat qo'shish """
-""" 1-usul """
-talaba["maktab"] = "BM school"
-print(talaba)
+# """ Qiymat qo'shish """
+# """ 1-usul """
+# talaba["maktab"] = "BM school"
+# print(talaba)
 
-""" 2-usul """
-talaba.update({"baho":5})
-print(talaba)
+# """ 2-usul """
+# talaba.update({"baho":5})
+# print(talaba)
 
 
-""" Qiymatni o'zgartirish """
-""" 1-usul """
-talaba["maktab"] = "2-maktab"
-print(talaba)
+# """ Qiymatni o'zgartirish """
+# """ 1-usul """
+# talaba["maktab"] = "2-maktab"
+# print(talaba)
 
-""" 2-usul """
-talaba.update({"baho":20})
-print(talaba)
+# """ 2-usul """
+# talaba.update({"baho":20})
+# print(talaba)
 
-""" Qiymatni o'chirish """
-""" 3 usul """
-del talaba["ism"]
-print(talaba)
+# """ Qiymatni o'chirish """
+# """ 3 usul """
+# del talaba["ism"]
+# print(talaba)
 
-talaba.pop("yosh")
-print(talaba)
+# talaba.pop("yosh")
+# print(talaba)
 
-talaba.popitem() # ro'yhatning oxiridagi elementni olib tashlaydi
-print(talaba)
+# talaba.popitem() # ro'yhatning oxiridagi elementni olib tashlaydi
+# print(talaba)
 
 
 taomlar = {
@@ -71,9 +71,39 @@ taomlar = {
 # meals2 = dict(taomlar)
 # print(meals2)
 
-""" get() metodi """
-# print(taomlar["abror"])
-# print(taomlar.get("nodir","Bunday key yo'q"))
+"""4-mashq
+Mashina haqida lug'at tuzing: model, rang, yil kabi keylari bo'lsin.
+    - “rang” ni boshqa rangga o'zgartiring.
+    - Yangi “tezlik” kaliti qo'shing.
+    - Mashina lug'atidan biror elementni pop() bilan o'chiring.
+    - Va so'ngida lug'atni tozalab tashlang.
+"""
+
+
+car = {
+    'model':"Nexia",
+    'rang':"ko'k",
+    "yil":2016
+}
+
+print(car)
+
+car.update({'rang':"oq"})
+print(car)
+
+car["tezlik"] = 200
+print(car)
+
+car.pop('yil')
+print(car)
+
+car.clear()
+print(car)
+
+
+
+
+
 
 
 
@@ -169,6 +199,8 @@ taomlar = {
 
 
 
+
+
 """
 1-mashq
 otam (onam, akam, ukam, va hokazo) degan lug'at tuzing va lug'atga shu inson haqida kamida 3 ta 
@@ -184,10 +216,10 @@ Python izohli lu'gati tuzing: Lug'atga shu kunga qadar o'rgangan 10 ta so'z(atam
     (masalan integer, float, string, if, else va hokazo) va har birining qisqacha tarjimasini yozing.
     
 4-mashq
-Mashina haqida lug‘at tuzing: model, rang, yil kabi keylari bo'lsin.
-    - “rang” ni boshqa rangga o‘zgartiring.
-    - Yangi “tezlik” kaliti qo‘shing.
-    - Mashina lug‘atidan biror elementni pop() bilan o‘chiring.
+Mashina haqida lug'at tuzing: model, rang, yil kabi keylari bo'lsin.
+    - “rang” ni boshqa rangga o'zgartiring.
+    - Yangi “tezlik” kaliti qo'shing.
+    - Mashina lug'atidan biror elementni pop() bilan o'chiring.
     - Va so'ngida lug'atni tozalab tashlang.
     
 5-mashq
