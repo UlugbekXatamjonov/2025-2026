@@ -5,4 +5,10 @@ from .models import News
 # Register your models here.
 @admin.register(News)
 class News_Admin(admin.ModelAdmin):
-    list_display = ("title", 'author')
+    list_display = ("title", 'author', 'news_type', 'views_count', 'created_on')  
+
+
+
+
+
+

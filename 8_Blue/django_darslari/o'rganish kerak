@@ -9,13 +9,13 @@ trothling
 pagination
 
 ---- Production ----
-+ swagger
-+ postman
-+ django-cors-headers
-+ python-decouple
-+ .env
-+ .gitnore
-+ req.txt
+- swagger
+- postman
+- django-cors-headers
+- python-decouple
+- .env
+- .gitnore
+- req.txt
 
 
 ------------------

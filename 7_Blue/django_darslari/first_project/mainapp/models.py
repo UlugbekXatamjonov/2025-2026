@@ -15,7 +15,8 @@ class News(models.Model):
 
 
 
-
+# local
+# global
 
 
 

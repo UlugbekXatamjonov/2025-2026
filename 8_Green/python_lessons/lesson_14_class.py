@@ -36,14 +36,78 @@ olimjon  = Inson("Olimjon", "Murodov", 2022, "Namangan region, Mingchinor street
 # print(olimjon.get_info())
 # print(nozima.get_age())
 # print(olimjon.get_age())
-print(nozima.change_adress("Andijon viloyati, Baliqchi tumani"))
-print(olimjon.change_adress("Farg'ona viloyati, Oltiariq tumani"))
+# print(nozima.change_adress("Andijon viloyati, Baliqchi tumani"))
+# print(olimjon.change_adress("Farg'ona viloyati, Oltiariq tumani"))
 
-print(nozima.get_info())
-print(olimjon.get_info())
+# print(nozima.get_info())
+# print(olimjon.get_info())
 
 
 
+class Student:
+    """ O'quvchi classi """
+    def __init__(self, full_name:str, year:int, marks:list,friends:list, facultety:str,level=1,):
+        """ Student haqidagi malumotlarni o'zida saqlovchi funksiya """
+        self.full_name = full_name
+        self.year = year
+        self.marks = marks
+        self.friends = friends
+        self.faculty = facultety
+        self.level = level
+
+    def get_name(self):
+        return self.full_name
+    
+    def get_info(self):
+        return f"{self.full_name} {self.year} yoshda. Va u {self.level} - bosqich talabasi "
+    
+    def get_marks(self):
+        info =  f"{self.full_name}ning olgan baholari: "
+        for mark in self.marks:
+            info += f"{mark} "
+        return info
+
+    def get_friends(self):
+        text = f"{self.full_name}ning ulfatlari: "
+        for frined in self.friends:
+            text += f"{frined}  "
+        return text
+    
+    def set_level(self, new_level):
+        self.level = new_level
+        return self.level
+    
+    def update_level(self):
+        if self.level < 4:
+            self.level += 1
+        else:
+            return "5 - bosqich mavjud emas !!!"
+        return self.level
+    
+    def get_faculty(self):
+        return f"{self.full_name} {self.faculty}  fakulteti talabasi"
+    
+    def set_faculty(self, new_faculty):
+        self.faculty = new_faculty
+        return self.faculty
+
+baxolar = [3,7,5,3,2,1,8]
+friends = ['Ali', "Olim", "Hasan", "Husan", "Vali"]
+
+student1 = Student("Aziz Alimov",23,baxolar, friends, 'Matematika', 4)
+student2 = Student("Olimjon", 43,baxolar, friends, "Ingliz tili", 2)
+student3 = Student("Boburov", 1999, baxolar, friends, "Shifokor")
+student4 = Student("Nodira Jamilova", 2002, [7,7,8,3,5,7], ['Guli', "Aziza", "Husnora", "Madina", "Barno"], 'Rus tili')
+
+print(student1.get_marks())
+print(student1.get_friends())
+
+# print(student1.set_level(3))
+# print(student1.get_info())
+
+# print(student1.get_faculty())
+# print(student1.set_faculty('Iqtisot'))
+# print(student1.get_faculty())
 
 
 
