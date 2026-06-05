@@ -15,8 +15,8 @@ class Author_Serializers(serializers.ModelSerializer):
 
 
 class Book_Serializers(serializers.ModelSerializer):
-    category_name = serializers.CharField(source='category.name')
-    author_name = serializers.CharField(source='author.name')
+    category_name = serializers.CharField(source='category.name',read_only=True)
+    author_name = serializers.CharField(source='author.name', read_only=True)
 
     class Meta:
         model = Book
