@@ -72,11 +72,7 @@ class Student:
         for frined in self.friends:
             text += f"{frined}  "
         return text
-    
-    def set_level(self, new_level):
-        self.level = new_level
-        return self.level
-    
+     
     def update_level(self):
         if self.level < 4:
             self.level += 1
@@ -102,12 +98,9 @@ student4 = Student("Nodira Jamilova", 2002, [7,7,8,3,5,7], ['Guli', "Aziza", "Hu
 print(student1.get_marks())
 print(student1.get_friends())
 
-# print(student1.set_level(3))
-# print(student1.get_info())
-
-# print(student1.get_faculty())
-# print(student1.set_faculty('Iqtisot'))
-# print(student1.get_faculty())
+print(student1.get_faculty())
+print(student1.set_faculty('Iqtisot'))
+print(student1.get_faculty())
 
 
 
