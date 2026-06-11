@@ -1,0 +1,29 @@
+from django.db import models
+
+# Create your models here.
+
+GENDER = (
+    ('boy', "O'g'il bola"),
+    ('girl', "Qiz bola")
+)
+
+LOTOK = (
+    ('yes', "Ha biladi"),
+    ('no', "Yo'q bilmaydi")
+)
+
+class Pat(models.Model):
+    zoti = models.CharField() # 255
+    rasm = models.ImageField()
+    laqabi = models.CharField()
+    yoshi = models.CharField()
+    jinsi = models.CharField(choices=GENDER)
+    sogligi = models.CharField()
+    manzil = models.CharField()
+    narxi = models.CharField()
+    telegram = models.CharField()
+    telefon = models.CharField()
+    lotok = models.CharField(choices=LOTOK)
+
+    created_on = models.DateTimeField()
+    status = models.BooleanField()

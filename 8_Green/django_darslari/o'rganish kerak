@@ -10,6 +10,7 @@ DRF searching va filtering
 ordering    
 swagger - drf_yasg
 Postman
+req.txt
     
 
 ---- Production ----
@@ -19,7 +20,6 @@ Postman
 - python-decouple
 - .env
 - .gitnore
-- req.txt
 
 
 ------------------
