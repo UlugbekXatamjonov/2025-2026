@@ -14,7 +14,7 @@ LOTOK = (
 
 class Pat(models.Model):
     zoti = models.CharField() # 255
-    rasm = models.ImageField()
+    rasm = models.ImageField(upload_to="pats_photo/")
     laqabi = models.CharField()
     yoshi = models.CharField()
     jinsi = models.CharField(choices=GENDER)
@@ -25,5 +25,5 @@ class Pat(models.Model):
     telefon = models.CharField()
     lotok = models.CharField(choices=LOTOK)
 
-    created_on = models.DateTimeField()
+    created_on = models.DateTimeField(auto_now_add=True)
     status = models.BooleanField()

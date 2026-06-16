@@ -4,4 +4,4 @@ from .models import Pat
 
 @admin.register(Pat)
 class Pat_Admin(admin.ModelAdmin):
-    list_display = ('zoti', 'laqabi', 'jinsi', 'narxi')
+    list_display = ('zoti', 'laqabi', 'jinsi', 'narxi', 'created_on')

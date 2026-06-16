@@ -17,7 +17,7 @@ class Book(models.Model):
     rasm = models.ImageField()
     kitob_haqida = models.TextField()
     muallif = models.CharField()
-    turi = models.CharField()
+    turi = models.CharField() # kitob turi
 
     qoshilgan_vaqt = models.DateTimeField()
     status = models.BooleanField()
