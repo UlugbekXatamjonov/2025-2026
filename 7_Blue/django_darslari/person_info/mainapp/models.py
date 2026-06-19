@@ -9,7 +9,7 @@ GENDER = (
 
 
 class Person(models.Model):
-    name = models.CharField(max_length=50, unique=True) # unique - yagonalilik
+    name = models.CharField(max_length=50, unique=True, help_text="Insonning ismini yozish uchun maydon") # unique - yagonalilik
     surname = models.CharField(max_length=50) # max_length - maksimal uzunlik
     birth_date = models.DateField()
     gender = models.CharField(choices=GENDER, default='male') # choises - tanlanadigan qilish
@@ -17,6 +17,7 @@ class Person(models.Model):
     adress = models.TextField()
     job = models.CharField(max_length=100, default="Bekorchi")
     about = models.TextField(null=True, blank=True)
+    about2 = models.TextField(null=True, blank=True)
     
     status = models.BooleanField()  # True / False
     created_on = models.DateTimeField(auto_now_add=True)

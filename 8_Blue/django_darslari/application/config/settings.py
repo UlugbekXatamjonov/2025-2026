@@ -157,6 +157,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:5174',                    # Vue.js dev server (Vite alt port)
     'http://localhost:8080',                    # Vue.js dev server (Vue CLI)
     'http://localhost:3000',                    # React (agar kerak bo'lsa)
+    'list-t.vercel.app'
 ]
 
 CORS_ALLOW_METHODS = (
