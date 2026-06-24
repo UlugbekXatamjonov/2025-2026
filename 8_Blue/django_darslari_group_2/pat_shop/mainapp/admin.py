@@ -5,3 +5,5 @@ from .models import Pat
 @admin.register(Pat)
 class Pat_Admin(admin.ModelAdmin):
     list_display = ('zoti', 'laqabi', 'jinsi', 'narxi', 'created_on')
+    list_filter = ('jinsi', 'lotok', 'created_on')
+    search_fields = ('zoti', 'laqabi', 'narxi', 'yoshi', 'manzil', 'telefon')

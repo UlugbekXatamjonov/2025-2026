@@ -13,7 +13,7 @@ LOTOK = (
 )
 
 class Pat(models.Model):
-    zoti = models.CharField(max_length=8) # 255
+    zoti = models.CharField(max_length=25) # 255
     rasm = models.ImageField(upload_to="pats_photo/")
     laqabi = models.CharField()
     yoshi = models.CharField()
